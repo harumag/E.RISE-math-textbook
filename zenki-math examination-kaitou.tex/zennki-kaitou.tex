@@ -1,0 +1,68 @@
+\documentclass[10pt,fleqn,a4paper]{jsarticle}
+\usepackage[dvipdfmx]{graphicx,color}
+\usepackage{ascmac,amsmath,amssymb,amstext}
+\usepackage{tikz,multicol,float,tikz-3dplot}
+\usetikzlibrary{positioning,intersections,calc,arrows.meta,math,angles}
+\usepackage{zogeny,ceo,comment}
+\newcommand{\ans}[1]{\mbox{\boldmath{$#1$}}}
+\renewcommand{\baselinestretch}{1.2} 
+\tdplotsetmaincoords{60}{110}%{xy平面からどれだけ上にいるか(90度から-90度)}{z軸中心にどれだけ左右に回転するか}
+\begin{document}
+\begin{itembox}
+[r]{\Mondai\kagil $\theta の範囲に注意せよ$\kagir(青山学院大)}
+$tを0\leq t\leq\pi を満たす実数とし,xy平面上の放物線\\
+\hspace{0.5cm}C:y=x^2-2(2\sin t)x+\sin t\cos t\\
+の頂点を\mathrm{P}とおくとき,以下の問いに答えよ.\\
+\Shomon 点\mathrm{P}の座標をtを用いて表せ.\\
+\Shomon 放物線Cとx軸の正の部分が異なる2点で交わるようなtの値の範囲を求めよ.\\
+\Shomon tが0\leq t\leq\pi の範囲を動くとき,点\mathrm{P}のyの最大値と最小値を求めよ.また,そのときのtの値を求めよ.$
+\end{itembox}
+
+
+\newpage
+\begin{itembox}
+[r]{$\Mondai\kagil 見た目に惑わされてはいけない \kagir$(中央大)}
+数列$\B{a_n}を,条件a_1=1と漸化式\\
+\hspace{0.5cm}a_{n+1}=(n+1)a_n+(n-1)!\indent(n=1,2,3,\cdots)\\
+によって定める.ただし,0!=1である.また,数列\B{b_n}を\\
+\hspace{0.5cm}b_n=\dfrac{a_n}{n!}\\
+で定める.このとき,以下の問いに答えよ.\\
+\Shomon b_1,b_2,b_3を求めよ.答えのみ記せば良い.\\
+\Shomon \B{b_n}の満たすべき漸化式を求めよ.また,\B{b_n}の一般項を求め\B{a_n}の一般項を求めよ.\\
+\Shomon nを自然数とする.次の等式を証明せよ.\\
+\hspace{0.5cm}\wa{K=1}{n}2^{k-1}a_k=2^nn!-1\\$
+\end{itembox}
+\kangaekata\\
+誘導に乗ることができればどの小問も優しいです.教科書レベルの問題になります.ただ,\ans{\kakkoni}に関しては,$b_n=\dfrac{a_n}{n!} を
+b_nの式だけで表したいのでa_{n+1}の漸化式を両辺(n+1)!で割り算すれば\ans{b_n}の階差数列になります.$\\\\
+\kai\\
+$\kakkoichi\indent $ $b_1=\dfrac{a_1}{1!}=\ans{1}\\\\
+\hspace{0.2cm}b_2=\dfrac{a_2}{2!}=\dfrac{2\cdot a_1+0!}{2\cdot1}=\ans{\dfrac{2}{3}}\\\\
+\hspace{0.2cm}b_3=\dfrac{a_3}{3!}=\dfrac{3\cdot a_2+1!}{3\cdot2\cdot1}=\kotaee{\dfrac{5}{3}}\\\\
+\kakkoni\indent a_{n+1}=(n+1)a_n+(n-1)!の両辺を(n+1)!で割ることにより,$
+\begin{center} $\dfrac{a_{n+1}}{(n+1)!}=\dfrac{a_n}{n!}+\dfrac{1}{n(n+1)}(n\geq1)$\end{center}
+\begin{center}$\doti \kotaee{b_{n+1}=b_n+\dfrac{1}{n(n+1)}(n\geq1)}$\end{center}
+$\Y b_n=b_1+\wa{k=1}{n-1}\p{\dfrac{1}{k}-\dfrac{1}{k+1}}=1-\tint{\dfrac{1}{k}}{1}{n}\\
+\hspace{1.7cm}=1-\p{\dfrac{1}{n}-1}=2-\dfrac{1}{n}(n\geq1)\\
+これは、n=1のときも成立する.\\
+\Y\kotaee{a_n=\p{2-\dfrac{1}{n}}n!(n\geq1)}\\\\
+\kakkosan\indent \kakkoni より,\kakkosan における示すべき等式は次のように書ける.$
+\begin{center}
+    $\wa{k=1}{n}2^{k-1}\cdot\p{2-\dfrac{1}{k}}k!=2^nn!-1\cdots\cdots\maruichi $
+\end{center}
+このことより,\\
+\indent $2^{k-1}\p{2-\dfrac{1}{k}}k!=2^{k-1}\B{2k!-(k-1)!}\\\\
+\hspace{0.5cm}=2^k\cdot k!-2^{k-1}(k-1)!\indent\temarkua\ans{差分型！(階差型！)}\\\\
+\Y \wa{k=1}{n}\B{2^k\cdot k!-2^{k-1}(k-1)!}=\tint{2^{k-1}\cdot(k-1)!}{1}{n+1}\\\\
+\hspace{0.5cm}=2^n\cdot n!-(1\cdot0!)=2^nn!-1\hspace{1cm}\ans{(証明終わり)}$
+
+
+
+
+
+
+
+
+
+
+\end{document}
