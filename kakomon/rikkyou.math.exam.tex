@@ -133,7 +133,7 @@ $\tokeiichi 　関数y=4\cos^2\theta-4\sin\theta-5の最小値は\Bc{ア}であ�
 \end{center}
 \newpage
 \noindent{\LARGE\tokesan.}　$pを正の実数とする.\mathrm{O}を原点とする座標平面上の放物線C:y=\dfrac{1}{4}x^2上の点
-\mathrm{P}\p{p,\dfrac{1}{4p^2}}における接線をl,\mathrm{P}を通りx軸に垂直な直線をmとする.また,m上の点\mathrm{Q}\p{p,-1}
+\mathrm{P}\p{p,\dfrac{1}{4}p^2}における接線をl,\mathrm{P}を通りx軸に垂直な直線をmとする.また,m上の点\mathrm{Q}\p{p,-1}
 を通り,lに垂直な直線をnとし,lとnの交点を\mathrm{R}とする.さらに,lに関して\mathrm{Q}と対称な点を\mathrm{S}とする.このとき,
 次の問\tokeiichi 〜\tokeigo に答えよ.解答欄には,\tokeiichi については答えのみを,\tokeini 〜\tokeigo については
 答えだけでなく途中経過も書くこと.\\\\
@@ -568,6 +568,512 @@ $\tokeiichi 　2^{1-3x}\geq\p{\dfrac{1}{\sqrt{2}}}^x を満たす実数xの範�
 \begin{center}
     計算用紙
 \end{center} 
+\newpage
+\section{解答}
+\subsection{2023年度2月6日実施}
+{\LARGE \noindent\tokeichi.}\\
+\kai\\
+\tokeiichi 　$y=4\cos^2\theta-4\sin\theta-5=-4\sin^2\theta-4\sin\theta-1　より,t=\sin\theta とおくと,-1\leq t\leq1
+に注意して,y=-4t^2-4t-1と表せる.\\
+従って,y'=-8t-4なので,t=1のとき,最小値\min y=-9を取る.\\
+\Y 求める最小値は,\kotaee{-9}\\
+\tokeini $
+\begin{align*}　
+    &\exists(x,y)
+    \begin{cases}
+    x^2+y^2=1\\
+    z=2x+y
+    \end{cases}\doti\exists x,x^2+(z-2x)^2=1\\
+    &\doti\exists x,5x^2-4zx+z^1-1=0\cdots\maruichi\doti 「二次方程式\maruichi が少なくとも一つ実数解をもつ.」\\
+    &\doti \p{\maruichi の判別式}4z^2-5z^2+5\geq0\doti z^2\leq5\\
+    &\doti\kotaee{-\sqrt{5}\leq z\leq\sqrt{5}}
+\end{align*}
+\tokeishi 　$余弦定理より,\Sankaku{ABC}において,\cos\Kaku{BAC}=\dfrac{4^2+4^2-6^2}{2\cdot4\cdot4}=-\dfrac{1}{8}であり,\\
+\Sankaku{APC}に余弦定理を用いると,25=\mathrm{AP}^2+16-2\mathrm{AP}\cdot4\cos A\\
+\Y \mathrm{AP}=\kotaee{\dfrac{-1+\sqrt{37}}{2}}$\\\\
+\tokego 　$\dfrac{a}{b}が整数になるような整数(a,b)の組みは以下の組み合わせである.\\
+(a,b)=(1,1),(2,2),(3,3),(4,4),(5,5),(6,6),(2,1),(3,1),(4,1),(5,1),(6,1),(4,2),(6,2),(6,3)\\
+\Y 求める確率は,\kotaee{\dfrac{7}{18}}\\
+\tokeigo 平面\mathrm{ABC}に垂直なベクトルとして,\vec{n}=\Vec{OA}\times\Vec{OB}=\Tvec<0,1>[2,4,-1]がとれるので,$
+\begin{align*}
+&\Vec{OC}\cdot\vec{n}=0\doti\Tvec<0,1>[1+t,t,1-t]\cdot\Tvec<0,1>[2,4,-1]=0\\
+&\doti7t=-1\\
+&\doti\kotaee{t=-\dfrac{1}{7}}
+\end{align*}
+\newpage
+\noindent\tokeiroku 　$f\p{f(x)}=f(x)^2+1において,t=f(x)とおくと,f(t)=t^2+1\\
+\Y \kotaee{f(x)=x^2+1}\\\\
+\tokeishichi 　XY平面で考える.\\
+・\underline{x<0}のとき,\\
+\begin{cases}
+    X=x\\
+    Y=-2x+2\\
+    x<0
+\end{cases}\doti\begin{cases}
+    X=x\\
+    Y=-2X+2\\
+    X<0
+\end{cases}\\
+・\underline{x\geq0 のとき,}\\
+\begin{cases}
+    X=x\\
+    Y=2x+2\\
+    x\geq0
+\end{cases}\doti\begin{cases}
+    X=x\\
+    Y=2X+2\\
+    X\geq0
+\end{cases}\\
+これらを図示すると,以下の図を得る.$
+\begin{center}
+    \begin{tikzpicture}[scale=1]
+        \draw[thick,->,>=stealth](-2,0)--(4,0)node[right]{$X$};
+        \draw[thick,->,>=stealth](0,-1)--(0,4.5)node[above]{$Y$};
+        \node[below right]at(0,0){O};
+        \draw[dashed,domain=-1.5:1.2]plot(\x,{-2*\x+2});
+        \draw[thick,domain=-1.5:0]plot(\x,{-2*\x+2});
+        \draw[dashed,domain=-1.5:1.3]plot(\x,{2*\x+2});
+        \draw[thick,domain=0:1.3]plot(\x,{2*\x+2})node[right]{$A\cap B$};
+        \draw[thick,domain=-1.5:3.2]plot(\x,{-\x+3})node[below]{C};
+    \end{tikzpicture}
+\end{center}
+上図のCと$A\cap Bとの交点の座標を求めて,\\
+\begin{cases}
+    Y=-X+3\\
+    Y=-2X+2
+\end{cases}\doti(X,Y)=(-1,4)\\
+\begin{cases}
+    Y=-X+3\\
+    Y=2X+2
+\end{cases}\doti(X,Y)=(\dfrac{1}{3},\dfrac{8}{3})\\
+\Y 求める交点の座標は,\kotaee{(x,y)=(-1,4),(\dfrac{1}{3},\dfrac{8}{3})}$
+\newpage
+\noindent{\LARGE \tokeni .}\\
+\kai\\
+まず,状況を整理するとこんな感じ.\\
+\begin{center}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        $n$ & 1年目(100万) & 2年目(12万追加) & 3年目\\
+        \hline 
+        $S_n$ & $100\times1.08$ & $(108+12)\times1.08$ &{} \\
+        \hline
+        
+    \end{tabular}
+\end{center}
+\tokeiichi 　$\kotaee{S_1=108万円},\kotaee{S_2=129.6万}\\\\
+\tokeini 　\kotaee{S_{n+1}=\p{S_n+12}\times1.08　(n\geq1)}\cdots\asta \\\\
+\tokeisan 　特性方程式を解くことにより,\asta は次のように変形することができる.$
+\begin{align*}
+    \asta&\doti S_n+162=270\times\p{1.08}^{n-1}\\
+    &\doti\kotaee{S_n=270\times\p{1.08}^{n-1}-162　(n\geq1)}
+\end{align*}
+\tokeishi \begin{align*}　
+    \log10.8&=\log\dfrac{108}{10}=\log\dfrac{2^2\times3^3}{10}\\
+    &=2\log2+3\log3-1=\kotaee{1.0333}
+\end{align*}
+
+\tokeigo 　\begin{align*}
+    S_n>513&\doti270\times\p{1.08}^{n-1}>512+513=675\\
+    &\doti 1.08^{n-1}>\dfrac{5}{2}=\dfrac{10}{4}\\
+    &\doti (n-1)\log1.08>\log\dfrac{10}{4}=1-2\log2=0.398\\
+    &\doti0.0333(n-1)>0.398\\
+    &\doti n-1>\dfrac{0.398}{0.0333}=11.9519\cdots\yaku11.95\\
+    &\doti n>12.95
+\end{align*}
+$\Y 求める最小の自然数nは,\kotaee{13}$
+\newpage
+\noindent{\LARGE \tokesan.}\\
+まず,与えられた状況を図示すると,下図のようになっている.
+\begin{center}
+    \begin{tikzpicture}[scale=0.8]
+      \draw[->,>=stealth](-3,0)--(6,0)node[right]{$x$};
+      \draw[->,>=stealth](0,-3)--(0,6)node[above]{$y$};
+      \draw[thick,domain=-2:5] plot(\x,{pow(\x,2)/4})node[right]{$y=\dfrac{1}{4}x^2$};
+      \coordinate[label=below left:O](O)at(0,0);
+
+      \coordinate(P)at(4,4);
+      \fill (P) circle (2pt);
+      \node[right]at(P){P$(p,\dfrac{1}{4}p^2)$};
+
+      \coordinate(R)at(2,0);
+      \node[above right=2.5mm]at(R){R$(2,0)$};
+      \fill (R) circle (2pt);
+
+      \coordinate(S)at(0,1);
+      \node[above right]at(S){S$(0,1)$};
+
+      \fill(0,1)circle(2pt);
+
+      \draw[thick,domain=2:5]plot(\x,{2*\x-4});
+      \draw[thick,domain=2:1]plot(\x,{2*\x-4})node[below]{$\ell$};
+      
+      \draw[thick](4,6)--(4,-2)node[below]{$m$};
+      \draw[thick,domain=-1:5.5]plot(\x,{-\x/2+1})node[right]{$n$};
+      \draw[dashed](4,-1)--(0,-1);
+      \node[left]at(0,-1){$-1$};
+      \fill (0,-1)circle(2pt);
+      \node[above right=1mm]at(4,-1){$\yad$Q$(4,-1)$};
+      \fill(4,-1)circle(2pt);
+     
+    \end{tikzpicture}
+\end{center}
+\kai\\
+$\mathrm{S}は,\mathrm{Q}の対称点であるから,座標は\mathrm{S}\p{0,1}とすぐに分かる.$\\
+\tokeiichi 　$y'=\dfrac{1}{2}xより,\ell の方程式は$
+\begin{center}
+    $\ell:y=\dfrac{1}{2}\p{x-p}+\dfrac{1}{4}p^2=\kotaee{\dfrac{1}{2}px-\dfrac{1}{4}p^2}$
+\end{center}
+\tokeini 　$\mathrm{S}の座標は,\mathrm{S}(0,1)なので,nの方程式は,$
+\begin{center}
+    $n:y=\dfrac{-1-1}{p-0}(x-0)+1=\kotaee{-\dfrac{1}{p}x+1}$
+\end{center}
+Rの座標は,$\kotaee{\mathrm{R}(\dfrac{p}{2},0)}$\\\\
+\tokeisan 　Sの座標は点Qとの対称性より,\kotaee{0,1}\\\\
+\tokeishi 　$直線m'は,2点\mathrm{P},\mathrm{S}を通る直線であるから,$
+\begin{center}
+    $m':y=\dfrac{\dfrac{1}{4}p^2-1}{p-0}(x-0)+1$
+\end{center}
+$\Y \kotaee{m':y=\dfrac{p^2-4}{4}x+1}$\\
+\newpage
+\noindent 一方,Tは$Cとm'の共有点であるから,二次方程式:\dfrac{1}{4}x^2=\dfrac{p^2-4}{4p}x+1\doti(x-p)(px+4)=0を解くことにより,
+x=p\vee x=-\dfrac{4}{p}を得るので,\mathrm{T}のx座標は,\kotaee{x=-\dfrac{4}{p}}$\\\\
+\tokeigo 　もとめる面積を$Lとおく.$
+\begin{align*}
+    L&=\dint{-\frac{4}{p}}{0}\p{\dfrac{p^2-4}{4p}x^2+x-\dfrac{1}{12}x^3}dx\\
+    &=-\B{\dfrac{p^2-4}{8p}\tint{x^2}{-\frac{4}{p}}{0}+\tint{x}{-\frac{4}{p}}{0}-\dfrac{1}{12}\tint{x^3}{-\frac{4}{p}}{0}}\\
+    &=\p{頑張って計算\cdots}\\
+    &=\kotaee{\dfrac{6p^2+8}{3p^3}}
+\end{align*}
+
+\newpage
+\subsection{2023年度2月9日実施}
+{\LARGE \noindent\tokeichi.}　\\
+\kai\\
+$\tokeiichi 　余弦定理より,線分\mathrm{AD}について次のように2通りで表せる.\\
+\mathrm{AD}^2=9+4-2\cdot3\cdot3\cdot2\cos A\cdots\maruichi\\
+\mathrm{AD}^2=25+36-2\cdot5\cdot6\cos A\p{\pi-A}=25+36+2\cdot5\cdot6\cos A\cdots\maruichi\\
+\Y \maruichi と\maruni より,25+36+60\cos A=9+4-12\cos A\doti72\cos A=-48\\
+\Y \kotaee{\cos A=-\dfrac{2}{3}}\\\\
+\tokeini 　(x+1)^{2023}について,二項定理より,\\
+(x+1)^{2023}=\comb{2023}{1}+\comb{2023}{1}x+\wa{k=2}{2023}\comb{2023}{k}x^k\godo\kotaee{1+2023x}\pmod{x^2}\\\\$
+\tokeisan 　\begin{align*}
+    \dfrac{1}{1-a}&=\dfrac{1}{1-\log_62}=\dfrac{1}{\log_66-\log_62}\\
+    &=\dfrac{1}{\log63}=\dfrac{1}{\dfrac{\log_33}{\log_36}}=\log_36
+\end{align*}
+$\Y 3^{\dfrac{1}{1-a}}=3^{\log_36}=\kotaee{6}$\\\\
+\tokeishi 　$3点\mathrm{O},\mathrm{A},\mathrm{B}を通る円の方程式は,x^2+y^2+ax+by+c=0\cdots\asta とかける.\\
+これより,$
+\begin{align*}
+    \begin{cases}
+        c=0\\
+        -6a+6b=-72\\
+        4a+2b=-20
+    \end{cases}&\doti\begin{cases}
+        c=0\\
+        a-b=12\\
+        2a+b=-10
+    \end{cases}\\
+    &\doti\begin{cases}
+        a=2/3\\
+        b=-34-3\\
+        c=0
+    \end{cases}
+\end{align*}
+$\Y x^2+y^2+\dfrac{2}{3}x-\dfrac{34}{3}y=0\\\
+\Y \p{x+\dfrac{1}{3}}^2+\p{y-\dfrac{17}{3}}^2=\cdots\\
+\Y 円の中心の座標は,\kotaee{\p{-\dfrac{1}{3},\dfrac{17}{3}}}$
+\newpage
+\noindent\tokeigo 　$z=\dfrac{\sqrt{3}}{2}+\dfrac{i}{2}において,z=r\p{\cos\theta+i\sin\theta}(r>0)とおくと,\\
+z=\cos\dfrac{\pi}{6}+i\sin\dfrac{\pi}{6}なので,\\
+z^6=\cos\pi+i\sin\pi=-1\\
+\Y\kotaee{\begin{cases}
+    a=-1\\
+    b=0
+\end{cases}}$\\\\
+\tokeiroku 　\begin{align*}
+&\left|\vec{a}+\vec{b}\right|=\sqrt{17}\doti2\vec{a}\cdot\vec{b}=-8\\
+&\doti\vec{a}\cdot\vec{b}=-4
+\end{align*}
+$\Y S=\sqrt{9\cdot16-(-4)^2}=\kotaee{8\sqrt{2}}\\\\$
+\tokeishichi 　$a_1=0,a_2=3,a_3=0,\cdots\\
+と続くような漸化式なので,n=2m 　または,　n=2m+1と表すことができる.\\
+\Y \wa{k=1}{2m}a_k=\overbrace{0+3+0+3+\cdots}^{2m個}=(3がm個)=3m\\
+一方,\wa{k=1}{2m+1}a_k=\overbrace{0+3+0+3+\cdots}^{2m個}+0=(3がm個+0)=3m\\
+\Y いずれのときも,\wa{k=1}{n}a_k=\kotaee{3m}$
+\newpage
+\noindent{\LARGE \tokeni.}\\
+\kai\\
+\tokeiichi 　(A,B,C,D)の手の出し方は,次の3通りである.\\
+(A,B,C,D)$=$(グ,チ,チ,チ),(チ,パ,パ,パ),(パ,グ,グ,グ)\\
+$\Y 求める確率は,\dfrac{3}{3^4}=\kotaee{\dfrac{1}{27}}$\\\\
+\tokeini 　A以外の勝者の決め方は,$\comb{3}{1}=3通りであり,二人のみ勝つ場合は,3通りである.\\
+\Y 求める確率は,\dfrac{3\times3}{3^4}=\kotaee{\dfrac{1}{9}}$\\\\
+\tokeisan 　\tokeiichi で,Aが一人で勝つ場合,\tokeini でAとその他一人が勝つ場合を求めているので,あとはAと他二人が勝つ場合を求めれば良い.
+他二人の選び方は,$\comb{3}{2}=3通りであり,手の出し方が3通りある.\\
+\Y 求める確率は,\tokeiichi と\tokeini の結果を合わせて,\dfrac{3+9+9}{3^4}=\kotaee{\dfrac{7}{27}}$\\\\
+\tokeishi 　あいこが発生するのは,「全員が同じ手」と「4人の内3人が違う手」である.\\
+まず,前者の場合から考える.\\
+・\underline{全員が同じ手になる確率}\\
+　これは,明らかに$\dfrac{3}{3^4}\cdots\cdots\maruichi $である.\\
+・\underline{4人の内3人が違う手になる確率}\\
+　3人の内,2人の手が決まれば,残り1人の手の出し方は,ただ一通りなので,先にその二人を指定する.\\
+$二人の選び方\to\comb{4}{2}=6通り.また,3人の内のもう一人の手の出し方は1通り.最後に,4人目の人の手の出し方は,3通り.\\
+ここで,三人目の人と4人目の人の並び方を考えて,2!=2通りである.\\
+\Y このときの確率は,\dfrac{\comb{4}{2}\times1\times3\times2}{3^4}=\dfrac{36}{3^4}\cdots\cdots\maruni である.\\
+\Y 以上より,求める確率は,\maruichi+\maruni=\dfrac{39}{3^4}=\kotaee{\dfrac{13}{27}}$\\\\
+\tokeigo 　2回目でゲームが終了するのは,\ans{1回目があいこで,2回目で少なくとも一人勝つとき}である.\\
+従って,あいこになる確率は\tokeishi で求めているので,4人の内少なくとも1人勝つ確率を求めて,これらの積を考えれば良い.\\
+ここで,「4人の内少なくとも一人勝つ」$\doti 「1-\p{あいこになる確率}」である.即ち,あいこの余事象である.\\
+\Y 求める確率は,\dfrac{13}{27}\times\dfrac{14}{27}=\kotaee{\dfrac{13\times14}{27^2}}$
+\newpage
+\noindent{\LARGE\tokesan.}\\
+\begin{center}
+    \begin{tikzpicture}[scale=0.8]
+        \draw[->,>=stealth](-4,0)--(3,0)node[right]{$x$};
+        \draw[->,>=stealth](0,-1)--(0,6)node[above]{$y$};
+        \draw[thick,domain=-3.5:-2] plot(\x,{pow(\x,2)+2*\x});
+        \draw[thick,domain=-2:0] plot(\x,{-pow(\x,2)-2*\x});
+        \draw[thick,domain=0:1.7] plot(\x,{pow(\x,2)+2*\x})node[above right]{$y=\left|x^2+2x\right|$};
+
+        \coordinate[label=below left:O](O)at(0,0);
+
+        \coordinate[label=below:A](A)at(-2,0);
+        \fill (A)circle(2pt);
+
+        
+
+        
+        \draw[thick,domain=-2.5:3] plot(\x,{\x/2+1})node[above right]{$\ell$};
 
 
-\end{document}
+
+
+    \end{tikzpicture}
+\end{center}
+\kai\\
+\tokeiichi 　$\mathrm{A}(-2,0)を通る傾きtの直線の方程式は,\ell:y=tx+2t\cdots\cdots\maruichi  とかける.$\\
+ また,2点P,Qの座標は,
+ \begin{align*}
+    \left|x^2+2x\right|=tx+2t&\doti x^2+2x=tx+2t\vee x^2+2x=-(tx+2t)\\
+    &\doti x^2+(2-t)x-2t=0\vee x^2+(2+t)x+2t=0\\
+    &\doti (x-t)(x+2)=0\vee (x+t)(x+2)=0\\
+    &\doti \p{x=t\vee x=-2}\vee\p{x=-t\vee x=0}
+ \end{align*}
+$\Y \mathrm{P}のx座標は\mathrm{Q}のy座標より小さいので,\kotaee{\mathrm{P}_x=-t,\mathrm{Q}_x=t}$\\\\
+\tokeini 　\begin{align*}
+S_1(t)&=\dint{-2}{-t}\B{-(x^2+2x)-t(x+2)}dx\\
+&=-\dint{-2}{-t}(x+2)(x+t)dx\\
+&=\dfrac{1}{6}\p{-t+2}^3
+\end{align*}
+$\Y \kotaee{S_1(t)=\dfrac{1}{6}(2-t)^3}$\\\\
+\tokeisan 　\begin{align*}
+    S_2(t)&=\dint{-t}{0}\B{t(x+2)-(-x^2-2x)}dx+\dint{0}{t}\B{t(x+2)-(x^2-2x)}dx\\
+    &=\dint{-t}{0}\B{x^2+(2+t)x+2t}dx+\dint{0}{t}\B{-x^2+(t-2)x+2t}dx\\
+    &=\dfrac{1}{3}\tint{x^3}{-t}{0}-\dfrac{1}{3}\tint{x^3}{0}{t}+\dfrac{2+t}{2}\tint{x^2}{-t}{0}+\dfrac{t-2}{2}\tint{x^2}{t}{0}
+    +2t(0+t)+2t(t-0)\\
+    &=\dfrac{t^3}{3}-\dfrac{t^3}{3}-\dfrac{t+2}{2}t^2+\dfrac{t-2}{2}t^2+2t^2+2t^2\\
+    &=\kotaee{2t^2}
+\end{align*}\\
+\tokeishi 　\tokeini と\tokeisan の結果より,$\kotaee{S(t)=\dfrac{1}{6}(2-t)^3+2t^2\cdots\cdots\maruni}$\\
+ここで,$\maruni に積の微分法を用いて微分すると,$
+\begin{align*}
+    \dfrac{d}{dt}S(t)&=\dfrac{1}{2}(2-t)^2\times(-1)+4t\\
+    &=\kotaee{-\dfrac{1}{2}(2-t)^2+4t}
+\end{align*}
+\newpage
+\noindent\tokeigo 　$\tokeishi より,\dfrac{d}{dt}S(t)=0を解くと,0<t<2に注意して,t=6-4\sqrt{2}を得る.これを\alpha とおく.\\
+このとき,以下の増減表を得る.$
+\begin{center}
+    \begin{tabular}{|c||c|c|c|c|c|}
+        \hline
+        $t$ & 0 & $\cdots$ & $\alpha$ & $\cdots$ & 2\\
+        \hline
+        $\dfrac{dS(t)}{dt}$ &  & $-$ & 0 & $+$ & \\
+        \hline
+        $S(t)$ & & $\yab$ & $S(\alpha)$ & $\yaa$ & \\
+        \hline
+    \end{tabular}
+\end{center}
+$\Y S(t)を最小にするようなtの値は,\kotaee{t=6-4\sqrt{2}}$
+
+\newpage
+\subsection{2024年度2月6日実施}
+\noindent{\LARGE\tokeichi.}\\
+\kai\\
+\tokeiichi 　$t=\log_2x とおくと,y=t^2-8t-20\cdots\cdots\maruichi　なので,y'=2t-8より,\\
+\maruichi はt=4\doti x=16 のとき,最小値をとるので,1\leq x\leq8 より,\kotaee{x=8}(:\Bc{ア})のとき,\min y=\kotaee{-35}(:\Bc{イ}).\\\\
+\tokeini 　両辺に(x+1)^3をかけることにより,$
+   \begin{align*}
+    3x^2-x+4&=a+b(x+1)+c(x+1)^2\\
+    &=cx^2+(b+2c)x+a+b+c\cdots\cdots\maruichi 
+   \end{align*} 
+ここで,$\maruichi$ は等式として一致するので,両辺の係数を比較することにより,\\
+$\begin{cases}
+c=3\\
+b+2c=-1\\
+a+b+c=4
+\end{cases}\doti\kotaee{\begin{cases}
+    a=8\\
+    b=-7\\
+    c=3
+\end{cases}}$\\\\
+\tokeisan 　「さいころを3回投げて,出る目の積が4の倍数」$\doti$ 「少なくとも1回4の倍数が出る.」\\
+このことより,\ans{3回とも1,3,5のどれか.}と\ans{4以外の偶数の目が1回だけでる.}場合の確率を求めて,余事象を考えれば良い.\\
+・\underline{3回とも1,3,5のどれかがでるとき,}\\
+　この場合の確率は,$\p{\dfrac{3}{6}}^3\cdots\cdots\maruichi 　である.$\\
+・\underline{4以外の偶数の目が1回だけでるとき,}\\
+　 $この場合の確率は,\comb{3}{1}\p{\dfrac{2}{6}}\p{\dfrac{3}{6}}^2=\dfrac{54}{6^3}\cdots\cdots\maruni 　である.$\\
+$\Y \maruichi,\maruni より求める確率は,1-\dfrac{81}{6^3}=1-\dfrac{3}{8}=\kotaee{\dfrac{5}{8}}$
+\newpage
+\noindent\tokeishi 　$ここで,一般の角\alpha,\beta について\tan の加法定理を考えると,次式で表される.$
+\begin{center}
+    $\tan\p{\alpha\pm\beta}=\dfrac{\tan\alpha\pm\tan\beta}{1\mp\tan\alpha\tan\beta}
+    =\dfrac{1\pm\dfrac{\tan\beta}{\tan\alpha}}{\dfrac{1}{\tan\alpha}\mp\tan\beta}\cdots\cdots\asta $
+\end{center}
+これに注目すると,与えられた式は,\ans{\asta の分母}であるから,$\asta で\beta=\alpha とおくと,$
+\begin{align*}
+    \tan\p{2\alpha}&=\dfrac{1+1}{\dfrac{1}{\tan\alpha}-\tan\alpha}\\
+    &=\dfrac{2}{\dfrac{1}{\tan\alpha}-\tan\alpha}\\
+    &\doti \dfrac{1}{\tan\alpha}-\tan\alpha=\left.\dfrac{2}{\tan2\alpha}\right|_{\alpha=\dfrac{\pi}{12}}
+    =\kotaee{2\sqrt{3}}
+\end{align*}\\
+\tokeigo 　少し数列の構造を調べてみよう.
+\begin{center}
+    \begin{tabular}{|c||c|c|c|c|c|c|}
+        \hline
+        $n$ & $1$ & $2$ & $3$ & $4$ & $5$ & $\cdots$\\
+        \hline
+        $a_n$ & 1 & 1 & 2 & 4 & 8 & $\cdots$\\
+        \hline
+        
+    \end{tabular}
+\end{center}
+このことから,数列の構造は以下のようになっている.
+\begin{center}
+    
+
+$1,1\to^{\times2}2\to^{\times2}4\to^{\times2},\cdots,\to^{\times2(n-2回目)}a_n$
+\end{center}
+$\Y 一般項a_nは,\kotaee{a_n=2^{n-2}}である.(これは,n\geq3のとき確かに成立している.)$\\\\
+\tokeiroku 　$f(x)\p{\dint{0}{1}f(t)dt}=x^2+5\cdots\cdots\asta\\
+    今, A=\dint{0}{1}f(t)dtとおくと,Aは定数なので,f(t)=\dfrac{t^2+5}{A}であるから,$
+    \begin{align*}
+        A&=\dint{0}{1}\dfrac{1}{A}\p{t^2+5}dt=\dfrac{1}{A}(\dfrac{1}{3}+5)(積分計算は省略)\\
+        &=\dfrac{16}{3}\cdot\dfrac{1}{A}\\
+        &\doti A=\pm\dfrac{4}{\sqrt{3}}
+    \end{align*}
+    $\Y A>0より,A=\dfrac{4}{\sqrt{3}}\\
+    \Y f(x)=\dfrac{\sqrt{3}}{4}x^2+\dfrac{\sqrt{3}}{4}\cdot5\\
+    \Y \kotaee{a=\dfrac{\sqrt{3}}{4},b=\dfrac{5\sqrt{3}}{4}}$
+\newpage
+\noindent{\LARGE\tokeni.}\\
+\kai\\
+まず,与えられた状況を図示すると以下のようになる.\\
+{tikzpicture スペース}\\
+\tokeiichi 　$ y'=-2xより,\\
+\ell:y=-2p(x-p)-p^2=\kotaee{-2px+p^2}\\
+m:y=2q(x+q)-q^2=\kotaee{2qx+q^2}$\\\\
+\tokeini  　$\ell とmの交点を求めれば良いので,\\
+\begin{cases}
+    y=-2px+p^2\\
+    y=2qx+q^2
+\end{cases}\doti\begin{cases}
+    x=\dfrac{p^2-q^2}{2(p+q)}=\dfrac{p+q}{2}\\
+    y=pq
+\end{cases}\\
+\Y \kotaee{\mathrm{R}\p{\dfrac{p-q}{2},pq}}$\\\\
+\tokeisan 　$\mathrm{Q}\p{-q,-q^2},\ell:y=-2px+p^2より、点と直線の距離公式から,$
+\begin{align*}
+    d&=\dfrac{\left|-2pq-q^2-p^2\right|}{\sqrt{(2p)^2+1^2}}\\
+    &=\dfrac{\left|2pq+q^2+p^2\right|}{\sqrt{4p^2+1}}\\
+    &=\kotaee{\dfrac{(p+q)^2}{\sqrt{4p^2+1}}}
+\end{align*}
+\tokeishi 　まず,高さに相当するPRを求める.$\Vec{PR}=\tvec<0,1>[-\dfrac{1}{2}(p+q),p(q+p)]より,$
+\begin{align*}
+    \left|\Vec{PR}\right|&=\sqrt{\dfrac{1}{4}(p+q)^2+p^2(q+p)^2}\\
+    &=(p+q)\sqrt{\dfrac{1}{4}+p^2}\\
+    &=\dfrac{p+q}{2}\sqrt{4p^2+1}
+\end{align*}
+このことより,求める面積Sは
+\begin{align*}
+    S&=\dfrac{1}{2}\times\left|\Vec{PR}\right|\times d\\
+    &=\dfrac{1}{2}\cdot\dfrac{p+q}{2}\sqrt{4p^2+1}\cdot\dfrac{(p+q)^2}{\sqrt{4p^2+1}}\\
+    &=\kotaee{\dfrac{1}{4}(p+q)^3}
+\end{align*}
+\newpage
+\noindent\tokeigo 　$2直線\ell,mが直交するので,(-2p)(2q)=-1\doti\kotaee{q=\dfrac{1}{4p}}$\\\\
+\tokeiroku 　$\tokeigo を用いると,面積\mathrm{S}は,S=\dfrac{1}{4}(p+\dfrac{1}{4p})\cdots\cdots\asta とかけるので,
+\asta に\mathrm{AM-GM}の関係を用いると,$
+\begin{center}
+    $p+\dfrac{1}{4p}\geq2\sqrt{p\cdot\dfrac{1}{4p}}=1$
+\end{center}
+等号成立は,$p=\dfrac{1}{4p}\doti p=\dfrac{1}{2}のとき成立する.(\because p>0)$\\ 
+$\Y 求める最小値は,\min S=\kotaee{\dfrac{1}{4}},またそのときのpはp=\kotaee{\dfrac{1}{2}}である.$
+\newpage
+\noindent{\LARGE\tokesan.}\\
+tikzpicture でお絵描きできなかった(技量不足)ので,板書よくみといてください!\hiraayamari\\
+\kai\\
+$\tokeiichi 　余弦定理より,\cos\Kaku{AOB}=\dfrac{25+49-64}{2\cdot5\cdot7}=\dfrac{1}{7}.\\
+\Y \vec{a}\cdot\vec{b}=35\cdot\dfrac{1}{7}=\kotaee{5}\\\\$
+\tokeini 　余弦定理より,$\cos\Kaku{OAB}=\dfrac{8^2+5^2-7^2}{2\cdot5\cdot8}=\dfrac{40}{80}=\dfrac{1}{2}なので,\\
+\mathrm{AD}=\mathrm{OA}\cos60^{\ddo}=5\cdot\dfrac{1}{2}=\dfrac{5}{2}\\$
+このとき,$\mathrm{BD}=8-\dfrac{5}{2}=\dfrac{11}{2}なので,\mathrm{AD}:\mathrm{BD}=5:11であるから,$
+\begin{center}
+    $\Vec{OD}=\dfrac{11\Vec{OA}+5\Vec{OB}}{5+11}=\dfrac{11}{16}\Vec{OA}+\dfrac{5}{16}\Vec{OB}$
+    \end{center}
+    $\Y \kotaee{t=\dfrac{5}{16}}$\\\\
+    \tokeisan 　$\mathrm{OD}=\mathrm{OA}\cos60^{\ddo}=\dfrac{5\sqrt{3}}{2}\\
+    \Y 半径r=\kotaee{\dfrac{5\sqrt{3}}{2}}$\\\\
+    \tokeishi 　\begin{align*}
+    \Vec{OH}&=\p{\Vec{OD}の\vec{a}向き正射影ベクトル}=\dfrac{\Vec{OD}\cdot\vec{a}}{\left|\vec{a}\right|^2}\vec{a}\\
+    &=\dfrac{\dfrac{11}{16}\left|\vec{a}\right|^2+\dfrac{5}{16}\vec{a}\cdot\vec{b}}{25}\vec{a}
+    =\dfrac{\dfrac{11\cdot25}{16}+\dfrac{25}{16}}{25}\vec{a}\\
+    &=\dfrac{11+1}{16}\vec{a}=\kotaee{\dfrac{3}{4}\vec{a}}
+    \end{align*}\\
+\tokeigo 　\fbox{コメント}：$\Vec{OH}が使えたら嬉しい.$\\
+円の幾何学的性質より,$点\mathrm{H}は線分\mathrm{DE}の中点であるから,\Vec{OH}=\dfrac{\Vec{OD}+\Vec{OE}}{2}\cdots\cdots\maruichi 　を満たす.\\
+このことより,$
+\begin{align*}
+    \Vec{OE}&=2\Vec{OH}-\Vec{OD}=\dfrac{3}{2}\vec{a}-\p{\dfrac{11}{16}\vec{a}+\dfrac{5}{16}\vec{b}}\\
+    &=\dfrac{13}{16}\vec{a}-\dfrac{5}{16}\vec{b}
+\end{align*}
+$\Y \kotaee{p=\dfrac{13}{16},q=-\dfrac{5}{16}}$
+\newpage
+\begin{center}
+    {\LARGE 傾向と対策の補足}
+\end{center}
+
+\begin{center}
+        \begin{tabular}{|c|c|c|}
+            \hline
+           {}&  \tokeni & \tokesan \\
+           \hline
+           2018 & \suII 三角関数と微積 & \suB ベクトル\\
+           \hline
+           2019 & \suII 微積 & \suII 図形と方程式\\
+           \hline
+           2020 & \suII 微積 & \suA\suII 三角関数と整数\\
+            \hline
+            2023.2/6 & \suB 複利計算　& \suII 微積\\
+            \hline
+            2023.2/9 & \suA 確率　& \suI\suII 絶対値のついた二次関数,微積\\
+            \hline
+            2024.2/6 & \suII 微積 & \suC ベクトル\\
+            \hline 
+            2024.2/9 & \suB 漸化式 & \suI\suII 二次関数と微積\\
+            \hline
+            2025.2/6 & \suA\suB 確率漸化式 & \suII 微積\\
+            \hline
+            2025.2/9 & \suII 三角関数と図形の融合問題 & \suII 微積\\
+            \hline
+        \end{tabular}
+    \end{center}
+
+
+
+
+
+
+
+\end{document} 

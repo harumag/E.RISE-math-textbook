@@ -1,0 +1,1180 @@
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.10.2)  13 NOV 2025 18:10
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**/Users/oshimaharuto/E.RISE-math-textbook/kakomon/rikkyou.math.exam
+(/Users/oshimaharuto/E.RISE-math-textbook/kakomon/rikkyou.math.exam.tex
+pLaTeX2e <2023-02-14>+1, based on
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-09-02>
+(/usr/local/texlive/2025/texmf-dist/tex/platex/jsclasses/jsarticle.cls
+Document Class: jsarticle 2025/04/27 jsclasses (okumura, texjporg)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/fleqn.clo
+File: fleqn.clo 2016/12/29 v1.2b Standard LaTeX option (flush left equations)
+\mathindent=\skip49
+Applying: [2015/01/01] Make \[ robust on input line 50.
+LaTeX Info: Redefining \[ on input line 51.
+Already applied: [0000/00/00] Make \[ robust on input line 62.
+Applying: [2015/01/01] Make \] robust on input line 74.
+LaTeX Info: Redefining \] on input line 75.
+Already applied: [0000/00/00] Make \] robust on input line 83.
+)
+Class jsarticle Info: Autodetected engine: pLaTeX on input line 236.
+\jsc@mpt=\dimen164
+\jsc@mmm=\dimen165
+\jsc@smallskipamount=\skip50
+LaTeX Info: Redefining \textmc on input line 511.
+LaTeX Info: Redefining \textgt on input line 513.
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 575.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 769.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 769.
+\fullwidth=\dimen166
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 7.68799pt on input line 922.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 7.68799pt on input line 922.
+\c@part=\count274
+\c@section=\count275
+\c@subsection=\count276
+\c@subsubsection=\count277
+\c@paragraph=\count278
+\c@subparagraph=\count279
+\@abstractbox=\box70
+\c@figure=\count280
+\c@table=\count281
+\abovecaptionskip=\skip51
+\belowcaptionskip=\skip52
+\jsc@tocl@width=\dimen167
+\@lnumwidth=\dimen168
+\bibindent=\dimen169
+ (/usr/local/texlive/2025/texmf-dist/tex/platex/jsclasses/jslogo.sty
+Package: jslogo 2019/07/25 okumura, texjporg
+LaTeX Info: Redefining \TeX on input line 82.
+LaTeX Info: Redefining \LaTeX on input line 135.
+LaTeX Info: Redefining \LaTeXe on input line 188.
+)
+\heisei=\count282
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvipdfmx.def on input line 106.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2025/09/29 v5.0n Graphics/color driver for dvipdfmx
+))
+\Gin@req@height=\dimen170
+\Gin@req@width=\dimen171
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: dvipdfmx.def on input line 149.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/usr/local/texlive/2025/texmf-dist/tex/latex/ascmac/ascmac.sty
+Package: ascmac 2020/01/15 v2.1 ascmac wrapper (community edition) 
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/ascmac/tascmac.sty
+Package: tascmac 2020/01/15 v2.1 ascmac package (community edition) 
+\@savetbaselineshift=\dimen172
+\@saveybaselineshift=\dimen173
+\scb@x=\box71
+\scscb@x=\box72
+\@bw=\dimen174
+\@nbox=\box73
+\@nbody=\box74
+\@scw=\dimen175
+\ascmac@hoboxa=\box75
+\ascmac@hoboxb=\box76
+\@itemh=\dimen176
+\@iboxpos=\toks19
+\@iboxstr=\box77
+\@bwsp=\box78
+\@@bwsp=\box79
+\@bcal=\count283
+\shaderule=\dimen177
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/06/16 v2.17y AMS math features
+\@mathmargin=\skip53
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen178
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen179
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count284
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count285
+\leftroot@=\count286
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count287
+\DOTSCASE@=\count288
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box80
+\strutbox@=\box81
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen180
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count289
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count290
+\dotsspace@=\muskip17
+\c@parentequation=\count291
+\dspbrk@lvl=\count292
+\tag@help=\toks21
+\row@=\count293
+\column@=\count294
+\maxfields@=\count295
+\andhelp@=\toks22
+\eqnshift@=\dimen181
+\alignsep@=\dimen182
+\tagshift@=\dimen183
+\tagwidth@=\dimen184
+\totwidth@=\dimen185
+\lineht@=\dimen186
+\@envbody=\toks23
+\multlinegap=\skip54
+\multlinetaggap=\skip55
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2949.
+LaTeX Info: Redefining \] on input line 2950.
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks25
+\pgfutil@tempdima=\dimen187
+\pgfutil@tempdimb=\dimen188
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box82
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks26
+\pgfkeys@temptoks=\toks27
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks28
+))
+\pgf@x=\dimen189
+\pgf@y=\dimen190
+\pgf@xa=\dimen191
+\pgf@ya=\dimen192
+\pgf@xb=\dimen193
+\pgf@yb=\dimen194
+\pgf@xc=\dimen195
+\pgf@yc=\dimen196
+\pgf@xd=\dimen197
+\pgf@yd=\dimen198
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count296
+\c@pgf@countb=\count297
+\c@pgf@countc=\count298
+\c@pgf@countd=\count299
+\t@pgf@toka=\toks29
+\t@pgf@tokb=\toks30
+\t@pgf@tokc=\toks31
+\pgf@sys@id@count=\count300
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-dvipdfmx.def
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2025-08-29 v3.1.11a (3.1.11a)
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+)
+\pgfsys@objnum=\count301
+)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count302
+\pgfsyssoftpath@bigbuffer@items=\count303
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: dvips.def on input line 274.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2025/01/21 v3.2a Graphics/color driver for dvips
+)
+LaTeX Info: Redefining \color on input line 762.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen199
+\pgfmath@count=\count304
+\pgfmath@box=\box83
+\pgfmath@toks=\toks32
+\pgfmath@stack@operand=\toks33
+\pgfmath@stack@operation=\toks34
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count305
+)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen256
+\pgf@picmaxx=\dimen257
+\pgf@picminy=\dimen258
+\pgf@picmaxy=\dimen259
+\pgf@pathminx=\dimen260
+\pgf@pathmaxx=\dimen261
+\pgf@pathminy=\dimen262
+\pgf@pathmaxy=\dimen263
+\pgf@xx=\dimen264
+\pgf@xy=\dimen265
+\pgf@yx=\dimen266
+\pgf@yy=\dimen267
+\pgf@zx=\dimen268
+\pgf@zy=\dimen269
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen270
+\pgf@path@lasty=\dimen271
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen272
+\pgf@shorten@start@additional=\dimen273
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box84
+\pgf@hbox=\box85
+\pgf@layerbox@main=\box86
+\pgf@picture@serial@count=\count306
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen274
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen275
+\pgf@pt@y=\dimen276
+\pgf@pt@temp=\dimen277
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen278
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen279
+\pgf@sys@shading@range@num=\count307
+\pgf@shadingcount=\count308
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box87
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box88
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen280
+\pgf@nodesepend=\dimen281
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen282
+\pgffor@skip=\dimen283
+\pgffor@stack=\toks35
+\pgffor@toks=\toks36
+)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count309
+\pgfplotmarksize=\dimen284
+)
+\tikz@lastx=\dimen285
+\tikz@lasty=\dimen286
+\tikz@lastxsaved=\dimen287
+\tikz@lastysaved=\dimen288
+\tikz@lastmovetox=\dimen289
+\tikz@lastmovetoy=\dimen290
+\tikzleveldistance=\dimen291
+\tikzsiblingdistance=\dimen292
+\tikz@figbox=\box89
+\tikz@figbox@bg=\box90
+\tikz@tempbox=\box91
+\tikz@tempbox@bg=\box92
+\tikztreelevel=\count310
+\tikznumberofchildren=\count311
+\tikznumberofcurrentchild=\count312
+\tikz@fig@count=\count313
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count314
+\pgfmatrixcurrentcolumn=\count315
+\pgf@matrix@numberofcolumns=\count316
+)
+\tikz@expandcount=\count317
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
+\c@tracingmulticols=\count318
+\mult@box=\box93
+\multicol@leftmargin=\dimen293
+\c@unbalance=\count319
+\c@collectmore=\count320
+\doublecol@number=\count321
+\multicoltolerance=\count322
+\multicolpretolerance=\count323
+\full@width=\dimen294
+\page@free=\dimen295
+\premulticols=\dimen296
+\postmulticols=\dimen297
+\multicolsep=\skip56
+\multicolbaselineskip=\skip57
+\partial@page=\box94
+\last@line=\box95
+\mc@boxedresult=\box96
+\maxbalancingoverflow=\dimen298
+\mult@rightbox=\box97
+\mult@grightbox=\box98
+\mult@firstbox=\box99
+\mult@gfirstbox=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\@tempa=\box123
+\@tempa=\box124
+\@tempa=\box125
+\@tempa=\box126
+\@tempa=\box127
+\@tempa=\box128
+\@tempa=\box129
+\@tempa=\box130
+\@tempa=\box131
+\@tempa=\box132
+\@tempa=\box133
+\@tempa=\box134
+\@tempa=\box135
+\@tempa=\box136
+\c@minrows=\count324
+\c@columnbadness=\count325
+\c@finalcolumnbadness=\count326
+\last@try=\dimen299
+\multicolovershoot=\dimen300
+\multicolundershoot=\dimen301
+\mult@nat@firstbox=\box137
+\colbreak@box=\box138
+\mc@col@check@num=\count327
+\g__mc_curr_col_int=\count328
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count329
+\float@exts=\toks37
+\float@box=\box139
+\@float@everytoks=\toks38
+\@floatcapt=\box140
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/tikz-3dplot/tikz-3dplot.sty (/usr/local/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary3d.code.tex
+File: tikzlibrary3d.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\arrowsize=\dimen302
+))) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryintersections.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
+\pgf@intersect@solutions=\count330
+)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowinset=\dimen303
+\pgfarrowlength=\dimen304
+\pgfarrowwidth=\dimen305
+\pgfarrowlinewidth=\dimen306
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymath.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfpu.code.tex)
+\tikz@math@for@depth=\count331
+\tikz@math@dimen=\dimen307
+\tikz@math@toks=\toks39
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryangles.code.tex
+File: tikzlibraryangles.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/local/texlive/texmf-local/tex/latex/local/ceo/zogeny.sty
+Package: zogeny 
+\hyouaki=\dimen308
+\hyouakib=\dimen309
+) (/usr/local/texlive/texmf-local/tex/latex/local/ceo/ceo.sty
+Package: ceo 
+ (/usr/local/texlive/texmf-local/tex/latex/local/ceo/waku.sty
+Package: waku 
+\@totalrightmargin=\dimen310
+\bk@bxb=\box141
+\bk@bxa=\box142
+\bk@lcnt=\count332
+\dashMboxlinelength=\dimen311
+\dashMboxlinegap=\dimen312
+\bk@lastgap=\dimen313
+\bk@processed@height=\dimen314
+\bk@remaining@height=\dimen315
+\bk@sideline=\box143
+) (/usr/local/texlive/texmf-local/tex/latex/local/ceo/Mwaku.sty
+Package: Mwaku 
+ (/usr/local/texlive/texmf-local/tex/latex/local/ceo/namemacro.sty
+Package: namemacro 
+)
+\roundboxaboveskip=\skip58
+\round@aboveskip=\dimen316
+\roundboxunderskip=\skip59
+\round@underskip=\dimen317
+\@senhaba=\dimen318
+\@rdbkbox@cornersize=\dimen319
+\@rdbkbox@leftmargin=\dimen320
+\@rdbkbox@rightmargin=\dimen321
+\@rdbkbox@topmargin=\dimen322
+\@rdbkbox@bottommargin=\dimen323
+\@rdbkbox@width=\dimen324
+\@rdbkbox@bordersize@top=\dimen325
+\@rdbkbox@bordersize@bottom=\dimen326
+\@rdbkbox@prevheight=\dimen327
+\@rdbkbox@lineskip=\dimen328
+\@rdbkbox@textbox=\box144
+\@rdbkbox@tempbox=\box145
+\@rdbkbox@topbox=\box146
+\@rdbkbox@bottombox=\box147
+) (/usr/local/texlive/texmf-local/tex/latex/local/ceo/gyoretuvec.sty
+\spacemh=\dimen329
+\spacemi=\dimen330
+\DelimReduceV=\dimen331
+\spacetro=\skip60
+\spacetri=\skip61
+\spacetrh=\skip62
+\DelimReduceM=\dimen332
+\spacemggi=\dimen333
+)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 18.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ceo/m/n on input line 18.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ceo/m/n on input line 18.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/ceo/m/n --> OT1/ceo/bx/n on input line 19.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 22.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ceo/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ceo/m/n on input line 22.
+\symruto=\mathgroup7
+\symyakumono=\mathgroup8
+\symdaikako=\mathgroup9
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ceo/bx/n on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ceo/bx/n on input line 30.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ceo/m/it on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ceo/m/it on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/ceo/m/it --> OT1/ceo/bx/it on input line 32.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 38.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ceo/m/it on input line 38.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ceo/m/it on input line 38.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/ceo/m/it --> OML/ceo/bx/it on input line 39.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 46.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ceo/m/n on input line 46.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ceo/m/n on input line 46.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/ceo/m/n --> OMS/ceo/bx/n on input line 47.
+ (/usr/local/texlive/texmf-local/tex/latex/local/ceo/kigou.sty
+Package: kigou 
+)
+LaTeX Font Info:    Redeclaring math accent \kosymbola on input line 126.
+LaTeX Font Info:    Redeclaring math accent \kosymbolb on input line 128.
+LaTeX Font Info:    Redeclaring math accent \kosymbolc on input line 130.
+LaTeX Info: Redefining \frac on input line 134.
+LaTeX Font Info:    Redeclaring math symbol \parallel on input line 186.
+LaTeX Font Info:    Redeclaring math symbol \alpha on input line 294.
+LaTeX Font Info:    Redeclaring math symbol \beta on input line 295.
+LaTeX Font Info:    Redeclaring math symbol \gamma on input line 296.
+LaTeX Font Info:    Redeclaring math symbol \delta on input line 297.
+LaTeX Font Info:    Redeclaring math symbol \epsilon on input line 298.
+LaTeX Font Info:    Redeclaring math symbol \zeta on input line 299.
+LaTeX Font Info:    Redeclaring math symbol \eta on input line 300.
+LaTeX Font Info:    Redeclaring math symbol \theta on input line 301.
+LaTeX Font Info:    Redeclaring math symbol \iota on input line 302.
+LaTeX Font Info:    Redeclaring math symbol \kappa on input line 303.
+LaTeX Font Info:    Redeclaring math symbol \lambda on input line 304.
+LaTeX Font Info:    Redeclaring math symbol \mu on input line 305.
+LaTeX Font Info:    Redeclaring math symbol \nu on input line 306.
+LaTeX Font Info:    Redeclaring math symbol \xi on input line 307.
+LaTeX Font Info:    Redeclaring math symbol \pi on input line 308.
+LaTeX Font Info:    Redeclaring math symbol \rho on input line 309.
+LaTeX Font Info:    Redeclaring math symbol \sigma on input line 310.
+LaTeX Font Info:    Redeclaring math symbol \tau on input line 311.
+LaTeX Font Info:    Redeclaring math symbol \upsilon on input line 312.
+LaTeX Font Info:    Redeclaring math symbol \phi on input line 313.
+LaTeX Font Info:    Redeclaring math symbol \chi on input line 314.
+LaTeX Font Info:    Redeclaring math symbol \psi on input line 315.
+LaTeX Font Info:    Redeclaring math symbol \omega on input line 316.
+LaTeX Font Info:    Redeclaring math symbol \varepsilon on input line 317.
+LaTeX Font Info:    Redeclaring math symbol \vartheta on input line 318.
+LaTeX Font Info:    Redeclaring math symbol \varpi on input line 319.
+LaTeX Font Info:    Redeclaring math symbol \varrho on input line 320.
+LaTeX Font Info:    Redeclaring math symbol \varsigma on input line 321.
+LaTeX Font Info:    Redeclaring math symbol \varphi on input line 322.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 323.
+LaTeX Font Info:    Redeclaring math symbol \varGamma on input line 324.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 325.
+LaTeX Font Info:    Redeclaring math symbol \varDelta on input line 326.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 331.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 332.
+LaTeX Font Info:    Redeclaring math symbol \varLambda on input line 333.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 334.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 335.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 336.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 337.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 338.
+LaTeX Font Info:    Redeclaring math symbol \varPhi on input line 339.
+LaTeX Font Info:    Redeclaring math symbol \varTheta on input line 340.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 341.
+LaTeX Font Info:    Redeclaring math symbol \varPsi on input line 342.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 343.
+LaTeX Font Info:    Redeclaring math symbol \varOmega on input line 344.
+LaTeX Font Info:    Redeclaring math symbol \aleph on input line 345.
+LaTeX Font Info:    Redeclaring math symbol \imath on input line 347.
+LaTeX Font Info:    Redeclaring math symbol \jmath on input line 348.
+LaTeX Font Info:    Redeclaring math symbol \ell on input line 349.
+LaTeX Font Info:    Redeclaring math symbol \wp on input line 350.
+LaTeX Font Info:    Redeclaring math symbol \Re on input line 351.
+LaTeX Font Info:    Redeclaring math symbol \Im on input line 352.
+LaTeX Font Info:    Redeclaring math symbol \partial on input line 353.
+LaTeX Font Info:    Redeclaring math symbol \infty on input line 354.
+LaTeX Font Info:    Redeclaring math symbol \prime on input line 355.
+LaTeX Font Info:    Redeclaring math symbol \emptyset on input line 356.
+LaTeX Font Info:    Redeclaring math symbol \nabla on input line 357.
+LaTeX Font Info:    Redeclaring math symbol \top on input line 359.
+LaTeX Font Info:    Redeclaring math symbol \bot on input line 360.
+LaTeX Font Info:    Redeclaring math symbol \triangle on input line 403.
+LaTeX Font Info:    Redeclaring math symbol \forall on input line 404.
+LaTeX Font Info:    Redeclaring math symbol \exists on input line 405.
+LaTeX Font Info:    Redeclaring math symbol \neg on input line 406.
+LaTeX Font Info:    Redeclaring math symbol \flat on input line 407.
+LaTeX Font Info:    Redeclaring math symbol \natural on input line 408.
+LaTeX Font Info:    Redeclaring math symbol \sharp on input line 409.
+LaTeX Font Info:    Redeclaring math symbol \clubsuit on input line 410.
+LaTeX Font Info:    Redeclaring math symbol \diamondsuit on input line 411.
+LaTeX Font Info:    Redeclaring math symbol \heartsuit on input line 412.
+LaTeX Font Info:    Redeclaring math symbol \spadesuit on input line 413.
+LaTeX Font Info:    Redeclaring math symbol \intop on input line 420.
+LaTeX Font Info:    Redeclaring math symbol \ointop on input line 506.
+LaTeX Font Info:    Redeclaring math symbol \smallint on input line 509.
+LaTeX Font Info:    Redeclaring math symbol \triangleleft on input line 510.
+LaTeX Font Info:    Redeclaring math symbol \triangleright on input line 511.
+LaTeX Font Info:    Redeclaring math symbol \bigtriangleup on input line 512.
+LaTeX Font Info:    Redeclaring math symbol \bigtriangledown on input line 513.
+LaTeX Font Info:    Redeclaring math symbol \wedge on input line 516.
+LaTeX Font Info:    Redeclaring math symbol \vee on input line 518.
+LaTeX Font Info:    Redeclaring math symbol \cap on input line 520.
+LaTeX Font Info:    Redeclaring math symbol \cup on input line 521.
+LaTeX Font Info:    Redeclaring math symbol \ddagger on input line 522.
+LaTeX Font Info:    Redeclaring math symbol \dagger on input line 523.
+LaTeX Font Info:    Redeclaring math symbol \sqcap on input line 524.
+LaTeX Font Info:    Redeclaring math symbol \sqcup on input line 525.
+LaTeX Font Info:    Redeclaring math symbol \uplus on input line 526.
+LaTeX Font Info:    Redeclaring math symbol \amalg on input line 527.
+LaTeX Font Info:    Redeclaring math symbol \diamond on input line 528.
+LaTeX Font Info:    Redeclaring math symbol \bullet on input line 529.
+LaTeX Font Info:    Redeclaring math symbol \wr on input line 530.
+LaTeX Font Info:    Redeclaring math symbol \div on input line 531.
+LaTeX Font Info:    Redeclaring math symbol \odot on input line 532.
+LaTeX Font Info:    Redeclaring math symbol \oslash on input line 533.
+LaTeX Font Info:    Redeclaring math symbol \otimes on input line 534.
+LaTeX Font Info:    Redeclaring math symbol \ominus on input line 535.
+LaTeX Font Info:    Redeclaring math symbol \oplus on input line 536.
+LaTeX Font Info:    Redeclaring math symbol \mp on input line 537.
+LaTeX Font Info:    Redeclaring math symbol \pm on input line 538.
+LaTeX Font Info:    Redeclaring math symbol \circ on input line 539.
+LaTeX Font Info:    Redeclaring math symbol \bigcirc on input line 540.
+LaTeX Font Info:    Redeclaring math symbol \setminus on input line 541.
+LaTeX Font Info:    Redeclaring math symbol \cdot on input line 542.
+LaTeX Font Info:    Redeclaring math symbol \ast on input line 543.
+LaTeX Font Info:    Redeclaring math symbol \times on input line 544.
+LaTeX Font Info:    Redeclaring math symbol \star on input line 545.
+LaTeX Font Info:    Redeclaring math symbol \propto on input line 546.
+LaTeX Font Info:    Redeclaring math symbol \sqsubseteq on input line 547.
+LaTeX Font Info:    Redeclaring math symbol \sqsupseteq on input line 548.
+LaTeX Font Info:    Redeclaring math symbol \mid on input line 550.
+LaTeX Font Info:    Redeclaring math symbol \dashv on input line 551.
+LaTeX Font Info:    Redeclaring math symbol \vdash on input line 552.
+LaTeX Font Info:    Redeclaring math symbol \nearrow on input line 553.
+LaTeX Font Info:    Redeclaring math symbol \searrow on input line 554.
+LaTeX Font Info:    Redeclaring math symbol \nwarrow on input line 555.
+LaTeX Font Info:    Redeclaring math symbol \swarrow on input line 556.
+LaTeX Font Info:    Redeclaring math symbol \Leftrightarrow on input line 565.
+LaTeX Font Info:    Redeclaring math symbol \Leftarrow on input line 566.
+LaTeX Font Info:    Redeclaring math symbol \Rightarrow on input line 567.
+LaTeX Font Info:    Redeclaring math symbol \leq on input line 571.
+LaTeX Font Info:    Redeclaring math symbol \geq on input line 573.
+LaTeX Font Info:    Redeclaring math symbol \succ on input line 575.
+LaTeX Font Info:    Redeclaring math symbol \prec on input line 576.
+LaTeX Font Info:    Redeclaring math symbol \approx on input line 577.
+LaTeX Font Info:    Redeclaring math symbol \succeq on input line 578.
+LaTeX Font Info:    Redeclaring math symbol \preceq on input line 579.
+LaTeX Font Info:    Redeclaring math symbol \supset on input line 580.
+LaTeX Font Info:    Redeclaring math symbol \subset on input line 581.
+LaTeX Font Info:    Redeclaring math symbol \supseteq on input line 582.
+LaTeX Font Info:    Redeclaring math symbol \subseteq on input line 583.
+LaTeX Font Info:    Redeclaring math symbol \in on input line 586.
+LaTeX Font Info:    Redeclaring math symbol \ni on input line 587.
+LaTeX Font Info:    Redeclaring math symbol \gg on input line 593.
+LaTeX Font Info:    Redeclaring math symbol \ll on input line 594.
+LaTeX Font Info:    Redeclaring math symbol \leftrightarrow on input line 598.
+LaTeX Font Info:    Redeclaring math symbol \leftarrow on input line 599.
+LaTeX Font Info:    Redeclaring math symbol \rightarrow on input line 601.
+LaTeX Font Info:    Redeclaring math symbol \mapstochar on input line 604.
+LaTeX Font Info:    Redeclaring math symbol \sim on input line 606.
+LaTeX Font Info:    Redeclaring math symbol \simeq on input line 607.
+LaTeX Font Info:    Redeclaring math symbol \perp on input line 608.
+LaTeX Font Info:    Redeclaring math symbol \equiv on input line 609.
+LaTeX Font Info:    Redeclaring math symbol \asymp on input line 613.
+LaTeX Font Info:    Redeclaring math symbol \smile on input line 614.
+LaTeX Font Info:    Redeclaring math symbol \frown on input line 615.
+LaTeX Font Info:    Redeclaring math symbol \leftharpoonup on input line 616.
+LaTeX Font Info:    Redeclaring math symbol \leftharpoondown on input line 617.
+LaTeX Font Info:    Redeclaring math symbol \rightharpoonup on input line 618.
+LaTeX Font Info:    Redeclaring math symbol \rightharpoondown on input line 619.
+LaTeX Info: Redefining \cong on input line 621.
+LaTeX Info: Redefining \notin on input line 625.
+LaTeX Info: Redefining \rightleftharpoons on input line 628.
+LaTeX Info: Redefining \doteq on input line 633.
+LaTeX Info: Redefining \joinrel on input line 635.
+LaTeX Info: Redefining \relbar on input line 637.
+LaTeX Info: Redefining \Relbar on input line 640.
+LaTeX Font Info:    Redeclaring math symbol \lhook on input line 641.
+LaTeX Font Info:    Redeclaring math symbol \rhook on input line 643.
+LaTeX Info: Redefining \bowtie on input line 646.
+LaTeX Info: Redefining \models on input line 648.
+LaTeX Info: Redefining \Longrightarrow on input line 650.
+LaTeX Info: Redefining \longrightarrow on input line 652.
+LaTeX Info: Redefining \longleftarrow on input line 654.
+LaTeX Info: Redefining \Longleftarrow on input line 657.
+LaTeX Info: Redefining \longmapsto on input line 660.
+LaTeX Info: Redefining \longleftrightarrow on input line 662.
+LaTeX Info: Redefining \Longleftrightarrow on input line 664.
+LaTeX Info: Redefining \iff on input line 666.
+LaTeX Font Info:    Redeclaring math symbol \ldotp on input line 667.
+LaTeX Info: Redefining \vdots on input line 676.
+LaTeX Info: Redefining \ddots on input line 679.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 689.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 690.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 691.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 692.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 693.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 694.
+LaTeX Font Info:    Redeclaring math accent \check on input line 695.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 696.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 697.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 698.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 699.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 700.
+LaTeX Font Info:    Redeclaring math symbol \braceld on input line 731.
+LaTeX Font Info:    Redeclaring math symbol \bracerd on input line 732.
+LaTeX Font Info:    Redeclaring math symbol \bracelu on input line 733.
+LaTeX Font Info:    Redeclaring math symbol \braceru on input line 734.
+LaTeX Font Info:    Redeclaring math delimiter \lmoustache on input line 742.
+LaTeX Font Info:    Redeclaring math delimiter \rmoustache on input line 744.
+LaTeX Font Info:    Redeclaring math delimiter \arrowvert on input line 746.
+LaTeX Font Info:    Redeclaring math delimiter \Arrowvert on input line 748.
+LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 750.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 753.
+LaTeX Font Info:    Redeclaring math delimiter \uparrow on input line 755.
+LaTeX Font Info:    Redeclaring math delimiter \downarrow on input line 757.
+LaTeX Font Info:    Redeclaring math delimiter \updownarrow on input line 759.
+LaTeX Font Info:    Redeclaring math delimiter \Uparrow on input line 761.
+LaTeX Font Info:    Redeclaring math delimiter \Downarrow on input line 763.
+LaTeX Font Info:    Redeclaring math delimiter \Updownarrow on input line 765.
+LaTeX Font Info:    Redeclaring math delimiter \backslash on input line 767.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 769.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 771.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 773.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 775.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 777.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 779.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 781.
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 783.
+LaTeX Font Info:    Redeclaring math delimiter \lgroup on input line 785.
+LaTeX Font Info:    Redeclaring math delimiter \rgroup on input line 787.
+LaTeX Font Info:    Redeclaring math delimiter \bracevert on input line 789.
+LaTeX Font Info:    Redeclaring math symbol \mathparagraph on input line 790.
+LaTeX Font Info:    Redeclaring math symbol \mathsection on input line 791.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 792.
+\c@bango=\count333
+LaTeX Info: Redefining \eqref on input line 875.
+\c@bangoA=\count334
+\c@bangoa=\count335
+\c@mondaibango=\count336
+\c@katakanabango=\count337
+\c@shomonbango=\count338
+\c@shomonbbango=\count339
+\c@shibango=\count340
+\c@shomonbangoshi=\count341
+\c@shomonbangoshib=\count342
+\c@shibbango=\count343
+\c@kurobango=\count344
+\c@tokeibango=\count345
+\c@shimonbango=\count346
+\c@shimonbangok=\count347
+\c@tokeibbango=\count348
+\c@shimonbbango=\count349
+\c@tokeikobango=\count350
+\c@tokeidaibango=\count351
+\c@kakubango=\count352
+\c@kakubbango=\count353
+\c@reidaibango=\count354
+\c@shomonbangor=\count355
+\c@shomonbbangor=\count356
+\c@tokeibangor=\count357
+\c@shomonbangok=\count358
+\c@shomonbbangok=\count359
+\c@tokeibangok=\count360
+\c@tokeibbangok=\count361
+\c@shimonbbangok=\count362
+\c@shimonbangor=\count363
+\c@shimonbbangor=\count364
+\c@katab=\count365
+\c@naganum=\count366
+\c@Marunum=\count367
+\rootbox=\box148
+\c@secNo=\count368
+\spaceo=\skip63
+\spacei=\skip64
+\spacej=\skip65
+\spaceg=\skip66
+\spaceh=\skip67
+\spacego=\skip68
+\spacegi=\skip69
+\spacegh=\skip70
+\spacebo=\skip71
+\spacebi=\skip72
+\spacebh=\skip73
+\spacepo=\skip74
+\spacepi=\skip75
+\spaceph=\skip76
+\spacerp=\skip77
+\uma=\dimen334
+\sika=\dimen335
+\umaa=\dimen336
+\sikaa=\dimen337
+\umab=\dimen338
+\sikab=\dimen339
+\sspaceo=\dimen340
+\sspacej=\dimen341
+\sspaceg=\dimen342
+\@verb@currpos=\count369
+LaTeX Encoding Info:    Redeclaring text command \" (encoding OT1) on input line 1911.
+LaTeX Encoding Info:    Redeclaring text command \' (encoding OT1) on input line 1912.
+LaTeX Encoding Info:    Redeclaring text command \. (encoding OT1) on input line 1913.
+LaTeX Encoding Info:    Redeclaring text command \~ (encoding OT1) on input line 1914.
+LaTeX Encoding Info:    Redeclaring text command \= (encoding OT1) on input line 1915.
+LaTeX Encoding Info:    Redeclaring text command \^ (encoding OT1) on input line 1916.
+LaTeX Encoding Info:    Redeclaring text command \` (encoding OT1) on input line 1917.
+LaTeX Encoding Info:    Redeclaring text command \c (encoding OT1) on input line 1918.
+LaTeX Encoding Info:    Redeclaring text command \u (encoding OT1) on input line 1921.
+LaTeX Encoding Info:    Redeclaring text command \v (encoding OT1) on input line 1922.
+LaTeX Encoding Info:    Redeclaring text symbol \ss (encoding OT1) on input line 1923.
+LaTeX Encoding Info:    Redeclaring text symbol \o (encoding OT1) on input line 1924.
+LaTeX Encoding Info:    Redeclaring text symbol \O (encoding OT1) on input line 1925.
+LaTeX Encoding Info:    Redeclaring text symbol \ae (encoding OT1) on input line 1926.
+LaTeX Encoding Info:    Redeclaring text symbol \AE (encoding OT1) on input line 1927.
+LaTeX Encoding Info:    Redeclaring text symbol \oe (encoding OT1) on input line 1928.
+LaTeX Encoding Info:    Redeclaring text symbol \OE (encoding OT1) on input line 1929.
+\@fboxrule=\dimen343
+\aboxwidth=\skip78
+\c@MaxMatrixCols=\count370
+\dotsspace@=\muskip18
+LaTeX Info: Redefining \text on input line 2196.
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write4
+ Excluding comment 'comment')
+LaTeX Font Info:    Trying to load font information for OT1+ceo on input line 12.
+ (/usr/local/texlive/texmf-local/tex/latex/local/ceo/ot1ceo.fd
+File: ot1ceo.fd 2005/5/18 v1.0
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2025-06-09 L3 backend support: dvips
+\l__pdfannot_backend_content_box=\box149
+\l__pdfannot_backend_model_box=\box150
+\g__pdfannot_backend_int=\count371
+\g__pdfannot_backend_link_int=\count372
+\g__pdfannot_backend_link_sf_int=\count373
+) (./rikkyou.math.exam.aux)
+\openout1 = `rikkyou.math.exam.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/ceo/m/it on input line 12.
+LaTeX Font Info:    Trying to load font information for OML+ceo on input line 12.
+ (/usr/local/texlive/texmf-local/tex/latex/local/ceo/omlceo.fd
+File: omlceo.fd 2005/5/18 v1.0
+)
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/ceo/m/n on input line 12.
+LaTeX Font Info:    Trying to load font information for OMS+ceo on input line 12.
+ (/usr/local/texlive/texmf-local/tex/latex/local/ceo/omsceo.fd
+File: omsceo.fd 2005/5/18 v1.0
+)
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/ceo/m/n on input line 12.
+LaTeX Font Info:    Trying to load font information for OMX+ceo on input line 12.
+ (/usr/local/texlive/texmf-local/tex/latex/local/ceo/omxceo.fd
+File: omxceo.fd 2005/5/18 v1.0
+)
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 16.60605pt on input line 13.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 16.60605pt on input line 13.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 13.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 13.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 5.76599pt on input line 13.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+cesq on input line 13.
+ (/usr/local/texlive/texmf-local/tex/latex/local/ceo/ucesq.fd
+File: ucesq.fd 2005/5/18 v1.0
+)
+LaTeX Font Info:    Trying to load font information for U+marua on input line 13.
+ (/usr/local/texlive/texmf-local/tex/latex/local/ceo/umarua.fd
+File: umarua.fd 2005/5/18 v1.0
+)
+LaTeX Font Info:    Trying to load font information for U+muparen on input line 13.
+ (/usr/local/texlive/texmf-local/tex/latex/local/ceo/umuparen.fd
+File: umuparen.fd 2005/5/18 v1.0
+)
+
+[1
+
+]
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 16.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 16.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 4.805pt on input line 16.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 16.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 16.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 21.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 7.68799pt on input line 21.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 5.76599pt on input line 21.
+
+
+[2]
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 35.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 35.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 35.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 35.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 35.
+ (./rikkyou.math.exam.toc)
+\tf@toc=\write5
+\openout5 = `rikkyou.math.exam.toc'.
+
+
+
+[3]
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 16.60605pt on input line 39.
+LaTeX Font Info:    Trying to load font information for U+kigob on input line 44.
+ (/usr/local/texlive/texmf-local/tex/latex/local/ceo/ukigob.fd
+File: ukigob.fd 2005/5/18 v1.0
+)
+LaTeX Font Info:    Trying to load font information for U+kigoa on input line 46.
+ (/usr/local/texlive/texmf-local/tex/latex/local/ceo/ukigoa.fd
+File: ukigoa.fd 2005/5/18 v1.0
+)
+
+[4]
+
+[5]
+
+Package amsmath Warning: Foreign command \over;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 104.
+
+
+
+[6]
+
+[7]
+
+[8]
+
+[9]
+
+[10]
+
+[11]
+
+[12]
+
+[13]
+
+[14]
+
+[15]
+
+[16]
+
+[17]
+
+[18]
+
+[19]
+
+[20]
+
+[21]
+
+[22]
+
+[23]
+
+[24]
+
+[25]
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 313.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 313.
+
+
+[26]
+
+[27]
+
+[28]
+
+[29]
+
+[30]
+
+[31]
+
+[32]
+
+[33]
+
+[34]
+
+[35]
+
+[36]
+
+[37]
+
+[38]
+
+[39]
+
+[40]
+
+[41]
+
+[42]
+
+[43]
+
+[44]
+
+[45]
+
+[46]
+
+[47]
+
+[48]
+
+[49]
+
+[50]
+
+[51]
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 573.
+
+Overfull \hbox (45.17422pt too wide) in paragraph at lines 590--598
+[]\OT1/ceo/m/n/10 (\OML/ceo/m/it/10 a; b\OT1/ceo/m/n/10 ) = (1\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 1)\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 (2\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 2)\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 (3\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 3)\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 (4\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 4)\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 (5\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 5)\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 (6\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 6)\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 (2\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 1)\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 (3\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 1)\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 (4\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 1)\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 (5\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 1)\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 (6\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 1)\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 (4\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 2)\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 (6\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 2)\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 (6\OML/ceo/m/it/10 ; \OT1/ceo/m/n/10 3)[] 
+ []
+
+
+
+[52]
+
+[53]
+
+[54]
+
+[55]
+
+[56]
+
+[57]
+
+[58]
+
+[59]
+
+[60]
+
+[61]
+
+[62]
+
+[63]
+
+[64]
+
+[65]
+
+[66]
+
+[67]
+LaTeX Font Info:    Trying to load font information for U+kigoc on input line 1015.
+ (/usr/local/texlive/texmf-local/tex/latex/local/ceo/ukigoc.fd
+File: ukigoc.fd 2005/5/18 v1.0
+)
+
+[68]
+
+[69] (./rikkyou.math.exam.aux)
+ ***********
+pLaTeX2e <2023-02-14>+1, based on
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-09-02>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 19564 strings out of 468392
+ 370783 string characters out of 5442310
+ 773955 words of memory out of 5000000
+ 47925 multiletter control sequences out of 15000+600000
+ 661386 words of font info for 177 fonts, out of 8000000 for 9000
+ 934 hyphenation exceptions out of 8191
+ 85i,23n,91p,780b,655s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on rikkyou.math.exam.dvi (69 pages, 155880 bytes).
