@@ -569,6 +569,7 @@ $\tokeiichi 　2^{1-3x}\geq\p{\dfrac{1}{\sqrt{2}}}^x を満たす実数xの範�
     計算用紙
 \end{center} 
 \newpage
+
 \section{解答}
 \subsection{2023年度2月6日実施}
 {\LARGE \noindent\tokeichi.}\\
@@ -1069,11 +1070,413 @@ $\Y \kotaee{p=\dfrac{13}{16},q=-\dfrac{5}{16}}$
             \hline
         \end{tabular}
     \end{center}
+    \newpage
 
+\subsection{2024年度2月9日実施}
+{\LARGE \noindent\tokeichi.}\\
+\noindent\kai\\
+\tokeiichi 　$\p{与式}=2^0\cdot1+2^1\cdot1+2^2\cdot0+2^3\cdot1\times\p{2^0\cdot1+2^1\cdot1}+2^0\cdot1+2^1\cdot1+2^2\cdot1+2^3\cdot1
+=\\33+15=\kotaee{48}$\\\\
+\tokeini 　$赤玉の数をn個とすると,白玉の数は20-n個なので,赤玉が2個取り出される確率は,\dfrac{\comb{n}{2}}{\comb{20}{2}}である.$\\
+従って,
+\begin{align*}
+    \dfrac{\comb{n}{2}}{\comb{20}{2}}=\dfrac{21}{38}&\doti \comb{n}{2}\cdot38=21\cdot10\cdot19\\
+    &\doti n(n-1)=210\\
+    &\doti n^2-n-210=0\\
+    &\doti (n+14)(n-15)=0\\
+    \yueni \kotaee{n=15}
+\end{align*}\\
+\tokeisan 　$\Sankaku{ABC}に着目すると,\cos\kaku{ACB}=\dfrac{4+16-9}{2\cdot2\cdot4}=\dfrac{11}{16}$\\
+次に,$\Sankaku{AMC}に着目すると,\mathrm{AM}^2=4+4-2\cdot2\cdot2\cdot2\cdot\dfrac{11}{16}=8-\dfrac{11}{2}=\dfrac{5}{2}\\
+\yueni \kotaee{\mathrm{AM=\dfrac{\sqrt{10}}{2}}}$\\\\
+\tokeishi 　$x^3+\dfrac{1}{x^3}=(x+\dfrac{1}{x})^3-3(x+\dfrac{1}{x})=-27+9=\kotaee{-18}$\\\\
+\tokeigo 　$f(x)=x^3+2x^2-4xの最小値を求める.\\
+f'(x)=3x^2+4x-4=(3x-2)(x+2)　これより,以下の増減表を得る.$
+\begin{center}
+    \begin{tabular}{|c||c|c|c|c|c|}
+        \hline
+        $x$ & $\cdots$ & $-2$ & $\cdots$ & $\dfrac{2}{3}$ & $\cdots$\\
+        \hline 
+        $f'(x)$ & $+$ & $0$ & $-$ & $0$ & $+$ \\
+        \hline
+        $f(x)$ & $\yaa$ & {} & $\yab$ & $-\dfrac{40}{27}$ & $\yaa$\\
+        \hline 
+    \end{tabular}
+\end{center}
+$\Y \kotaee{\min f(x)=-\dfrac{40}{27}}$\\\\
+\newpage
+\noindent\tokeiroku 　$\mathrm{A}(-10,-3,8)を通り,\vec{a}=\Tvec<0,1>[1,2,-2]に平行な直線の方程式は,ある実数tを用いて,$\\
+$\Tvec<0,1>[x,y,z]=\Tvec<0,1>[-10,-3,8]+t\Tvec<0,1>[1,2,-2]\cdots\cdots\asta　と表せる.\\\\
+今,\asta において,z成分0なので,z=0\doti8=2t\doti t=4　である.\\
+\Y\kotaee{(x,y,z)=(-6,5,0)}$
+\newpage
+{\LARGE\noindent\tokeni.}\\
+\kai\\
+\tokeiichi \\　$　\begin{cases}
+a_3=\sqrt{\dfrac{2^3}{2\cdot1}}=2\\
+a_4=\sqrt{\dfrac{2^3}{2\cdot2}}=\sqrt{2}\\
+a_5=\sqrt{\dfrac{1/2^3}{2\cdot2}}=2^{-\dfrac{1}{2}}
+\end{cases}\\
+\Y \kotaee{x=1,y=\dfrac{1}{2},z=-\dfrac{1}{2}}$\\\\
+\tokeini　$a_{n+2}=\sqrt{\dfrac{a_{n+1}^3}{2a_n}}について,両辺を2乗して,両辺に\dfrac{1}{a_{n+1}^2}をかけると,$
+\begin{align*}
+    &a_{n+2}^2=\dfrac{a_{n+1}^3}{2a_n}=\dfrac{1}{2}\cdot\dfrac{a_{n+1}}{a_n}\cdot a_{n+1}^2\\
+    &\doti \p{\dfrac{a_{n+2}}{a_{n+1}}}^2=\dfrac{1}{2}\cdot\dfrac{a_{n+1}}{a_n}\\
+    &\doti b_{n+1}^2=\dfrac{1}{2}b_n\\
+    &\Y \kotaee{b_{n+1}=\sqrt{\dfrac{b_n}{2}}}
+\end{align*}\\
+\tokeisan 　\tokeini の結果に$2を底とする対数をとると,$
+\begin{center}
+    $\log_2b_{n+1}=\log_2\sqrt{\dfrac{b_n}{2}}=\dfrac{1}{2}\p{\log_2b_n-1}$
+\end{center}
+$\Y \kotaee{c_{n+1}=\dfrac{1}{2}c_n-\dfrac{1}{2}}$\\\\
+\tokeishi 　$\B{c_n}の一般項を求める.\\
+特性方程式を解くことにより,次のように変形し,一般項を求めることができる.$
+\begin{align*}
+&c_{n+1}+1=\dfrac{1}{2}\p{c_n+1}\\
+&\doti c_n=\p{\dfrac{1}{2}}^{n-1}\p{c_1+1}-1\\
+&\doti c_n=\p{\dfrac{1}{2}}^{n-2}-1 　\p{\because c_1=\log_2b_1=\log_2\dfrac{a_2}{a_1}=1}
+\end{align*}
+これより,$S_nは,$
+\begin{align*}
+    S_n&=\wa{k=1}{n}c_k=\dfrac{2-\p{\dfrac{1}{2}^{n-1}}}{1-\dfrac{1}{2}}-n\\
+    &=4-\p{\dfrac{1}{2}}^{n-2}-n\\
+    &\yueni \kotaee{S_n=2-\B{n+\p{\dfrac{1}{2}}^{n-2}}}
+\end{align*}\\
+\tokeigo 　$a_n=2^{d_n}のd_n を求める.\\
+今,c_n=\log_2b_n=\log_2\dfrac{a_{n+1}}{a_n}　より,t_n=\log_2a_n　とおくと,$
+\begin{align*}
+    c_n&=\log_2a_{n+1}-\log_2a_n=t_{n+1}-t_n\p{=階差数列}\\
+    &\doti \B{c_n}は\B{t_n}の階差数列\\
+    &\doti \wa{k=1}{n-1}c_k=\wa{k=1}{n-1}\p{t_{k+1}-t_k}
+\end{align*}
+\begin{align*}
+    \Y c_n&=\log_2a_{n+1}-\log_2a_n\\
+    &=t_{n+1}-t_n=(t_2-t_1)+(t_3-t_2)+\cdots+(t_{n-1}+t_{n-2})+(t_n-t_{n-1})\\
+    &=t_n-t_1(n\geq2)\\
+    &\Y t_n=t_1+\wa{k=1}{n-1}c_k　(n\geq2)
+\end{align*}
+従って,\tokeishi の結果より,$\B{t_n}の一般項は,$
+\begin{align*}
+ t_n&=t_1\wa{k=1}{n-1}c_k=t_1+S_{n-1}\\
+ &=\log_2a_1+4-\B{(n-1)+\p{\dfrac{1}{2}^{n-3}}}\\
+ &=\log_21+4-n+1-\p{\dfrac{1}{2}}^{n-3}\\
+ &=5-n-\p{\dfrac{1}{2}}^{n-3}　(n\geq2)
+\end{align*}
+$\Y \log_2a_n=5-n-\p{\dfrac{1}{2}}^{n-3}\\
+上式にn=1を代入すると,a_1=1になるので,n\geq1 で上式は成立する.\\
+\Y\kotaee{d_n=5-\B{n+\p{\dfrac{1}{2}}^{n-3}}(n\geq1)}$
+\newpage
+{\LARGE\noindent\tokesan.}\\
+\noindent\kai\\
+\tokeiichi 
+\begin{align*}
+    Cが\ell に接する&\doti \exists x!,x^2+(2p+1)x+q-\dfrac{3}{4}=0\\
+    &\doti\p{判別式}(2p+1)^2-4q+3=0\\
+    &\doti \kotaee{q=p^2+p+1}
+\end{align*}\\
+\tokeini 　$Cの式を平方関西すると,y=(x+p)^2-p^2+qより,頂点の座標(-p,-p^2+q)なので,\tokeiichi の結果より,
+\kotaee{(-p,p+1)}$\\\\
+\tokeisan 　$Cがx軸に接するから,Cの頂点のy座標は0である.\\
+\Y p+1=0\doti p=-1\\
+\Y 頂点の座標(1,0)より,\kotaee{C:y=(x-1)^2}.頂点のx座標は,\kotaee{x=1}$\\\\
+\tokeishi 　今,\tokeini より,$C:y=(x+p)^2+p+1\cdots\cdots\asta とおいてもよい.\\
+ここで,Cと2つの直線のいずれか一方の接点のx座標をx=sとおくと,$
+\begin{align*}
+    &\exists s!,\begin{cases}
+        (s+p)^2+p+1-2s=0\\
+        (s+p)^2+p+1+s-\dfrac{3}{4}=0
+    \end{cases}\doti
+    \exists s!,\begin{cases}
+        s^2+(2p-2)s+p^2+p+1=0\cdots\cdots\maruichi\\
+        s^3+(2p+1)s+p^2+p+\dfrac{1}{4}=0\cdots\cdots\maruni
+    \end{cases}\\
+    &\doti\p{\maruichi または\maruni の判別式}=0　(この場合の中括弧は「または」の意味である.)\\
+    &\doti\p{\maruichi の判別式}=(p-1)^2-\p{p^2+p+1}=0\\
+    &\doti -3p=0\\
+    &\doti p=0       
+\end{align*}
+$\Y p=0を\asta に代入して,\kotaee{C:y=x^2+1}\\
+このとき,Cと\ell の接点の座標は,Cと\ell を連立して解くことにより,$
+\begin{align*}
+    &s^2+1=-s+\dfrac{3}{4}\doti 4s^2+4s+1=0\\
+    &\doti (2s+1)^2=0\doti s=-\dfrac{1}{2}
+\end{align*}
+$\Y\kotaee{x=-\dfrac{1}{2}}$\\\\
+\newpage
+\noindent\tokeigo　まず,$\ell とC_1,C_2のそれぞれの接点のx座標を求める.\ell とC_2のx座標は\tokeishi より得ているので
+\ell とC_1の接点のx座標のみ求めれば良い.$
+\begin{align*}
+    &(x-1)^2=-x+\dfrac{3}{4}\doti x^2-2x+1=-x+\dfrac{3}{4}\\
+    &\doti x^2-x+\dfrac{1}{4}=0\\
+    &\doti (x-\dfrac{1}{2})^2=0\\
+    &\doti x=\dfrac{1}{2}
+\end{align*}
+以上より,求める面積を図示すると,下図のようになっている.
+\begin{center}
+    \begin{tikzpicture}[scale=2]
+        \draw[->,>=stealth](-2,0)--(3,0)node[right]{$x$};
+        \draw[->,>=stealth](0,-1)--(0,3)node[above]{$y$};
+        \draw[thick,domain=-2:1.5]plot(\x,{-\x+3/4})node[right]{$\ell$};
+        \draw[thick,domain=-1.4:1.2]plot(\x,{pow(\x,2)+1})node[above right]{$C_2$};
+        \draw[thick,domain=-0.7:2.5]plot(\x,{pow(\x,2)-2*\x+1})node[above right]{$C_1$};
+        \coordinate[label=below left:O](O)at(0,0);
+        \node[below left]at(0,0.75){$\dfrac{3}{4}$};
+        \fill (0,0.75)circle(0.7pt); 
+        \node[above right]at(0,1){$(0,1)$};
+        \fill (0,1)circle(0.7pt);
+        \draw[dashed](-0.5,1.25)--(-0.5,0)node[below]{$-\dfrac{1}{2}$};
+        \draw[dashed](0.5,0.25)--(0.5,0)node[below]{$\dfrac{1}{2}$};
+       
 
+    \end{tikzpicture}
+\end{center}
+$\Y 求める面積Sは,上図の網目部なので,$
+\begin{align*}
+    S&=\dint{-\frac{1}{2}}{0}\p{x^2+1+x-\dfrac{3}{4}}dx+\dint{0}{\frac{1}{2}}\p{(x-1)^2-(-x+\dfrac{3}{4})dx}\\
+    &=\dint{-\frac{1}{2}}{0}\p{x^2+x-\dfrac{1}{4}}dx+\dint{0}{\frac{1}{2}}{\p{x^2-x-\dfrac{1}{4}}}dx\\
+    &=\dfrac{1}{24}\times2=\kotaee{\dfrac{1}{12}}
+\end{align*}
+\newpage
+\subsection{2025年度2月6日実施}
+{\LARGE\noindent\tokeichi.}\\
+\kai\\
+\tokeiichi　$x^4+y^4=\p{x^2+y^2}^2-2(xy)^2\cdots\cdots\maruichi \\
+ここで,x^2+y^2=\p{x+y}^2-2xy=5-2=3　なので,\maruichi=9-2\cdot1=\kotaee{7}$\\\\
+\tokeini 　加法定理より,$y=\sqrt{2}\sin\p{x+\dfrac{\pi}{4}}+2\cos x　を展開して計算すると,$
+\begin{align*}
+    y&=\sqrt{2}\p{\sin x\cdot\dfrac{1}{\sqrt{2}}+\cos x\cdot\dfrac{1}{\sqrt{2}}}+2\cos x\\
+    &=\sin x+\cos x+2\cos x\\
+    &=2\cos x+\sin x\\
+    &=\sqrt{10}\sin\p{x+\phi}　\p{ただし\phi は,\sin\phi=\dfrac{3}{\sqrt{10}}かつ\cos\phi=\dfrac{1}{\sqrt{10}}をみたす角である.}
+\end{align*}
+また,$\cos\phi\neq0なので,\phi<\dfrac{\pi}{2}である.従って,x+\phi は,x+\phi=\dfrac{\pi}{2}を取りうる.\\
+\Y \max y=\kotaee{\sqrt{10}}$\\\\
+\tokeisan　$\log_2x=2\log_x4\cdots\cdots\asta の値を求める.\\
+\log_x4=\dfrac{2}{\log_2x} なので,$
+\begin{align*}
+    \asta&\doti\log_2x=2\cdot\dfrac{2}{\log_2x}\\
+    &\doti \log_2x=\dfrac{4}{\log_2x}\\
+    &\doti \p{\log_2x}^2=4\\
+    &\doti \log_2x=\pm2\\
+    &\doti x=2^{\pm2}\\
+    &\Y x=\kotaee{4,\dfrac{1}{4}}
+\end{align*}\\
+\newpage
+\noindent\tokeishi 　$\Vec{BE}=\Vec{AE}-\Vec{AB}=p\Vec{AC}-\Vec{AB}\\
+\Vec{CD}=\Vec{CD}=\Vec{AD}-\Vec{AC}=\dfrac{1}{4}\Vec{AB}-\Vec{AC}\\
+これらより,$
+\begin{align*}
+    \mathrm{BE}\bot\mathrm{CD}&\doti\Vec{BE}\cdot\Vec{CD}=0\\
+    &\doti \p{p\Vec{AC}-\Vec{AB}}\p{\dfrac{1}{4}\Vec{AB}-\Vec{AC}}=0\\
+    &\doti \dfrac{1}{4}p\Vec{AB}\cdot\Vec{AC}-p\left|\Vec{AC}\right|^2-\dfrac{1}{4}\left|\Vec{AB}\right|^2
+    +\Vec{AB}\cdot\Vec{AC}=0\\
+    &\doti \dfrac{p}{8}-\dfrac{1}{2}p-\dfrac{1}{4}+\dfrac{1}{2}=0\\
+    &\doti -3p+2=0\\
+    &\doti\kotaee{p=\dfrac{2}{3}}
+\end{align*}\\
+\tokeigo　$f(x)=x^2-4x+9,g(x)=ax$
+\begin{align*}
+    &\forall x,f(x)\geq g(x)\\
+    &\doti \forall x,x^2-(a+4)x+9\geq0\\
+    &\doti 放物線y=x^2-(a+4)x+9が常にx軸より上側または接している.\\
+    &\doti D=a^2+8a+16-36\leq0\p{Dは,x^2-(a+4)x+9=0の判別式}\\
+    &\doti (a+10)(a-2)\leq0\\
+    &\doti \kotaee{-10\leq a\leq2}
+\end{align*}
+\begin{itembox}
+    [l]{\chud \tokeigo の解答について}
+    「解の配置だから,判別式だけではなく,軸や$x=0での値も調べなくてはいけないのでは？？」と思ったかもしれません.
+    結論としては,\ans{調べなくて良い.}です.\tokeigo の問題では,\underline{xのどの範囲に解を持つか指定されていない}(つまり,x軸のどの範囲で放物線が共有点を持つか)
+    ので,判別式だけでよいです.$
+\end{itembox}
+\newpage
+\noindent\tokeiroku \begin{align*}
+    &f(x)=x^3+ax^2+bx+2がx=-1とx=\dfrac{1}{3}で極値をとる.
+    \narabaa\begin{cases}
+        f'(-1)=0\\
+        f'(\dfrac{1}{3})=0
+    \end{cases}\\
+    &\doti \begin{cases}
+        3-2a+b=0\\
+        \dfrac{1}{3}+\dfrac{2}{3}a+b=0
+    \end{cases}\doti\begin{cases}
+        2a-b=3\\
+        2a+3b=-1
+    \end{cases}\\
+    &\doti \begin{cases}
+        a=1\\
+        b=-1
+    \end{cases}\\
+    &\Y \kotaee{a=1,b=-1}
+\end{align*}
+また,このとき$f(x)=x^3+x^2-x+2なので,f'(x)=3x^2+2x-1=(3x-1)(x+1)なので,以下の増減表を得る.$
+\begin{center}
+    \begin{tabular}{|c||c|c|c|c|c|}
+        \hline
+        $x$ & $\cdots$ & $-1$ & $\cdots$ & $\frac{1}{3}$ & $\cdots$\\
+        \hline
+        $f'(x)$ & $+$ & $0$ & $-$ & $0$ & $+$\\
+        \hline
+        $f(x)$ & $\yaa$ & 極大 & $\yab$ & 極小 & $\yac$\\
+        \hline
+    \end{tabular}
+\end{center}
+上表から極大値は,$x=-1のときで,その値は,f(-1)=\kotaee{3}$\\
+\begin{itembox}
+    [l]{\chud 極値を持つ条件について}
+    上の解答の,$\ans{x=aで極値を持つ\narabaa f'(a)=0}$ というのは,必要十分条件ではなく\ans{必要条件である}ということに注意
+    してください.\\
+    例えば,記述答案の中で,「$f(x)は,x=aで極値を持つので,f'(a)=0$」と書いたら減点される可能性が高いです.\\
+    では,どうすれば減点されないかというと,「まずは,必要条件で$f'(a)を計算してから,求めた定数をf(x)に戻して,
+    \ans{f(x)の増減表を書き,x=aの前後で符号変化する}こと」を言えば良いのです!$\\
+    記述でこのような問題に遭遇した際は,十分に気を付けてください.
+\end{itembox}
+\newpage
+{\LARGE\noindent\tokeni.}\\
+\kai\\
+$p_n:n個の数の和が偶数になる確率$\\
+\tokeiichi 　$p_1=(偶数を引く)=\kotaee{\dfrac{3}{7}}$\\\\
+$p_2=\dfrac{3}{7}\cdot\dfrac{3}{7}+\dfrac{4}{7}\cdot\dfrac{4}{7}=\kotaee{\dfrac{25}{49}}$\\\\
+\tokeini　$p_3=\underbrace{p_2\times\dfrac{3}{7}}_{ぐ\to ぐ\to ぐ}+
+\underbrace{\p{1-p_2}\times\dfrac{4}{7}}_{き\to き\to ぐ}=\dfrac{75}{7^3}+\dfrac{24\cdot4}{7^3}=\kotaee{\dfrac{171}{343}}$\\\\
+\tokeisan　$\tokeini の計算過程より,p_nは次のように表すことができる.$
+\begin{align*}
+    p_n&=\dfrac{3}{7}p_{n-1}+\dfrac{4}{7}\p{1-p_{n-1}}\\
+    &=-\dfrac{1}{7}p_{n-1}+\dfrac{4}{7}\\
+    &\yueni \kotaee{p_{n+1}=-\dfrac{1}{7}p_n+\dfrac{4}{7}}
+\end{align*}\\
+\tokeishi 　$\tokeisan で得られた漸化式を特性方程式を解くことにより,等比型に変形しよう.$
+\begin{align*}
+    &p_{n+1}=-\dfrac{1}{7}p_n+\dfrac{4}{7}\\
+    &\doti p_n-\dfrac{1}{2}=-\dfrac{1}{7}\p{p_n-\dfrac{1}{2}}\\
+    &\doti p_n-\dfrac{1}{2}=\p{-\dfrac{1}{7}}^{n-1}\cdot\dfrac{-1}{14}\\
+    &\doti \kotaee{p_n=\dfrac{1}{2}-\dfrac{1}{14}\cdot\p{-\dfrac{1}{7}}^{n-1}}
+\end{align*}\\
+\tokeigo　\begin{align*}
+    S_n&=\wa{k=1}{n}p_k=\dfrac{n}{2}-\dfrac{1}{14}\cdot\dfrac{1-\p{-\dfrac{1}{7}}^{n}}{1+\dfrac{1}{7}}\\
+    &=\dfrac{n}{2}-\dfrac{1-\p{-\dfrac{1}{7}}^n}{7+1}\cdot7\\
+    &=\dfrac{n}{2}-\dfrac{1}{2}\cdot\dfrac{1}{8}\p{1-\p{-\dfrac{1}{7}}^n}\\
+    &=\kotaee{\dfrac{1}{2}\B{n+\dfrac{1}{8}\p{-\dfrac{1}{7}}^n-\dfrac{1}{8}}}
+\end{align*}
+\newpage
+{\LARGE\noindent\tokesan.}\\
+\kai\\
+\tokeiichi　$\Vec{OR}=\tvec<0,1>[\frac{1}{\sqrt{2}},-\frac{1}{\sqrt{2}}]　とおくと,\vec{n}=\tvec<0,1>[1,-1]
+は\ell の法線ベクトルなので,\ell 上の点(x,y)について,$
+\begin{align*}
+    &\tvec<0,1>[x-\frac{1}{\sqrt{2}},y+\frac{1}{\sqrt{2}}]\cdot\tvec<0,1>[1,-1]=0\\
+    &\doti x-\dfrac{1}{\sqrt{2}}-y-\dfrac{1}{\sqrt{2}}=0\\
+    &\doti\kotaee{y=x-\sqrt{2}}
+\end{align*}\\
+\tokeini 　\begin{align*}
+    \ell がCと接する&\doti (x^2+ax+b-x+\sqrt{2}=0の判別式)=0\\
+    &\doti (x^2+(a-1)x+b+\sqrt{2}=0の判別式)=0\\
+    &\doti (a-1)^2-4b-4\sqrt{2}=0\\
+    &\doti\kotaee{b=\dfrac{1}{4}(a-1)^2-\sqrt{2}}
+\end{align*}\\
+\tokeisan　$f(x)=x^2+ax+b,g(x)=x-\sqrt{2}とおくと,y=g(x)がx=2\sqrt{2}でy=f(x)に接するので,\begin{cases}
+    f(2\sqrt{2})=g(2\sqrt{2})\\
+    f'(2\sqrt{2})=g'(\sqrt{2})
+\end{cases}\cdots\cdots\maruichi　を満たす.$
+このことより,
+\begin{align*}
+  \maruichi&\doti
+  \begin{cases}
+    2\sqrt{2}-\sqrt{2}=8+2\sqrt{2}a+b\\
+    1=2\cdot2\sqrt{2}+a
+  \end{cases} \\
+&\doti\kotaee{\begin{cases}
+    b=8-\sqrt{2}\\
+    a=1-4\sqrt{2}
+\end{cases}} 
+\end{align*}\\
+\tokeishi　\tokeisan より,$f(x)=x^2+(1-4\sqrt{2})x+8-\sqrt{2}である.また,それぞれの座標は,\mathrm{S}(0,-\sqrt{2}),
+\mathrm{P}(\dfrac{1}{\sqrt{2}},-\dfrac{1}{\sqrt{2}}),\mathrm{Q}(0,8-\sqrt{2})である.このとき,線分\mathrm{SP,QS}及び,Cの0\leq x\leq2\sqrt{2}で
+囲まれた部分の面積Xを求める.$
+\newpage
+\begin{center}
+    \begin{tikzpicture}
+        \draw[->,>=stealth](-1.5,0)--(5,0)node[right]{$x$};
+        \draw[->,>=stealth](0,-2)--(0,9)node[above]{$y$};
+        \draw(0,0)circle[radius=1];
+        \draw[thick,smooth,domain=-0.2:5]plot(\x,{pow(\x,2)+\x-4*sqrt(2)*\x+8-sqrt(2)})node[above right]{$y=f(x)$};
+        \node[left]at(0,8-1.4142){Q$(0,8-\sqrt{2})$};
+        \fill(0,8-1.4142)circle(2pt);
+        \draw[thick,domain=-1:4]plot(\x,{\x-sqrt(2)})node[right]{$\ell$};
 
+        \node[below right]at(2.8284,1.4142){P$(2\sqrt{2},\sqrt{2})$};
+        \fill(2.8284,1.4142)circle(2pt);
 
+        \node[below right]at(0.7,-0.7){R};
+        \fill(0.7,-0.7)circle(2pt);
 
+        \node[left]at(0,-1.4142){S};
+        \fill(0,-1.4142)circle(2pt);
+        
+        \draw[-,thick](0,-1.4142)--(0,8-1.4142);
 
+        \draw[dashed](2.8284,0)--(2.8284,1.4142);
+        
+        
+    \end{tikzpicture}
+\end{center}
+上図より,求める面積は,
+\begin{align*}
+    X&=\dint{0}{2\sqrt{2}}\p{x^2+(1-4\sqrt{2})x+8-\sqrt{2}-x+\sqrt{2}}dx\\
+    &=\dint{0}{2\sqrt{2}}\p{x^2-4\sqrt{2}x+8}dx\\
+    &=\dint{0}{2\sqrt{2}}\p{x-2\sqrt{2}}^2dx\\
+    &=\dfrac{1}{3}\tint{\p{x-2\sqrt{2}}^3}{0}{2\sqrt{2}}\\
+    &=\dfrac{1}{3}\cdot8\cdot2\cdot\sqrt{2}=\kotaee{\dfrac{16\sqrt{2}}{3}}
+\end{align*}
+\newpage
+\noindent\tokeigo　線分PR,線分QT,線分TR,Cの$0\leq x\leq2\sqrt{2}で囲まれた部分の面積Yを求める.$\\
+\begin{center}
+    \begin{tikzpicture}
+        \draw[->,>=stealth](-1.5,0)--(5,0)node[right]{$x$};
+        \draw[->,>=stealth](0,-2)--(0,9)node[above]{$y$};
+        \draw(0,0)circle[radius=1];
+        \draw[thick,smooth,domain=-0.2:5]plot(\x,{pow(\x,2)+\x-4*sqrt(2)*\x+8-sqrt(2)})node[above right]{$y=f(x)$};
+        \node[left]at(0,8-1.4142){Q$(0,8-\sqrt{2})$};
+        \fill(0,8-1.4142)circle(2pt);
+        \draw[thick,domain=-1:4]plot(\x,{\x-sqrt(2)})node[right]{$\ell$};
 
+        \node[below right]at(2.8284,1.4142){P$(2\sqrt{2},\sqrt{2})$};
+        \fill(2.8284,1.4142)circle(2pt);
+
+        \node[below right]at(0.7,-0.7){R};
+        \fill(0.7,-0.7)circle(2pt);
+
+        \node[left]at(0,-1.4142){S};
+        \fill(0,-1.4142)circle(2pt);
+        
+        \draw[-,thick](0,-1.4142)--(0,8-1.4142);
+
+        \draw[dashed](2.8284,0)--(2.8284,1.4142);
+
+        \draw[-, very thick](0,0)--(0.7,-0.7);
+
+        \node[above left]at(0,1){T};
+        \fill(0,1)circle(2pt);
+
+        \node[below left]at(0,0){O};
+    \end{tikzpicture}
+\end{center}
+上図より,求める面積$Yは,Y=X-(扇形\mathrm{TOR})-(\Sankaku{ORS})なので,扇形\mathrm{TOR},\Sankaku{ORS}の面積をそれぞれ
+S_1,S_2とおく.$\\
+$\Kaku{TOR}=\dfrac{3\pi}{4}なので,扇形の面積の公式より,$
+\begin{center}
+    $S_1=\dfrac{1}{2}\cdot1^2\cdot\dfrac{3\pi}{4}=\dfrac{3\pi}{8}　である.$
+\end{center}
+また,$\Sankaku{ORS}について,\mathrm{OR}=\mathrm{RS}=1(\because\Kaku{SOR}=\dfrac{\pi}{4})なので,$
+\begin{center}
+    $S_2=\dfrac{1}{2}\cdot1\cdot1=\dfrac{1}{2}$
+\end{center}
+$\Y Y=X-(S_1+S_2)=\kotaee{\dfrac{16\sqrt{2}}{3}-\dfrac{3\pi}{8}-\dfrac{1}{2}}$
 \end{document} 
+
+
+
+
+
+
