@@ -1490,6 +1490,253 @@ $\Y Y=X-(S_1+S_2)=\kotaee{\dfrac{16\sqrt{2}}{3}-\dfrac{3\pi}{8}-\dfrac{1}{2}}$
         \end{cases}}$
     \end{center}
 \end{itembox}
+\newpage
+\subsection{2025年度2月9日実施}
+{\LARGE\noindent\tokeichi.}\\
+\kai\\
+\tokeiichi　$2^{1-3x}\geq\p{\dfrac{1}{\sqrt{2}}}^x=\p{\dfrac{1}{2}}^{\frac{x}{2}}=2^{-\frac{x}{2}}\\
+\Y 2^{1-3x}\geq2^{-\frac{x}{2}}\\
+\Y 両辺の指数部分を比較して,$
+\begin{align*}
+    1-3x\geq-\dfrac{x}{2}&\doti 2-6x\geq-x\\
+    &\doti \kotaee{x\leq\dfrac{2}{5}}
+\end{align*}\\
+\tokeini　赤玉と白玉の並べ方の総数は,$7!である.$\\
+そのうち,両端にくる白玉の選び方は,$\comb{4}{2}=6通り　である.$\\
+また2つの両端の白玉の並べ方は,$2!通り　なので,求める確率は,$
+\begin{align*}
+    \dfrac{5!\cdot6\cdot2}{7!}&=\dfrac{6!\cdot2}{7!}\\
+    &=\kotaee{\dfrac{2}{7}}
+\end{align*}\\
+\tokeisan　$x<y のとき,\begin{cases}
+    3,x,yが等差数列\\
+    4,x,y,zが等比数列
+\end{cases}になるようなx,y,zを求める.$\\
+数列の構造は,次のようになっている.\\
+$3\xrightarrow{+d}x\xrightarrow{+d}y\\
+4\xrightarrow{+d}x\xrightarrow{+d}y\xrightarrow{+d}z$\\
+従って,このような$x,y,zは存在せず,\kotaee{解はなし}$\\
+\chua　問題のタイプミスで解けない問題になってしまっていました.\hiraayamari\\
+正しくは次のような問題です.
+\begin{itembox}
+    [l]{\tokeisan}
+    $x,y,zは実数であり,x<yを満たすとする.3つの数3,x,yがこの順に等差数列となり,さらに,4つの数4,x,y,z がこの順に
+\underline{等比数列}となるとき,x=\Bc{ウ},y=\Bc{エ},z=\Bc{オ}である.$
+\end{itembox}
+正しい問題の解答も付けておきますが,一回自分で解いてみてください.
+\newpage
+\noindent
+(正しい)\tokeisan の\kai\\
+$4,x,y,zがこの順に等比数列なので,公比をrとすると,\begin{cases}
+    x=4r\\
+    y=4r^2\\
+    z=4r^3
+\end{cases}\cdots\asta　を満たす.\\
+更に,3,x,yがこの順で等差数列なので,次のような構造になっている.$
+\begin{center}
+    $3\xrightarrow{+d}x\xrightarrow{+d}y$
+\end{center}
+このことより,$3+y=2x　が成立する.\\
+よって,x,yに\asta をそれぞれ適用すると,$
+\begin{align*}
+    3+4r^2=2\times4r&\doti 4r^2-8r+3=0\\
+    &\doti (2r-3)(2r-1)=0\\
+    &\doti r=\dfrac{3}{2},\dfrac{1}{2}\\
+    &\doti r=\dfrac{3}{2}(\because x<y)
+\end{align*}
+$\Y \kotaee{x=6,y=9,z=\dfrac{27}{2}}$\\\\
+\newpage
+\noindent\tokeishi　$「(a+1)x+ay=1,ax+(a+2)y=2がただ一つ共有点を持つ.」\doti 「2直線が平行でない.」\\
+なので,まず2直線が平行になるような条件を求めて,最後にその条件を否定すれば良い.$\\\\
+$\begin{cases}
+    (a+1)x+ay=1\doti \tvec<0,1>[a+1,a]\cdot\tvec<0,1>[x,y]=1\cdots\cdots\cdots\maruichi\\
+     ax+(a+2)y=2\doti \tvec<0,1>[a,a+2]\cdot\tvec<0,1>[x,y]=2\cdots\cdots\cdots\maruni
+\end{cases}\\\\
+これらより,\maruichi,\maruni の方向ベクトルをそれぞれ\vec{d_1},\vec{d_2}とおくと,\\\\
+\begin{cases}
+    \vec{d_1}=\tvec<0,1>[-a,a+1]\\
+    \vec{d_2}=\tvec<0,1>[-a-2,a]
+\end{cases}　がそれぞれとれる.\\\\
+\Y これらが平行になる条件は,$
+\begin{align*}
+    \det\B{\vec{d_1},\vec{d_2}}=0&\doti -a^2-(-a-2)(a+1)=0\\
+    &\doti 3a+2=0\\
+    &\doti a=-\dfrac{2}{3}\cdots\cdots\cdots\asta
+\end{align*}
+$\Y \asta を否定して,\kotaee{a\neq-\dfrac{2}{3}}$\\\\
+\tokeigo　$\dint{0}{2}(x+1)|x-1|dxを求める.\\
+今,I=\dint{0}{2}(x+1)|x-1|dx　とおく.\\
+・\underline{0\leq x\leq1 のとき,}$
+\begin{align*}
+    I=\dint{0}{1}-(x+1)(x-1)dx&=-\dint{0}{1}(x^2-1)dx\\
+    &=-\dfrac{1}{3}\tint{x^3}{0}{1}+1\\
+    &=1-\dfrac{1}{3}=\dfrac{2}{3}
+\end{align*}
+この積分値を$I_1とおく,$\\
+$・\underline{1\leq x\leq2のとき,}$
+\begin{align*}
+    I=\dint{0}{2}(x+1)(x-1)dx&=\dfrac{1}{3}\tint{x^3}{1}{2}-(2-1)\\
+    &=\dfrac{8}{3}-\dfrac{1}{3}-1\\
+    &=\dfrac{4}{3}
+\end{align*}
+この積分値を$I_2とおく.$\\
+$\Y 以上より,求める積分Iは,I=I_1+I_2=\kotaee{2}$\\\\
+\tokeiroku　$\vec{p}は,\vec{a}と\vec{b}の両方に垂直なので,$
+\begin{align*}
+    \vec{a}\times\vec{b}=\Tvec<0,1>[6,-2,3]
+\end{align*}
+$\Y \kotaee{\vec{p}=(6,-2,3)}$
+\newpage
+{\LARGE\noindent\tokeni.}\\
+\kai\\
+まず,与えられた条件を全て図示すると下図のようになる.\\
+\begin{center}
+    \begin{tikzpicture}[scale=1.8]
+        \draw[->,>=stealth](-0.5,0)--(4,0)node[right]{$x$};
+        \draw[->,>=stealth](0,-0.5)--(0,4)node[above]{$y$};
+        \draw[smooth,domain=4:0.25]plot (\x,{pow(\x,-1)})node[above right]{$y=\dfrac{1}{x}$};
+        \node[right]at(0.4,2.5){P};
+        \fill(0.4,2.5)circle(1.5pt);
+        \node[above right]at(1.5,0.66666){Q};
+        \fill(1.5,0.66666)circle (1.5pt);
+        \draw[-,thick](0,0)--(0.4,2.5);
+        \draw[-,thick](0,0)--(1.5,0.66666);
+        \draw[dashed](0,1)--(1,1)--(1,0)node[below]{A};
+        \draw[dashed](0.4,2.5)--(0.4,0)node[below]{$p$};
+        \node[left]at(0,1){1};
+        \node[below left]at(0,0){O};
+        \draw [thick,->,>=Latex](0.6,0) arc [start angle = 0, end angle = 91, radius = 0.5];
+        \node[above]at(0.55,0.4){$\alpha$};
+        \draw [thick,->,>=Latex] (0.8,0) arc [start angle = 0,end angle = 40,radius=0.5];
+        \node [right]at(0.8,0.2){$\beta$};
+        \draw[-,thick](0.4,2.5)--(1.5,0.66666);
+        \draw[dashed](1.5,0.66666)--(1.5,0)node[below]{$q$};
+   
+    
+
+    \end{tikzpicture}
+\end{center}
+\tokeiichi　$上図より,p=\mathrm{OP}\cos\alpha,\dfrac{1}{p}=\mathrm{OP}\sin\alpha　なので,\mathrm{OP}=\sqrt{p^2+\dfrac{1}{p^2}}=\dfrac{1}{p}\sqrt{p^4+1}より,$
+\begin{align*}
+ \begin{cases}
+    \cos\alpha=\dfrac{p}{\mathrm{OP}}\\
+    \sin\alpha=\dfrac{1}{p}\cdot\dfrac{1}{\mathrm{OP}}
+ \end{cases}\doti   
+ \kotaee{\begin{cases}
+    \cos\alpha=\dfrac{p^2}{\sqrt{p^4+1}}\\
+    \sin\alpha=\dfrac{1}{\sqrt{p^4+1}}
+ \end{cases}}
+\end{align*}
+角度$\beta に対しても同様なので,$
+\begin{align*}
+    \kotaee{
+        \begin{cases}
+\cos\beta=\dfrac{q^2}{\sqrt{q^2+1}}\\
+\sin\beta=\dfrac{1}{\sqrt{q^4+1}}
+        \end{cases}}
+\end{align*}\\
+\newpage
+\noindent\tokeini　$今,\beta-\alpha を\phi とおくと,T=\tan\phi=\dfrac{\sin\phi}{\cos\phi} である.$
+\begin{align*}
+    \cos\phi&=\cos\beta\cos\alpha+\sin\beta\sin\alpha\\
+    &=\dfrac{q^2}{\sqrt{q^4+1}}\cdot\dfrac{p^2}{\sqrt{p^4+1}}+\dfrac{1}{\sqrt{p^4+1}}\cdot\dfrac{1}{\sqrt{q^4+1}}\\
+    &=\dfrac{1}{\B{(q^4+1)(p^4+1)}^{\frac{1}{2}}}\cdot\p{p^2q^2+1}
+\end{align*}\\
+$\sin\phi も同様にして,$
+\begin{align*}
+    \sin\phi&=\cos\phi\sin\beta-\sin\alpha\cos\beta\\
+    &=\dfrac{1}{\B{(q^4+1)(p^4+1)}^{\frac{1}{2}}}\cdot\p{p^2-q^2}
+\end{align*}
+$\Y 以上より,\kotaee{T=\dfrac{p^2-q^2}{p^2q^2+1}}$\\\\
+\tokeisan　$\Vec{OP}=\tvec<0,1>[p,\frac{1}{p}],\Vec{OQ} = \tvec<0,1>[q,\frac{1}{q}]　とおくと,$\\
+\begin{align*}
+    S&=\dfrac{1}{2}\left|\det\Vec{OP},\Vec{OQ}\right|\\
+    &=\dfrac{1}{2}\left|\dfrac{p}{q}-\dfrac{q}{p}\right|\\
+    &=\dfrac{1}{2}\left|\dfrac{p^2-q^2}{pq}\right|\\
+    &=\kotaee{\dfrac{q^2-p^2}{2pq}(\because p<q)}
+\end{align*}\\
+\tokeishi　$t=pq より,$
+\begin{align*}
+    \dfrac{S}{T}&=\dfrac{p^2-q^2}{2t}\cdot\dfrac{t^2+1}{q^2-p^2}\\
+    &=\kotaee{-\dfrac{t^2+1}{2t}}
+\end{align*}\\
+\tokeigo　$\dfrac{S}{T}=L　とおくと,$
+\begin{align*}
+   L=-\dfrac{1}{2}\p{t+\dfrac{1}{t}} 
+\end{align*}
+なので,$\mathrm{AM-GM}の関係を用いると,$
+\begin{align*}
+    \dfrac{1}{2}\p{t+\dfrac{1}{t}}\geq\dfrac{1}{2}\cdot2\sqrt{t\cdot\dfrac{1}{t}}=1
+\end{align*}
+$これより,-1\leq Lであるが,t\to\infty でL\to-\infty なので,これは矛盾.\\
+従って,\kotaee{最小値は存在しない.}$
+\newpage
+{\LARGE\noindent\tokesan.}\\
+\kai\\
+\tokeiichi　一瞬で,$\kotaee{y=k(x-1)+1}$\\\\
+\tokeini　$f^\prime(x)=3x^2-2x=\kotaee{x(3x-2)}$\\\\
+\tokeisan　$f^\prime(x)は下に凸の2次関数なので,次の増減表を得る.$
+\begin{center}
+    \begin{tabular}{|c||c|c|c|c|c|}
+        \hline
+        $x$ & $\cdots$ & $0$ & $\cdots$ & $\dfrac{2}{3}$ & $\cdots$\\
+        \hline
+        $f^\prime(x)$ & $+$ & 0 & $-$ & 0 & $+$\\
+        \hline
+        $f(x)$ & $\yaa$ & 1 & $\yab$ & $\frac{23}{27}$ & $\yaa$\\
+        \hline    
+    \end{tabular}
+\end{center}
+$\Y 上の増減表より,極値は$
+\begin{align*}
+    \kotaee{\begin{cases}
+        極大値1　(x=0)\\
+        極小値\frac{23}{27}(x=\frac{2}{3})
+    \end{cases}}
+\end{align*}\\
+\tokeishi　\begin{align*}
+    「Cと\ell が2つ共有点をもつ」&\doti 「x^3-x^2+1=k(x-1)+1が実数解を2つもつ」\\
+    &\doti x^3-x^2-k(x-1)　が実数解を2つもつ\\
+    &\doti (x-1)(x^2-k)=0\cdots\cdots\cdots\asta　が実数解を2つもつ\\
+\end{align*}
+$\asta について考察する.$\\
+$(x^2-k)=0が重解になるとき,\asta は実数解を二つもつので,k=0,1のとき,それぞれ,$
+\begin{align*}
+    x^2(x-1)=0,(x+1)(x-1)^2=0
+\end{align*}
+となることから,求める$kは,\kotaee{k=0,1}$\\\\
+\tokeigo　\tokeishi と同様に$\asta について考察すると,(x^2-k)=0が(x-\sqrt{k})(x+\sqrt{k})=0と因数分解できるとき
+,\asta は異なる三つの実数解をもつので,k\neq0,1に注意して,求めるkの範囲は,\kotaee{k>1,0<k<1}$
+\newpage
+\noindent\tokeiroku\\
+\kangaekata\\
+関数と比の問題は,幾何学的に解くことが多いですが,$y_1,y_2,y_3の座標が全くわからないので,y=k(x-1)+1を使って,計算で押すしかありません.\\
+また,\tokeigo が誘導になっていることにも気づきましょう.\\
+すなわち,\ans{(x-1)(x+\sqrt{k})(x-\sqrt{k})=0のx座標に順序が生じる.}ということです.$\\
+\kai\\
+$y_1,y_2,y_3に対応するx座標をそれぞれ,x_1,x_2,x_3とおく.$
+\begin{align*}
+    (y_2-y_1):(y_3-y_2)=1:2&\doti k(x_2-x_1):k(x_3-x_1)=1:2\\
+    &\doti x_2-x_1:x_3-x_2=1:2\\
+    &\doti 2x_2-2x_1=x_3-x_2\\
+    &\doti 2x_1-3x_2+x_3=0\cdots\cdots\cdots\maruichi 
+\end{align*}
+ここで,$\tokeishi より,異なる3つの共有点は,x=1,x=\pm\sqrt{k}なので,次の二つの場合分けが生じる.$\\
+・\underline{$0<k<1のとき,$}\\
+　$x_1=-\sqrt{k},x_2=\sqrt{k},x_3=1である.これらを\maruichi にそれぞれ代入することにより,$
+\begin{align*}
+    -2\sqrt{k}-3\sqrt{k}+1=0&\doti 5\sqrt{k}=1\\
+    &\doti \sqrt{k}=\dfrac{1}{5}\\
+    &\doti k=\dfrac{1}{25}
+\end{align*}
+$\Y これは,確かに0<k<1を満たすので,真である.\\
+・\underline{k>1のとき,}
+x_1=-\sqrt{l},x_2=1,x_3=\sqrt{k}である.これらを\maruichi にそれぞれ代入することにより,$
+\begin{align*}
+    -2\sqrt{k}-3+\sqrt{k}=0\doti \sqrt{k}=-3 
+\end{align*}
+$\Y これを満たすようなkは存在しない.\\
+\Y 以上より,求めるkの値は,\kotaee{k=\dfrac{1}{25}}$
 \end{document} 
 
 
