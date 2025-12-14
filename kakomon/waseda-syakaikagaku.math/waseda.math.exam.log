@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.10.2)  14 DEC 2025 04:16
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.10.2)  14 DEC 2025 16:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1027,7 +1027,14 @@ LaTeX Font Info:    Trying to load font information for U+kigob on input line 12
 File: ukigob.fd 2005/5/18 v1.0
 )
 
-[12] (./waseda.math.exam.aux)
+[12]
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 153.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 153.
+
+
+[13] (./waseda.math.exam.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2025-06-01> patch level 1
@@ -1037,10 +1044,10 @@ L3 programming layer <2025-09-02>
 Here is how much of TeX's memory you used:
  18805 strings out of 468392
  355483 string characters out of 5442310
- 755962 words of memory out of 5000000
+ 757963 words of memory out of 5000000
  47170 multiletter control sequences out of 15000+600000
- 654339 words of font info for 151 fonts, out of 8000000 for 9000
+ 654717 words of font info for 153 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 85i,12n,91p,804b,275s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,14n,91p,804b,275s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on waseda.math.exam.dvi (12 pages, 13796 bytes).
+Output written on waseda.math.exam.dvi (13 pages, 16788 bytes).
