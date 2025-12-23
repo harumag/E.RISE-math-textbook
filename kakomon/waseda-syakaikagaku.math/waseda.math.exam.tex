@@ -603,6 +603,266 @@ $\Y a^2+2a+7=0の解は複素数なので,a=2である.\\
 $\Y b^2+2\sqrt{2}b+5=0の解は複素数なので,b=2\sqrt{2}.\\
 \Y 2\sqrt{2}の整数部分は,2なので求める整数は,\kotaee{2}$
 \newpage
+\subsection{2024年度実施}
+\noindent\reibanichi　\\
+線形計画法の典型的な問題です.完答以外はありえません.\\
+\kai\\
+\kakkoichib　$D:\begin{cases}
+    y\leq-\dfrac{2}{3}x+4\\
+    y\geq x-1\\
+    x,y\geq0
+\end{cases}を図示すると,下図のようになる.$
+\begin{center}
+    \begin{tikzpicture}[scale=0.8]
+    
+        \begin{scope}
+            \clip(-1,-3)rectangle(7,5);
+            \node[below left]at(0,0){O};
+            \node[above right]at(0,4){4};
+            \node[above left]at(0,-1){$-1$};
+            \fill[black!20!white]
+            (3,2)
+            --plot[domain=3:0](\x,{-2/3*\x+4})
+            --(0,-1)
+            --plot[domain=0:3](\x,{\x-1})
+            --cycle;
+            \draw[very thick]plot(\x,{\x-1});
+            \draw[very thick]plot(\x,{-2/3*\x+4});
+            \draw[dashed](3,2)--(3,0)node[below]{3};
+        \end{scope}
+        \draw[very thick,domain=3:7]plot(\x,{-2/3*\x+4});
+        \node[below]at(7,-1){$y=-\dfrac{2}{3}x+4$};
+        \node[above]at(5.5,4){$y=x-1$};
+        \draw[->,>=Latex](-1,0)--(7,0)node[right]{$x$};
+        \draw[->,>=Latex](0,-2)--(0,5)node[above]{$y$};
+
+    \end{tikzpicture}
+\end{center}
+上図の網目部$がDで境界をすべて含む.$\\
+\kakkonib　$-2x+y=kとおいて,下図に図示すると,下図太実線部がy=2x+kである.$
+\begin{center}
+\begin{tikzpicture}[scale=0.5]
+        \begin{scope}
+            \clip(-1,-3)rectangle(7,5);
+            \node[above left]at(0,0){O};
+            \node[ left]at(0,4){4};
+            \node[above left]at(0,-1){$-1$};
+            \fill[black!20!white]
+            (3,2)
+            --plot[domain=3:0](\x,{-2/3*\x+4})
+            --(0,-1)
+            --plot[domain=0:3](\x,{\x-1})
+            --cycle;
+            \draw[thick]plot(\x,{\x-1});
+            \draw[thick]plot(\x,{-2/3*\x+4});
+            \draw[dashed](3,2)--(3,0)node[below]{3};
+            \draw[very thick]plot(\x,{2*\x+4});
+            \draw[very thick]plot(\x,{2*\x+2});
+            \draw[very thick]plot(\x,{2*\x-1/2});
+        \end{scope}
+        \draw[thick,domain=3:7]plot(\x,{-2/3*\x+4});
+        \node[below]at(7,-1){$y=-\dfrac{2}{3}x+4$};
+        \node[above]at(5.5,4){$y=x-1$};
+        \draw[->,>=Latex](-1,0)--(7,0)node[right]{$x$};
+        \draw[->,>=Latex](0,-2)--(0,5)node[above]{$y$};
+
+    \end{tikzpicture}
+\end{center}
+$\Y 上図より,(x,y)=(0,4)を通るとき最大より,\\求める最大値は,\kotaee{(x,y)=(0,4)のとき,\max k=4}$
+\newpage
+\kakkosanb　$2x+y=\ell とおいて,下図に図示すると,下図太実線部がy=-2x+\ell である.$
+\begin{center}
+\begin{tikzpicture}[scale=0.5]
+    
+        \begin{scope}
+            \clip(-1,-3)rectangle(7,5);
+            \node[above left]at(0,0){O};
+            \node[above right]at(0,4){4};
+            \node[above left]at(0,-1){$-1$};
+            \fill[black!20!white]
+            (3,2)
+            --plot[domain=3:0](\x,{-2/3*\x+4})
+            --(0,-1)
+            --plot[domain=0:3](\x,{\x-1})
+            --cycle;
+            \draw[thick]plot(\x,{\x-1});
+            \draw[thick]plot(\x,{-2/3*\x+4});
+            \draw[dashed](3,2)--(3,0)node[below]{3};
+
+            \draw[very thick]plot(\x,{-2*\x+1});
+            \draw[very thick]plot(\x,{-2*\x+4.5});
+            \draw[very thick]plot(\x,{-2*\x+8});
+        \end{scope}
+        \draw[very thick,domain=3:7]plot(\x,{-2/3*\x+4});
+        \node[below]at(7,-1){$y=-\dfrac{2}{3}x+4$};
+        \node[above]at(5.5,4){$y=x-1$};
+        \draw[->,>=Latex](-1,0)--(7,0)node[right]{$x$};
+        \draw[->,>=Latex](0,-2)--(0,5)node[above]{$y$};
+
+    \end{tikzpicture}
+\end{center}
+$\Y 上図より,(x,y)=(3,2)を通るとき最大より,\\求める最大値は,\kotaee{(x,y)=(3,2)のとき,\max \ell=8}$\\\\
+\kakkoshib$ax+y=mとおいて,a=0,a>\dfrac{2}{3},a<\dfrac{2}{3}の三つの場合で分けて考える.$\\
+　\underline{\tokeiichi$a=0のとき,$}\\
+　　$y=mなので,(x,y)=(0,4)のとき,\max m=4である.$\\\\
+　\underline{\tokeini$a>\dfrac{2}{3}$のとき,}\\
+　　$このとき,y=-ax+mは,傾き負の1次関数で,y=-\dfrac{2}{3}x+4の傾きよりも大きくなるので
+(x,y)=(0,4)で\max m=4である.$\\\\
+　\underline{\tokeisan$a<\dfrac{2}{3}$のとき,}\\
+　　$ このとき,y=-ax+mは,傾き負の1次関数で,y=-\dfrac{2}{3}x+4の傾きよりも小さくなるので
+(x,y)=(3,2)で\max m=2-3aである.$\\
+$\Y 以上より,求める最大値は,$
+\begin{align*}
+    \kotaee{\max m=\begin{cases}
+        4　　　\p{a=0,a>\frac{2}{3}}\\
+        2-3a　\p{a<\frac{2}{3}}
+    \end{cases}}
+\end{align*}
+\newpage
+\noindent\reibanni\\
+\noindent\chud 幾何学図形(座標平面に書かないやつ.)を書くには,僕の技量不足で書けないので,あとで別紙(手書き)を渡します.\hiraayamari\\
+\kangaekata\\
+ベクトルの典型的な問題です.\kakkogob の係数比較の計算が厄介ですがこれも完答をして欲しいところです.\\
+\kai\\
+\kakkoichib　$角の二等分線の性質より,\mathrm{AC:AB=6:5}なので,$
+\begin{align*}
+    \kotaee{\Vec{OC}=\dfrac{5}{11}\vec{a}+\dfrac{6}{11}\vec{b}}
+\end{align*}\\
+\kakkonib　添付図のように点$\mathrm{D,E}をおく.このとき,p,q\in\mathbb{R}に対して,$
+\begin{align*}
+    \begin{cases}
+        \mathrm{EI:IB=p:1-p}\\
+        \mathrm{DI:IA=q:1-q}
+    \end{cases}
+\end{align*}
+とおくと,
+\begin{align*}
+    \begin{cases}
+    \Vec{OI}=p\vec{b}+\frac{5}{12}(1-p)\vec{a}\cdots\cdots\cdots\maruichi\\
+    \Vec{OI}=q\vec{a}+\frac{6}{13}(1-q)\vec{b}\cdots\cdots\cdots\maruni
+        \end{cases}
+\end{align*}
+$\maruichi,\maruni $をそれぞれ係数比較して,
+\begin{align*}
+    \begin{cases}
+    p=\frac{6}{13}(1-q)\\
+    \frac{5}{12}(1-p)=q
+    \end{cases}&\doti \begin{cases}
+        13p=6\p{1-\frac{5}{12}+\frac{5}{12}p}\\
+        q=\frac{5}{12}(1-p)
+    \end{cases}\\
+    &\doti\begin{cases}
+        p=\frac{1}{3}\\
+        q=\frac{5}{18}
+    \end{cases}
+\end{align*}
+$\Y \kotaee{\Vec{OI}=\dfrac{5}{18}\vec{a}+\dfrac{1}{3}\vec{b}}$\\\\
+\kakkosanb　余弦定理より,
+\begin{align*}
+    \cos\Kaku{BOA}=\dfrac{25+36-49}{2\cdot5\cdot6}=\dfrac{1}{6}
+\end{align*}
+なので,
+\begin{align*}
+    \vec{a}\cdot\vec{b}=\kotaee{6}
+\end{align*}
+\newpage
+\noindent\kakkoshib　添付の図より,
+\begin{align*}
+    \Vec{AH}&=\Vec{OH}-\vec{a}\\
+    &=\kotaee{(s-1)\vec{a}+t\vec{b}}
+\end{align*}
+同様にして,
+\begin{align*}
+    \Vec{BH}&=\Vec{OH}-\vec{b}\\
+    &=\kotaee{s\vec{a}+(t-1)\vec{b}}
+\end{align*}\\
+\kakkogob　重心の性質より,
+\begin{align*}
+    \begin{cases}
+        \Vec{AH}\cdot\vec{b}=0\\
+        \Vec{BH}\cdot\vec{a}=0
+    \end{cases}&\doti\begin{cases}
+        (s-1)\vec{a}\cdot\vec{b}+t\left|\vec{b}\right|^2=0\\
+        s\left|\vec{a}\right|^2+(t-1)\vec{a}\cdot\vec{b}=0
+    \end{cases}\\
+    &\doti\begin{cases}
+        6s+25t=6\\
+        6s+t=1
+    \end{cases}\\
+    &\doti\begin{cases}
+        t=\frac{5}{24}\\
+        6s=\frac{9}{24}
+    \end{cases}\\
+    &\doti\kotaee{\begin{cases}
+        s=\frac{9}{144}\\
+        t=\frac{5}{24}
+    \end{cases}}
+\end{align*}
+\newpage
+\noindent\reibansan\\
+\kangaekata 数列は集合論で定義されている問題です.抽象的な数学(大学数学とか)に慣れていないと解答できる問題は,1つもないのではないでしょうか.
+これは全滅でも仕方ありません.\\
+\kai\\
+$n\in\mathbb{N}\geq3.S=\B{a_1,a_2,\cdots,a_n}.a_1=k$\\
+\kakkoichib,\kakkonib　$a_i-a_1(i\geq2)\in Sのとき,a_2を求める.$
+\begin{align*}
+    &a_1\\
+    &a_2-k\\
+    &a_3-k\\
+    &a_4-k\\
+    &\vdots\\
+    &a_n-k
+\end{align*}
+は$すべてSの元になるので,a_n-k<a_nより,S=\B{a_2-k,a_3-k,\cdots,a_n-k}について,これは等差数列になる.$\\
+すなわち,
+\begin{align*}
+    &a_2-k=a_2-a_1=k\narabaa a_2=2k\\
+    &a_3-k=a_3-a_1=(a_2+k)-k\narabaa a_3=3k\\
+    &\vdots\\
+    &a_n=nk
+\end{align*}
+$\Y \kotaee{a_2=2k}　\kakkoichib$\\
+$\Y \kotaee{a_n=nk}　\kakkonib$\\\\
+\kakkosanb　$\dfrac{a_i}{a_1}(i\geq2)がすべてSの元のとき,\B{\dfrac{a_i}{k}}は$
+\begin{align*}
+    {\dfrac{a_2}{k},\dfrac{a_3}{k},\cdots,\dfrac{a_n}{k}}\cdots\cdots\cdots\asta 
+\end{align*}
+なので,$kが次の3つの場合のときを考える.$
+\begin{align*}
+    \begin{cases}
+        k=1\\
+        0<k<1\\
+        k>1
+    \end{cases}
+\end{align*}
+　\noindent\underline{\tokeiichi $k=1のとき$}\\
+　　$このとき\asta は,$
+\begin{align*}
+    \B{a_2,a_3,\cdots,a_n}
+\end{align*}
+となるので,$a_nはnで表すことができない.$\\\\
+\underline{\tokeini $0<k<1のとき$}\\
+　　$このとき,すべてのiに対して,\dfrac{a_i}{k}>a_nになるので,下限から上限までのすべての元がSの元にならない.\\
+　　よって,a_nは存在しない.$\\\\
+　\underline{\tokeisan$k>1$のとき}\\
+　　$このとき,すべてのiに対して,\dfrac{a_i}{k}<a_nになるので,確かにSの元になる.$\\
+従って,
+\begin{align*}
+    &\dfrac{a_2}{k}=\dfrac{a_2}{a_1}=\dfrac{a_1\cdot k}{a_1}=k\narabaa a_2=k^2\\
+    &\dfrac{a_3}{k}=\dfrac{a_3}{a_1}=\dfrac{a_2\cdot k}{a_1}=k^2\narabaa a_3=k^3\\
+    &\vdots\\
+    &\dfrac{a_n}{k}=k^{n-1}\narabaa a_n=k^n
+\end{align*}
+$\Y a_n=k^n.$\\
+$\Y 以上より,a_nは$
+\begin{align*}
+    \kotaee{a_n=\begin{cases}
+        表せない.(k>1)\\
+        存在しない.(0<k<1)\\
+        k^n(k>1)
+    \end{cases}}
+\end{align*}
+\newpage
 \section{良問集解答編}
 \subsection{第1回}
 \ba{1.0}\\
