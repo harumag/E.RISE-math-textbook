@@ -349,7 +349,8 @@ $f(\theta)=\cos2\theta-\sqrt{3}\sin2\theta+4\cos\frac{\theta}{2}\p{\sin\frac{\th
     
 \end{itembox}
 \newpage
-    さて,来週分の宿題の範囲です.なにをしようかなあと思いましたが,やはり解析分野(関数)と幾何学分野(図形)あたりを演習することにしました.\\
+\subsection{第3回}
+    なにをしようかなあと思いましたが,やはり解析分野(関数)と幾何学分野(図形)あたりを演習することにしました.\\
     \begin{itembox}%以下すべて大学への数学8月より
         [l]{\ba{3.1.0}\kagil 座標平面と幾何3\kagir(B15)}
         $r,a,bを実数とし,r>0,a\neq0とする.座標平面上において,中心が点\p{\dfrac{\sqrt{3}}{2},0}で半径がrの円をK,
@@ -375,7 +376,7 @@ $f(\theta)=\cos2\theta-\sqrt{3}\sin2\theta+4\cos\frac{\theta}{2}\p{\sin\frac{\th
         \kakkoichi　$実数aの取りうる値の範囲を求めよ.$\\
         \kakkoni　$aが\kakkoichi で求めた範囲を動くとき,線分\mathrm{AB}の中点の軌跡を求め,図示せよ.$\\
         \hspace{10cm}(小樽商科大)
-    \end{itembox}\\
+    \end{itembox}
     \begin{itembox}
         [l]{\fbox{\kurosankakub 類題演習3.1.2\kurosankakua}}
         $mがすべての実数の値を取りながら変わるとき,2つの直線mx-y=1とx+my=m+2の交点の軌跡を求めよ.$\\
@@ -418,6 +419,9 @@ $f(\theta)=\cos2\theta-\sqrt{3}\sin2\theta+4\cos\frac{\theta}{2}\p{\sin\frac{\th
     とおく.$a_nの値が整数となるnの値の最大値は\Bc{ア},b_nの値が最大となるnの値は\Bc{イ}である.$\\
     \hspace{10cm}(同志社大・文,経)
 \end{itembox}
+\newpage
+\subsection{第4回}
+4回目の話題は数列です.数学的帰納法や難しい漸化式などの論述を必要とする問題を中心に取り上げたいと思います.\\
 \newpage
     \section{早稲田大学過去問解答編}
     \subsection{2023年度実施}
@@ -601,7 +605,7 @@ $\Y b^2+2\sqrt{2}b+5=0の解は複素数なので,b=2\sqrt{2}.\\
 \newpage
 \section{良問集解答編}
 \subsection{第1回}
-\ba{1.}\\
+\ba{1.0}\\
 \kai\\
 \kakkoichib 　両辺が0以上であるから,両辺2乗しても同値性は崩れないので,両辺を2乗することにより,
 \begin{align*}
@@ -642,7 +646,7 @@ $\Y b^2+2\sqrt{2}b+5=0の解は複素数なので,b=2\sqrt{2}.\\
     \end{cases}\\
     &\doti\kotaee{-\dfrac{1}{2}<x<\dfrac{7}{3}}
 \end{align*}\\\\
-\ba{2.1}\\
+\ba{1.2.0}\\
 \kai\\
 与えられた状況を図示すると下図のようになる.
 \begin{center}
@@ -707,7 +711,7 @@ $\Y s=1のとき,\maruichi:y=2(x-1)+1　\Y \kotaee{y=2x-1,接点(1,1)}\\
     &=\kotaee{\dfrac{80}{3}}
 \end{align*}
 \newpage
-\noindent\ba{2.2}\\
+\noindent\ba{1.2.1}\\
 \kai\\
 まずは,図示すると下図のような状況.
 \begin{center}
@@ -743,7 +747,7 @@ $\Y s=1のとき,\maruichi:y=2(x-1)+1　\Y \kotaee{y=2x-1,接点(1,1)}\\
 $ここで,\mathrm{AB}^2=25^2+20^2であり,\mathrm{AB}を通る直線の方程式は,4x+5y=100なので,点と直線の距離公式より,\mathrm{CH}=\dfrac{|4\cdot10-100|}{\sqrt{4^2+5^2}}=\dfrac{60}{\sqrt{4^2+5^2}}.$\\
 $\Y \Sankaku{ABP}=\dfrac{1}{2}\cdot5\sqrt{5^2+4^2}\p{\dfrac{10}{\sqrt{5^2+4^2}}-1}6=\kotaee{15\p{10-\sqrt{41}}}$
 \newpage
-\fbox{\kurosankakub 類題演習\kurosankakua}\\
+\fbox{\kurosankakub 類題演習1.2.2\kurosankakua}\\
 \kai\\
 \kakkoichib　$O_2の中心がC,半径が2であることより,Cの座標は(1,0)であるとすぐにわかる.$\\
 従って3つの円をすべて図示すると下図のようになる.
@@ -787,5 +791,431 @@ $\Y \kotaee{\mathrm{P}(t+1,\sqrt{3})}$
 \end{align*}
 $\Y \mathrm{P}の座標は,\kotaee{\mathrm{P}\p{\dfrac{23}{11},\dfrac{12\sqrt{3}}{11}}}\\\\
 半径rは,r=2\cdot\dfrac{1}{11}=\kotaee{\dfrac{2}{11}}$
+\newpage
+\subsection{第2回}
+\noindent\kangaekata\\
+領域・軌跡の総合的な演習です.領域・軌跡の典型的な解答は,\ans{自然流(順像法)}か\ans{逆手流(逆像法)}の2つです.\\
+軽くまとめておきましょう.
+\begin{itembox}
+    [l]{\kagil 軌跡・領域の城跡\kagir}
+$y=f(t)のtが全ての実数を動くとき,その軌跡(領域)Wを求めたい.\\
+　\doichib \ans{順像法：tをすべての実数で動かして,それらをすべて集める.}\\
+　\donib\ans{逆像法：(x,y)\in W\doti y=f(t)を満たすtが少なくとも一つ存在する.\doti\cdots}$
+\end{itembox}
+\chu　逆像法を選択するか順像法を選択するかは,問題によって違う.例えば,ベクトルの和の形で表すことができるなら,それは順像法のほうが楽な場合が多いです.\\
+\ba{2.1.0}\\
+\kai\\
+$以下,\kakkoichib,\kakkonib,\kakkosanb,\kakkoshib の通過領域をW_i(i=1,2,3,4)とおく.$\\
+\kakkoichib　\begin{align*}
+    (x,y)\in W_1&\doti \exists m>0,m^2-mx+y=0\cdots\cdots\cdots\maruichi
+\end{align*}
+$ここで,f(m)=m^2-mx+y　とおくと,$
+\begin{align*}
+    \maruichi&\doti \begin{cases}
+        x^2-4y\geq0\\
+        f(0)>0かつx>0\\
+        f(0)<0かつ(x<0またはx>0)
+    \end{cases}\\
+    &\doti \begin{cases}
+        y\leq\dfrac{x^2}{4}\\
+        y>0かつx>0\\
+        y<0
+    \end{cases}
+\end{align*}
+これを図示すると,次図を得る.\\
+\begin{center}
+    
 
+\begin{tikzpicture}[scale=0.7]
+   
+    \begin{scope}
+        \clip(-3,0) rectangle (5,5);
+        % Shade the region to the RIGHT of y = (1/4)x^2 within the clipped window
+        \fill[black!20!white]
+            (0,0)
+            -- plot[domain=0:5] ({2*sqrt(\x)},{\x})
+            -- (5,5)
+            -- (5,0)
+            -- cycle;
+        \draw[thick] plot[domain=0:5] (\x,{1/4*pow(\x,2)}) node[below left]{$y=\dfrac{1}{4}x^2$};
+    \end{scope}
+        \filldraw[black!20!white](0,0)--(-3,0)--(-3,-2)--(5,-2)--(5,0)--cycle;
+        \draw[dashed,domain=-3:0]plot(\x,{1/4*pow(\x,2)});
+         \draw[->,>=Latex](-3,0)--(5,0)node[right]{$x$};
+    \draw[->,>=Latex](0,-2)--(0,5)node[above]{$y$};
+    \draw [thick] (0,0)circle[radius=0.1];
+    \node[above left]at(0,0){O};
+    \node[above]at(5,5){$y=\dfrac{1}{4}x^2$};
+\end{tikzpicture}
+\end{center}
+求める領域は左図の網目部で原点を除き,$y=\dfrac{1}{4}x^2$上の境界以外すべて除く.\\\\
+\kakkonib　$\mathrm{P}(x,y)は方程式x^2+y^2\leq1 を満たす.またこのとき,\begin{cases}
+    X=x+y\\
+    Y=xy
+\end{cases}とおくと,$
+\begin{align*}
+    (X,Y)\in W_2&\doti\exists(x,y),\begin{cases}
+        X=x+y\\
+        Y=xy\\
+        x^2+y^2\leq1
+    \end{cases}
+    \doti\exists (x,y), \begin{cases}
+        X=x+y\\
+        Y=xy\\
+        (x+y)^2-2xy\leq1
+    \end{cases}\\
+    &\doti \begin{cases}
+        X^2-2Y\geq1\\
+        \exists t,t^2-Xt+Y=0
+    \end{cases}\doti \begin{cases}
+        Y\geq \dfrac{X^2}{2}-\dfrac{1}{2}\\
+        X^2-4Y\geq0
+    \end{cases}\\
+    &\doti\begin{cases}
+        Y\geq\dfrac{X^2}{2}-\dfrac{1}{2}\\
+        Y\leq\dfrac{X^2}{4}
+    \end{cases} 
+\end{align*}
+これらを図示すると,下図の網目部が$W_2である.また,境界はすべて含む.$
+\begin{center}
+    \begin{tikzpicture}[scale=1.5]
+        
+        \fill[black!20!white]
+            (1.414,0.5)
+            -- plot[domain=-1.414:1.414] (\x,{1/2*pow(\x,2)-1/2})
+            -- (1.414,0.5)
+            -- (0,0)
+            -- plot[domain=1.414:-1.414] (\x,{1/4*pow(\x,2)});
+            -- cycle;
+        \draw[->,>=Latex](-2,0)--(2,0)node[right]{$x$};
+        \draw[->,>=Latex](0,-1)--(0,2)node[above]{$y$};
+        \begin{scope}
+            \clip (-2,-1) rectangle (2,2);
+
+        \draw[thick,smooth] plot(\x,{1/2*pow(\x,2)-1/2});
+        \draw[thick,smooth] plot(\x,{1/4*pow(\x,2)});
+        \end{scope}
+        \node[above]at(2,1.7){$y=\dfrac{x^2}{2}-\dfrac{1}{2}$};
+        \node[right]at(2,1){$y=\dfrac{x^2}{4}$};
+        \draw[dashed](1.414,0)--(1.414,0.5)--(0,0.5)--(-1.414,0.5)--(-1.414,0)node[below]{$-\sqrt{2}$};
+        \node[below]at(1.414,0){$\sqrt{2}$};
+        \node[above left]at(0,0.5){$\frac{1}{2}$};
+        \node[below left]at(0,-0.5){$-\frac{1}{2}$};
+        \node[below left]at(0,0){O};
+    \end{tikzpicture}
+\end{center}
+\newpage
+\noindent\kakkosanb　\begin{align*}
+    (x,y)\in W_3&\doti\exists m,\begin{cases}
+        (m-1)x-y+1=0\cdots\cdots\cdots\maruichi\\
+        mx+(m-2)y+2=0\cdots\cdots\maruni\\
+        m>0\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\marusan
+    \end{cases}
+\end{align*}
+ここで$\maruichi より,$
+\begin{align*}
+    mx-x-y+1=0\doti m=\dfrac{x+y-1}{x}　(x\neq0)
+\end{align*}
+なので,
+\begin{align*}
+    \exists m,\begin{cases}
+        \maruichi\\
+        \maruni\\
+        \marusan
+    \end{cases}&\doti \exists m,\begin{cases}
+        m=\dfrac{x+y-1}{x}　(x\neq0)\\
+        m(x+y)-2y-2=0\\
+        m>0
+    \end{cases}\\\\
+    &\doti \begin{cases}
+        \dfrac{x+y-1}{x}(x+y)-2y-2=0\\
+        \dfrac{x+y-1}{x}>0\\
+        x\neq0
+    \end{cases}\\\\
+    &\doti \begin{cases}
+        \dfrac{x^2+y^2+x-y}{x}=0\\
+        x(x+y-1)>0\\
+        x\neq0
+    \end{cases}\\\\
+    &\doti\begin{cases}
+        \p{x+\dfrac{1}{2}}^2+\p{y-\dfrac{1}{2}}^2=\dfrac{1}{2}\\
+        x(x+y-1)>0\\
+        x\neq0
+    \end{cases}
+\end{align*}
+これを図示すると,$\p{-\dfrac{1}{2},\dfrac{1}{2}}中心の円において,x\neq0より,y軸上の点を全て含まないことに注意して,次図を得る.$
+\begin{center}
+    \begin{tikzpicture}[scale=2]
+        \draw[->,>=Latex](-1.5,0)--(0.5,0)node[right]{$x$};
+        \draw[->,>=Latex](0,-0.5)--(0,1.5)node[above]{$y$};
+        \draw[dashed](-1/2,1/2)circle[radius=1/sqrt(2)];
+        \node[below right]at(0,0){O};
+        \draw
+       [very thick] (0,1)circle[radius=0.04]; 
+       \draw[very thick](0,0)circle[radius=0.04];
+        \begin{scope}
+            \clip (-1.5,-0.5) rectangle(0,1.25);
+            \draw[very thick](-1/2,1/2)circle[radius=1/sqrt(2)];
+            \node[below left]at(-1,0){$-1$};
+        \end{scope}
+        \node[right]at(0,1){1};
+    \end{tikzpicture}
+\end{center}
+$W_3は,左下図の太実線部で,原点,(1,0)を除き,それ以外の境界すべて含む.$\\\\
+\kakkoshib　\begin{align*}
+    (x,y)\in W_4&\doti
+        -1\leq\exists t\leq1,\begin{cases}
+            x=2t-1\\
+            y=t^2+t
+        \end{cases}\\\\
+        &\doti-1\leq \exists t\leq1,\begin{cases}
+            t=\dfrac{x}{2}+\dfrac{1}{2}\\
+            y=\dfrac{1}{4}x^2+x+1
+        \end{cases}\\\\
+        &\doti-1\exists y\leq1\begin{cases}
+            t=\dfrac{1}{2}(x+1)\\
+            y=\dfrac{1}{4}x^2+x+1
+        \end{cases}\\\\
+        &\doti \begin{cases}
+            -2\leq x+1\leq2\\
+            y=\dfrac{1}{4}\p{x+2}^2
+        \end{cases}\\\\
+        &\doti\begin{cases}
+            -3\leq x\leq1\\
+            y=\dfrac{1}{4}\p{x+2}^2
+        \end{cases}
+\end{align*}
+よって,下図を得る.
+\begin{center}
+    \begin{tikzpicture}
+        \draw[->,>=Latex](-4,0)--(4,0)node[right]{$x$};
+        \draw[->,>=Latex](0,-1)--(0,3.5)node[above]{$y$};
+        \begin{scope}
+            \clip (-4,0)rectangle(4,3.5);
+            \draw[dashed]plot(\x,{1/4*pow(\x,2)+\x+1});
+            \draw[very thick,domain=-3:1]plot(\x,{1/4*pow(\x,2)+\x+1});
+            \draw[dashed](1,0)--(1,9/4)--(0,9/4)node[left]{$\frac{9}{4}$};
+        \end{scope}
+        \draw[dashed](-3,1/4)--(-3,0)node[below]{$-3$};
+         \draw[dashed](1,9/4)--(1,0)node[below]{$1$};
+         \node[below]at(-2,0){$-2$};
+         \node[above left]at(0,1){$1$};
+         \node[below left]at(0,0){O};
+         \filldraw(-3,1/4)circle(2pt);
+         \filldraw(1,9/4)circle(2pt);
+    \end{tikzpicture}
+\end{center}
+$W_4は,上図の太実線部で,境界すべて含み,黒丸もすべて含む.$
+\newpage
+\noindent\ba{2.1.1}\\
+\kai\\
+\kakkoichib　2点P,Qを通る直線は,
+\begin{align*}
+    y&=\dfrac{8t}{8}(x-4)+2t^2+4t-1\\
+    &=t(x-4)+2t^2+4t-1
+\end{align*}
+$\Y \kotaee{y=tx+3t^2-1}$\\\\
+\kakkonib　$領域Dを先に図示してから,2点\mathrm{A,B}がDに含まれないことを言う.$\\
+$Dの表す式は,$
+\begin{align*}
+    \exists(x,y)\in D&\doti-1\leq\exists t\leq1,y=tx+2t^2-1\\
+    &\doti -1\leq\exists t\leq1,2t^2+xt-y-1=0\\
+    &\doti 二次関数f(t)=2t^2+xt-y-1が-1\leq t\leq1の範囲に少なくとも一つ実数解をもつ.
+\end{align*}
+$y=f(t)が,-1\leq t\leq1 に少なくとも一つ実数解を持つ条件をもつための条件は,下図を参照することにより,$
+\begin{center}
+\begin{tikzpicture}
+    \draw[->,>=Latex](-2,0)--(2,0)node[right]{$t$};
+    \node[below right]at(1.4,2){$y=f(t)$};
+    \begin{scope}
+        \clip (-2,-2) rectangle(2,2);
+        \draw[thick,smooth]plot(\x,{1.5*pow(\x,2)-1});
+        \draw[dashed](-1,-2)--(-1,2);
+        \draw[dashed](1,-2)--(1,2);
+        \node[above left]at(-1,0){$-1$};
+        \node[above right]at(1,0){1};
+        \draw[thick,smooth]plot (\x,{0.8*pow(\x,2)+1.5*\x-0.7});
+    \end{scope}
+\end{tikzpicture}    
+\end{center}
+\begin{align*}
+    f(-1)f(1)&\leq0(端点の積が異符号)または\begin{cases}
+        (f(t)=0の判別式)x^2+8(y+1)\geq0\\
+        -1<\frac{x}{4}<1\\
+        f(-1)>0\\
+        f(1)>0
+    \end{cases}\\
+    &\doti (-x-y+1)(x-y+1)\leq0 または\begin{cases}
+        y<-x+1\\
+        y<x+1\\
+        -4<x<4\\
+        y\geq-\frac{1}{8}x^2-1
+    \end{cases}
+\end{align*}
+ところで,$y^\prime =-\dfrac{1}{2}xより,y=-\dfrac{1}{8}x^2-1は,
+x=\pm4 でy^\prime=\mp1(復号同順)なので,x+y=1とx-y=-1とそれぞれx=\pm4で接する.これに注意して図示すると,次図がDである.$
+\newpage
+\begin{center}
+    \begin{tikzpicture}[scale=0.8]
+        \begin{scope}
+            \clip(-5,-8)rectangle(8,8);
+            \fill[black!20!white]
+            (-4,5)
+            --
+            (-4,-3)
+            --
+            plot[domain=-4:4](\x,{-1/8*pow(\x,2)-1})
+            --
+            (4,5)
+            --
+            (0,1)
+            --
+            (-4,5)
+            --cycle;
+            \draw[very thick]plot(\x,{\x+1});
+            \draw[very thick]plot(\x,{-\x+1});
+            \draw[very thick]plot(\x,{-1/8*pow(\x,2)-1});
+            \draw[dashed](4,0)--(4,5)--(-4,5)--(-4,-3)--(4,-3)--(4,0)node[above right]{4};
+            \node[above left]at(-4,0){$-4$};
+            \node[below left]at(0,-3){$-3$};
+            \node[above right]at(1,0){$1$};
+            \node[above]at(0,-1){$-1$};
+            \node[above left]at(-1,0){$-1$};
+            \node[ left]at(0,1){1};
+
+        \end{scope}
+        \draw[very thick,domain=4:5]plot(\x,{-1/8*pow(\x,2)-1});
+         \draw[->,>=Latex](-5.5,0)--(6,0)node[right]{$x$};
+        \draw[->,>=Latex](0,-5)--(0,6)node[above]{$y$};
+        \draw[very thick,domain=0:5]plot(\x,{-\x+1});
+         \node[above right]at(4.5,5){$x-y=-1$};
+         \node[above left]at(-4.5,5){$x+y=1$};
+         \node[above left]at(0,5){5};
+    \end{tikzpicture}
+\end{center}
+上図の網目部が$Dで,\mathrm{A,B}は含まれない.$　　　\ans{(証明終わり)}\tokeiichi\\\\
+$Dはy軸に関して対称なので,求める面積をSとおくと,$
+\begin{align*}
+    \dfrac{S}{2}&=-\dint{0}{4}\p{-\frac{1}{8}x^2-1}dx+(1+5)\cdot4\cdot\frac{1}{2}\\
+    &=\frac{1}{24}\tint{x^3}{0}{4}+4+12\\
+    &=\frac{8}{3}+16\\
+    &=\frac{56}{3}
+\end{align*}
+$\Y S=\kotaee{\dfrac{112}{3}}$
+\newpage
+\noindent\fbox{\kurosankakub 類題演習2.1.2\kurosankakua}\\
+\kai\\
+\kakkoichib　\begin{align*}
+    2x^2+xy-y^2-4x+5y-6&=2x^2+x(y-4)-y^2+5y-6\\
+    &=2x^2+x(y-4)-(y-2)(y-3)\\
+    &=\B{x+\p{y-3}}\B{2x-\p{y-2}}\\
+    &=\kotaee{(x+y-3)(2x-y+2)}
+\end{align*}\\
+\kakkonib　$D:(2x+y-3)(x-y+2)>0を描く.$\\
+$(x,y)=(0,0)\nein Dなので,Dの表す領域は下図の網目部となり,境界はすべて除く.$
+\begin{center}
+    \begin{tikzpicture}
+    \begin{scope}
+        \clip (-3,-1.5)rectangle(5,5);
+        
+        \node[below right]at(-2,0){$-2$};
+        \node[below left]at(3/2,0){$\frac{3}{2}$};
+        \node[below left]at(0,0){O};
+        \fill[black!20!white]
+        (1/3,8/3)
+        --
+        plot[domain=1/3:5](\x,{-\x+3})
+        --
+        plot[domain=5:1/3](\x,{2*\x+2})
+        --
+        (1/3,8/3)
+        --cycle;
+        \fill[black!20!white]
+        (1/3,8/3)
+        --
+        plot[domain=1/3:-3](\x,{-\x+3})
+        --
+        plot[domain=-3:1/3](\x,{2*\x+2})
+        --
+        (1/3,8/3)
+        --cycle;
+        \draw[very thick]plot(\x,{-\x+3});
+        \draw[very thick]plot(\x,{2*\x+2});
+    \end{scope}
+    \draw[->,>=Latex](-3,0)--(5,0)node[right]{$x$};
+    \draw[->,>=Latex](0,-2)--(0,5)node[above]{$y$};
+    \node[above]at(1.8,5){$2x-y+2=0$};
+    \node[below right]at(2,-1){$x+y-3$};
+    \draw[dashed](1/3,7/3)--(1/3,0)node[below]{$\frac{1}{3}$};
+     \end{tikzpicture}
+    \end{center}
+    \kakkoshib　\begin{align*}
+    x^2+y^2-2kx-y+k^2<0 &\doti \p{x-k}^2+\p{y-\dfrac{1}{2}}^2<\dfrac{1}{4}\\
+    &\doti 中心\p{k,\dfrac{1}{2}},半径\dfrac{1}{2}の円の内部.
+\end{align*}
+これより,$D\cap E=\emptyset となるkの下限値と上限値はそれぞれ,$
+\begin{center}
+    $x-y=-2とEが接するとき.(下限値)$\\
+    $2x+y=3とEが接するとき.(上限値)$
+\end{center}
+である.これより,$Eと\kakkoichib を同一平面内で図示して,下限値と上限値の状態を描くと,図は次のような図になる.$
+\newpage
+\begin{center}
+    \begin{tikzpicture}
+    \begin{scope}
+       \clip (-3,-1.5)rectangle(5,5);
+        
+        \node[below right]at(-2,0){$-2$};
+        \node[below left]at(3/2,0){$\frac{3}{2}$};
+        \node[below left]at(0,0){O};
+        \fill[black!20!white]
+        (1/3,8/3)
+        --
+        plot[domain=1/3:5](\x,{-\x+3})
+        --
+        plot[domain=5:1/3](\x,{2*\x+2})
+        --
+        (1/3,8/3)
+        --cycle;
+        \fill[black!20!white]
+        (1/3,8/3)
+        --
+        plot[domain=1/3:-3](\x,{-\x+3})
+        --
+        plot[domain=-3:1/3](\x,{2*\x+2})
+        --
+        (1/3,8/3)
+        --cycle;
+        \draw[very thick]plot(\x,{-\x+3});
+        \draw[very thick]plot(\x,{2*\x+2});
+        
+        
+    \end{scope}
+    \draw[->,>=Latex](-3,0)--(5,0)node[right]{$x$};
+    \draw[->,>=Latex](0,-2)--(0,5)node[above]{$y$};
+    \node[right]at(3,5){$2x-y+2=0$};
+    \node[below right]at(2,-1){$2x+y-3$};
+    \draw[dashed](1/3,7/3)--(1/3,0)node[below]{$\frac{1}{3}$};
+    \draw[very thick](-0.18,1/2)circle[radius=1/2];
+    \filldraw(-0.18,1/2)circle(2pt);
+    \draw[very thick] (1.8,1/2)circle[radius=1/2];
+    \filldraw(1.8,1/2)circle(2pt);
+ \draw[dashed](-3,1/2)--(3,1/2)node[right]{$y=\dfrac{1}{2}$};
+     \end{tikzpicture}
+    \end{center}
+点と直線の距離公式より,Eとそれぞれの直線が接するなら,中心からの距離と半径が一致するので,まず下限値は,
+\begin{align*}
+    \dfrac{\left|2k-\frac{1}{2}+2\right|}{\sqrt{2^2+1}}=\dfrac{1}{2}&\doti \left|2k+\dfrac{3}{2}\right|=\dfrac{\sqrt{5}}{2}\\
+    &\doti k=\dfrac{-3\pm\sqrt{5}}{4}\cdots\cdots\cdots\cdots\maruichi 
+\end{align*}
+である.また上限値は,
+\begin{align*}
+    \dfrac{\left| k+\frac{1}{2}+3\right|}{\sqrt{1+1}}=\dfrac{\sqrt{2}}{2}&\doti \left|k-\dfrac{5}{2}\right|=\dfrac{\sqrt{2}}{2}\\
+    &\doti k=\dfrac{5\pm\sqrt{2}}{2}\cdots\cdots\cdots\cdots\maruni  
+\end{align*}
+$\maruichi,\maruni 　より,D\cap E=\emptyset になるためには下限値が,k>-1,上限値が,k<\dfrac{3}{2}をそれぞれ満たす必要があるので,
+求めるkの値の範囲は,$
+\begin{align*}
+    \kotaee{\dfrac{-3+\sqrt{5}}{4}\leq k\leq\dfrac{5-\sqrt{2}}{2}}
+\end{align*}
 \end{document}
