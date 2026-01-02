@@ -863,6 +863,226 @@ $\Y 以上より,a_nは$
     \end{cases}}
 \end{align*}
 \newpage
+\subsection{2025年度実施}
+\reibanichi\\
+\kangaekata\\
+剰余に関する問題です.$n桁の数の1の位の数を調べたかったら,\ans{\mod10 で考える.}というのが鉄則です.$\\
+\kai\\
+\kakkoichib　$f_2(n)\doti n^2の1の位.$\\
+$以下,\mod10で考える.$
+\begin{center}
+    \begin{tabular}{|c||c|c|c|c|c|c|c|c|c|}
+        \hline
+        $n$ & $1$ & $2$ & $3$ & $4$ & $5$ & $6$ & $7$ & $8$ & $9$ \\
+        \hline
+        $n^2$ & $1$ & $4$ & $9$ & $16$& $25$ & $36$&  $49$ & $64$ & $81$ \\
+        \hline
+        $n^2\kmod{10}$& $1$ & $4$&  $9$&  $6$ & $5$ & $6$ & $9$ & $4$ & $1$ \\
+        \hline
+    \end{tabular}
+\end{center}
+$上表より,f_2(n)は,0,1,4,5,6,9を周期的に繰り返し,その周期は6である.$\\
+$\Y \kotaee{0,1,4,5,6,9}$\\\\
+\kakkonib　$f_5(n)-f_1(n)\doti n^5-nの1の位$
+\begin{center}
+    \begin{tabular}{|c||c|c|c|c|c|c|}
+        \hline
+        $n^2\kmod{10}$ & $0$ &  $1$ & $4$&  $5$&  $6$&  $9$\\
+        \hline
+        $n^5\kmod{10}$ & $0$ &  $1$ & $4$&  $5$&  $6$&  $9$\\
+        \hline
+        $n^5-n\kmod{10}$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$\\
+        \hline
+    \end{tabular}
+\end{center}
+$\Y 上表より,f_5(n)-f_1(n)\kotaee{0}$\\\\
+\kakkosanb　$\kakkonib より,n^5\godo n\kmod{10}なので,$
+\begin{align*}
+    n^{100}=\p{n^5}^{20}\godo n^20=\p{n^5}^4\godo n^4\kmod{10}
+\end{align*}
+これより,$n^{100}\godo n^4\kmod{10}$なので,
+\begin{center}
+    \begin{tabular}{|c||c|c|c|c|c|c|c|c|c|c|}
+        \hline
+        $n$ & $0$ &$1$& $2$& $3$& $4$& $5$& $6$& $7$ &$8$& $9$\\
+        \hline
+        $n^4\kmod{10}$ & $0$ & $1$ & $6$ & $1$ & $6$ & $5$ & $6$ & $1$ & $6$ & $1$\\
+        \hline 
+    \end{tabular}
+\end{center}
+これよ,$0,1,5,6を周期的に繰り返すので,\kotaee{0,1,5,6}$
+\newpage
+\reibanni\\
+\kangaekata\\
+階差数列に関する問題です.これは完答しましょう.\\
+\kai\\
+\kakkoichib　$b_n=\kotaee{-\dfrac{1}{n+1}+\dfrac{1}{n}}$\\\\
+\kakkonib　\begin{align*}
+    a_n&=a_1+\wa{k=1}{n-1}\B{\dfrac{1}{k}-\dfrac{1}{k+1}}\\
+    &=a_1-\wa{k=1}{n-1}\B{\dfrac{1}{k+1}-\dfrac{1}{k}}\\
+    &=1-\tint{\dfrac{1}{n}}{1}{n}\\
+    &=2-\dfrac{1}{n}　(n\geq2)
+\end{align*}
+$また,これはn=1のときも成立している.\\
+\Y \kotaee{a_n=2-\dfrac{1}{n}}$\\\\
+\kakkosanb　$\Delta a_n=n(n+1)なので,和差分の関係より,$
+\begin{align*}
+    a_n&=\wa{k=1}{n}\Delta a_n\\
+    &=\tint{\dfrac{1}{3}n(n-1)(n+1)}{1}{n+1}\\
+    &=\kotaee{\dfrac{1}{3}n(n+1)(n+2)}
+\end{align*}
+\newpage
+\noindent\reibansan\\
+\kangaekata\\
+$三角関数と解の個数の問題です.この種の問題で一番難しいと思いました.特に,\kakkosanb では,\ans{対応するkの個数と\theta の個数}に注意しないといけません.$\\
+\kai\\
+\kakkoichib\begin{align*}
+    f(\theta)&=2\cos^2\theta-1-2\sqrt{3}\sin\theta\cos\theta+2\cdot2\cos\frac{\theta}{2}\sin\frac{\theta}{2}-4\sqrt{3}\cos^2\frac{\theta}{2}+2\sqrt{3}\\
+    &=2\cos^2\theta-2\sqrt{3}\sin\theta\cos\theta+2\sin\theta-4\sqrt{3}\cdot\dfrac{1+\cos\theta}{2}+2\sqrt{3}\\
+    &=2\cos^2\theta-2\sqrt{3}\sin\theta\cos\theta+2\sin\theta-2\sqrt{3}-2\sqrt{3}\cos\theta+2\sqrt{3}-1\\
+    &=\p{2\cos^2\theta-2\sqrt{3}\sin\theta\cos\theta+1}-2+2\p{\sin\theta-\sqrt{3}\cos\theta}\cdots\cdots\cdots\maruichi 
+\end{align*}
+また,$k^2=2\cos^2\theta-2\sqrt{3}\sin\theta\cos\theta+1なので,\maruichi について,$
+\begin{align*}
+    f(\theta)=\kotaee{k^2+2k-2}
+\end{align*}\\
+\kakkonib　$ここで,g(k)=k^2+2k-2とおく.$\\
+$k=2\sin\p{\theta-\dfrac{\pi}{3}}なので,kの取りうる値の範囲は,-\dfrac{\pi}{3}\leq\theta-\dfrac{\pi}{3}\leq\dfrac{2\pi}{3}\cdots\cdots\cdots\asta である.\\
+このことより,$
+\begin{align*}
+    -\dfrac{\sqrt{3}}{2}\leq\sin\p{\theta-\dfrac{\pi}{3}}\leq1\doti -\sqrt{3}\leq k\leq 2
+\end{align*}
+
+    \begin{tikzpicture}
+        \draw[->,>=Latex](-2.5,0)--(2.5,0)node[right]{$\theta$};
+        \draw[->,>=Latex](0,-2.5)--(0,2.5)node[above]{$k$};
+        \draw(0,0)circle[radius=2];
+        \draw[very thick]({2*cos(-60)},{2*sin(-60)})
+    arc[start angle=-60, end angle=120, radius=2];
+    \fill(-1,{sqrt(3)})circle(2pt);
+    \fill(1,{-sqrt(3)})circle(2pt);
+    \draw[thick](-1,{sqrt(3)})--(1,{-sqrt(3)});
+    \node[below left]at(0,0){O};
+    \node[above right]at(0,2){2};
+    \draw[dashed](-1,{sqrt(3)})--(0,{sqrt(3)})node[ right]{$\sqrt{3}$};
+    \draw[dashed](1,{-sqrt(3)})--(0,{-sqrt(3)})node[left]{$-\sqrt{3}$};
+    \node[below right]at(2,0){2};
+    \end{tikzpicture}
+\begin{tikzpicture}[scale=0.6]
+     \draw[->,>=Latex](-3,0)--(4,0)node[right]{$k$};
+    \draw[->,>=Latex](0,-3.4)--(0,7)node[above]{$y$};
+    \begin{scope}
+       \clip (-2.5,-3.2)rectangle(3,7);
+       \draw[dashed,smooth]plot(\x,{pow(\x,2)+2*\x-2});
+       \draw[very thick,smooth,domain={-sqrt(3)}:2]plot(\x,{pow(\x,2)+2*\x-2});
+       \fill({-sqrt(3)},{1-2*sqrt(3)})circle(3pt);
+       \draw[dashed]({-sqrt(3)},{1-2*sqrt(3)})--(0,{1-2*sqrt(3)})node[right]{$1-2\sqrt{3}$};
+       \draw[dashed]({-sqrt(3)},{1-2*sqrt(3)})--({-sqrt(3)},0)node[above]{$-\sqrt{3}$};
+       \draw[dashed](-1,0)--(-1,-3)--(0,-3)node[right]{$-3$};
+       \node[above right]at(-1,0){$-1$};
+       \fill(2,6)circle(3pt);
+       \draw[dashed](2,0)--(2,6)--(0,6)node[left]{$6$};
+       \node[below]at(2,0){2};
+ \end{scope}
+           \node[left]at(5,4){$y=g(k)$};
+\end{tikzpicture}
+\newpage
+\noindent 上図より,$y=g(k)はk=-1を対称軸とする下に凸の放物線なので,求める最大値及び最小値は,$
+\begin{align*}
+    &k=-1\doti \theta=\dfrac{\pi}{6}のとき,最大値を取る.\\
+    &k=2\doti \theta=\dfrac{5\pi}{6}のとき,最小値を取る.
+\end{align*}
+$\Y 求める最大値及び最小値は,$
+\begin{align*}
+    \kotaee{\begin{cases}
+        \max g(k)=6　\p{\theta=\frac{5\pi}{6}}\\
+        \min g(k)=-3　\p{\theta=\frac{\pi}{6}}
+    \end{cases}}
+\end{align*}\\
+\kakkosanb　\begin{align*}
+    &\kakkoichi のkに対して,f(\theta)=ak の解の個数を求める.\\
+    &\doti f(\theta)=akの共有点の個数は,ky平面における(k,y)の個数に対応する.(全射であって,単射ではない.)\\
+    &また,その(k,y)に対して,\theta k平面の共有点(\theta,k)に変換したものが求める解の個数.(これも全射)
+\end{align*}
+以下,\chud\\
+上で言っていることはすなわち,\\
+$\ans{y=g(k)とy=akの共有点の個数は本来求める解の個数ではない.}\\
+\ans{y=f(\theta)とy=akの共有点の個数が本来求めるもの.}ということ.$イメージは下みたいな感じ.
+\begin{center}
+    「$y=g(k)とy=akの共有点の個数$　(\kakkoni の放物線の座標平面で考える)」\\$\xrightarrow{変換}$ 「$y=f(\theta)とy=akの共有点の個数$　(\kakkoni の円の座標平面で考える)」\ans{\chud 終わり}
+\end{center}
+\begin{center}
+    \begin{tikzpicture}[scale=1.5]
+    \draw[->,>=Latex](-2.5,0)--(2.5,0)node[right]{$\theta$};
+    \draw[->,>=Latex](0,-2.5)--(0,2.5)node[above]{$k$};
+    \draw(0,0)circle[radius=2];
+    \draw[very thick]({2*cos(-60)},{2*sin(-60)})
+    arc[start angle=-60, end angle=120, radius=2];
+    \fill(-1,{sqrt(3)})circle(2pt);
+    \fill(1,{-sqrt(3)})circle(2pt);
+    \draw[thick](-1,{sqrt(3)})--(1,{-sqrt(3)});
+    \node[below left]at(0,0){O};
+    \node[above right]at(0,2){2};
+    \draw[dashed](-1,{sqrt(3)})--(2.2,{sqrt(3)})node[right]{$\sqrt{3}$};
+    \draw[dashed](0,{-sqrt(3)})--(2.2,{-sqrt(3)})node[right]{$-\sqrt{3}$};
+   \draw[<->,>=Latex](2.1,{-sqrt(3)})--(2.1,{sqrt(3)});
+   \node[right]at(2.1,1){$\theta は1個定まる.(-\sqrt{3}\leq k<\sqrt{3},k=2)$};
+   \draw[dashed](-1,{sqrt(3)})--(-2.2,{sqrt(3)});
+   \draw[dashed](0,2)--(-2.2,2);
+   \draw[<->,>=Latex](-2.1,2)--(-2.1,{sqrt(3)});
+   \node[left]at(-2.3,{sqrt(3)+0.2}){$\theta は2個定まる.(\sqrt{3}\leq k<2)$};
+    \node[below right]at(2,0){2};
+    \end{tikzpicture}
+\end{center}
+\newpage
+P.50の図より,$-\sqrt{3}\leq k<\sqrt{3},k=2のとき\theta は1つ決まり,\sqrt{3}\leq k<2のとき\theta は2つ決まる.$\\
+このことから,$k=-\sqrt{3},-1,\sqrt{3},2上の放物線の座標を通る直線を描くと下図を得る.$
+\begin{center}
+    \begin{tikzpicture}[scale=1.3]
+     \draw[->,>=Latex](-3,0)--(4,0)node[right]{$k$};
+    \draw[->,>=Latex](0,-3.4)--(0,7)node[above]{$y$};
+    \begin{scope}
+       \clip (-2.5,-3.2)rectangle(3,7);
+       \draw[dashed,smooth]plot(\x,{pow(\x,2)+2*\x-2});
+       \draw[ thick,smooth,domain={-sqrt(3)}:2]plot(\x,{pow(\x,2)+2*\x-2});
+       \fill({-sqrt(3)},{1-2*sqrt(3)})circle(2pt);
+       \draw[dashed]({-sqrt(3)},{1-2*sqrt(3)})--(0,{1-2*sqrt(3)})node[right]{$1-2\sqrt{3}$};
+       \draw[dashed]({-sqrt(3)},{1-2*sqrt(3)})--({-sqrt(3)},0)node[above]{$-\sqrt{3}$};
+       \draw[dashed](-1,0)--(-1,-3)--(0,-3)node[right]{$-3$};
+       \node[above]at(-1,0){$-1$};
+       \fill(2,6)circle(2pt);
+       \draw[dashed](2,0)--(2,6)--(0,6)node[left]{$6$};
+       \node[below]at(2,0){2};
+       \draw[dashed]({sqrt(3)},0)--({sqrt(3)},{1+2*sqrt(3)})--(0,{1+2*sqrt(3)})node[left]{$1+2\sqrt{3}$};
+       \draw[thick]plot(\x,{2*\x-sqrt(3)/3*\x});
+       \draw[thick]plot(\x,{3*\x});
+       \draw[thick]plot(\x,{2*\x+sqrt(3)/3*\x});
+       \fill({sqrt(3)},{1+2*sqrt(3)})circle(2pt);
+
+
+ \end{scope}
+      \node[below right]at(3,4){$y=\frac{6-\sqrt{3}}{3}k$}; 
+      \node[left]at(1.5,5){$y=3k$};    
+      \node[right]at(2.2,5.5){$y=\frac{6+\sqrt{3}}{3}k$};
+ 
+\end{tikzpicture}
+\end{center}
+上図より,\\
+   $\bullet　0<a<\dfrac{6-\sqrt{3}}{3} のとき,kは1つで,対応する\theta は\mathrm{P.50}の図でk>0側に1つ.\\
+    \bullet　\dfrac{6-\sqrt{3}}{3}\leq a<\dfrac{6+\sqrt{3}}{3}のとき,kは2つで,-\sqrt{3}\leq k<\sqrt{3}より対応する\theta は\mathrm{P.50}の図でk>0側に1つ,k<0側に1つで合計2つ.\\
+    \bullet　\dfrac{6+\sqrt{3}}{3}\leq a<3のとき,kは2つで,\sqrt{3}\leq k<2より対応する\theta は\mathrm{P.50}の図でk>0側に2つ,k<0側に1つで合計3つ.\\
+    \bullet　a=3のとき,kは2つで,k=2より対応する\theta は2つ.$
+まとめると次のようになる.
+\newpage
+\noindent
+\begin{align*}
+    \kotaee{\begin{cases}
+        0<a<\dfrac{6-\sqrt{3}}{3} のとき,対応する\theta は1つ.\\
+        \dfrac{6-\sqrt{3}}{3}\leq a<\dfrac{6+\sqrt{3}}{3},a=3のとき,対応する\theta は2つ.\\
+        \dfrac{6+\sqrt{3}}{3}\leq a<3のとき,対応する\theta は3つ.
+    \end{cases}}
+\end{align*}
+\newpage
 \section{良問集解答編}
 \subsection{第1回}
 \ba{1.0}\\
@@ -1478,4 +1698,5 @@ $\maruichi,\maruni 　より,D\cap E=\emptyset になるためには下限値が
 \begin{align*}
     \kotaee{\dfrac{-3+\sqrt{5}}{4}\leq k\leq\dfrac{5-\sqrt{2}}{2}}
 \end{align*}
+
 \end{document}
