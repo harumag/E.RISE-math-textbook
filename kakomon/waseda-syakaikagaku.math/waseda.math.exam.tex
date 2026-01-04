@@ -1819,5 +1819,155 @@ $\Y 以上より,求める確率は,\dfrac{12}{120}=\kotaee{\dfrac{1}{10}}$\\\\
 　$(a_1,a_2,b_1,b_2)=(2,6,3,5),(3,5,2,6)の\p{2!\times2!}\times2=8通り.$\\
 \tokeiroku\underline{$k=9のとき$}\\
 　$(a_1,a_2,b_1,b_2)=(3,6,4,5),(4,5,3,6)の\p{2!\times2!}\times2=8通り.$\\
-$\Y 求める確率は,\dfrac{56}{360}=\kotaee{\dfrac{7}{45}}$
+$\Y 求める確率は,\dfrac{56}{360}=\kotaee{\dfrac{7}{45}}$\\\\\
+\kakkosanb　余事象「6回中少なくとも一回$a=b$」が成立する確率を計算することにより,\kakkosanb の確率を求める.\\
+$a=bが実現するのは,3回目以降であり,3回目のと4回目でa=bが成立する確率は\kakkoichib 及び\kakkonib で求めているので,5回目
+すなわちa_1+a_2+a_3=b_1+b_2(=\ell とおく.)が成立する確率のみ調べれば良い.$\\
+今,$全事象は,6\cdot5\cdot4\cdot3\cdot2=720通りである.$\\
+ここで,$a_1+a_2+a_3=(偶数)のとき,a_n,b_n(1\leq n\leq3)の組み合わせは下表の通り.$
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        {} & $a_1$ & $a_2$  & $a_3$  & $b_4$ & $b_5$ & $b_6$\\
+        \hline
+        case1 & き & き & き & ぐ  &ぐ & ぐ\\
+        \hline
+        case2 &き & き & ぐ & ぐ &ぐ &き\\
+        \hline
+        case3 &ぐ & ぐ & ぐ& き & き & き\\
+        \hline
+    \end{tabular}
+\end{center}
+case1のとき,3つの異なる奇数の和が3つの異なる偶数の和で表すことはできないので,case1は成立しない.\\
+次に,$a_1+a_2+a_3=(奇数)のときも同様に考える.$
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        {} & $a_1$ & $a_2$  & $a_3$  & $b_4$ & $b_5$ & $b_6$\\
+        \hline
+        case4 & き & き & き & ぐ  &ぐ & ぐ\\
+        \hline
+        case5 &き & ぐ & ぐ & き &ぐ &き\\
+        \hline
+    \end{tabular}
+\end{center}
+このとき,casem4も同様の理由により不適である.また,いずれのcaseにしても$\ans{b_3は奇数}である.$\\
+このことより,$a_1+a_2+a_3+b_1+b_2+b_3=21であり,b_3は奇数であるから,$
+\begin{align*}
+    a_1+a_2+a_3+b_1+b_2=2m\cdots\cdots\cdots\marusan (m\in\mathbb{N})と表せる.
+\end{align*}
+\newpage
+\noindent このことより,$b_3=1,3,5の場合で場合分けする.$\\
+\tokeiichi\underline{$b_3=1$のとき}
+　$\ell=10なので,これを満たす(a_1,a_2,a_3)と(b_1,b_2)の組は$
+\begin{align*}
+    \begin{cases}
+        (a_1,a_2,a_3)=(2,3,5)\\
+        (b_1,b_2)=(4,6)
+    \end{cases}
+\end{align*}
+なので,$3!\times2!=12通りが満たす.$\\
+\tokeini\underline{$b_3=3のとき$}
+　$\ell=9なので,これを満たす(a_1,a_2,a_3)と(b_1,b_2)の組は$
+\begin{align*}
+    \begin{cases}
+        (a_1,a_2,a_3)=(1,2,6)\\
+        (b_1,b_2)=(4,5)
+    \end{cases}
+\end{align*}
+なので,$12通りがこれを満たす.$\\
+\tokeisan\underline{$b_3=5のとき$}\\
+　$\ell=8なので,これを満たす(a_1,a_2,a_3)と(b_1,b_2)の組は$
+\begin{align*}
+    \begin{cases}
+        (a_1,a_2,a_3)=(1,3,4)\\
+        (b_1,b_2)=(2,6)
+    \end{cases}
+\end{align*}
+なので,$12通りがこれを満たす.$\\
+$\Y 以上より,求める確率は,$
+\begin{align*}
+    1-\p{\dfrac{1}{10}+\dfrac{7}{45}+\dfrac{1}{20}}&=1-\dfrac{1}{5}\p{\dfrac{18+28+9}{36}}\\
+    &=\kotaee{\dfrac{25}{36}}
+\end{align*}
+\newpage
+\noindent\tokesanb\\
+\kangaekata\\
+\kakkonib が漸化式？？と思いきや簡単な絶対不等式の問題です.\tokenib に比べたら簡単です!\\
+でも絵を描くのは無理だったので参考図(手書き)を添付します.\\
+\kai\\
+\kakkoichib　図より,
+\begin{align*}
+    \mathrm{BE}_n&=\dfrac{1}{2}a_n\\
+    \mathrm{CE}_n&=3-\dfrac{1}{2}a_n\\
+    \mathrm{CF}_n&=\dfrac{1}{2}\p{3-\dfrac{1}{2}a_n}=-\dfrac{1}{4}a_n+\dfrac{3}{2}\\
+    \mathrm{AF}_n&=3-\mathrm{CF}_n=\dfrac{a_n}{4}+\dfrac{3}{2}\\
+    \mathrm{AD}_{n+1}&=\dfrac{1}{2}\mathrm{AF}_n=\dfrac{a_n}{8}+\dfrac{3}{4}\\
+    \mathrm{BD}{_{n+1}}&=3-\mathrm{AD}_{n+1}=-\dfrac{a_n}{8}+\dfrac{9}{4}
+\end{align*}
+よって,$\mathrm{BD}_{n+1}=a_{n+1}なので,$
+\begin{align*}
+    a_{n+1}=-\dfrac{1}{8}a_n+\dfrac{9}{4}\doti a_n=2-\p{-\dfrac{1}{8}}^{n-1}　(漸化式は暗算でいいよね？？)
+\end{align*}
+$\Y \kotaee{a_2=\dfrac{17}{8},a_3=\dfrac{127}{64}}$\\\\
+\kakkonib\begin{align*}
+    \left|a_n-2\right|<10^{-9}&\doti \dfrac{1}{8^{n-1}}<10^{-9}\\
+    &\doti 2^{-3(n-1)}<10^{-9}\\
+    &\doti (n-1)\log_{10}2>3\\
+    &\doti n>\dfrac{3}{\log_{10}2}=10.9\cdots\yaku10.9
+\end{align*}
+$\Y \kotaee{n=11}$
+\newpage
+\subsection{2024年度実施}
+\noindent\tokeichi\\
+\kangaekata\\
+\kakkonib の連立方程式の計算が煩雑です.同値性を崩さずに正しく場合分けできたでしょうか.確認してください.\\
+\kai\\
+\kakkoichib　$a=1かつb=16のとき$
+\begin{align*}
+    &\p{\log_2x}^2=\log_24x=2+\log_2x\\
+    &\doti \p{\log_2x+2}\p{\log_2x-1}=0\\
+    &\doti \log_2x=-2,1\\
+    &\doti\kotaee{x=\dfrac{1}{4},2}
+\end{align*}\\
+\kakkonib $x=2\sqrt{2}を代入すると,$
+\begin{align*}
+    \p{\log_22\sqrt{2}}^2&=\log_2\p{\sqrt{b}2\sqrt{2}^a}\\
+    &=\dfrac{1}{2}\log_2b+a\log_22^{\frac{3}{2}}
+\end{align*}
+\begin{align*}
+\Y \p{\log_22^{\frac{3}{2}}}^2=\dfrac{1}{2}\log_2b+a\log_22^{\frac{3}{2}}&\doti \p{\dfrac{3}{2}}^2=\dfrac{1}{2}\log_2b+\dfrac{3}{2}a\\
+&\doti \dfrac{9}{2}=\log_2b+3a\cdots\cdots\cdots\maruichi 
+\end{align*}
+$ここで,x=\dfrac{b}{4}を元の式に代入すると,$
+\begin{align*}
+    \p{\log_2\dfrac{b}{4}}^2=\dfrac{1}{2}\log_2b+a\log_2\dfrac{b}{4}&\doti \p{\log_2b-2}^2=\dfrac{1}{2}\log_2b+a\p{\log_2b-2}\cdots\cdots\cdots\maruni
+\end{align*}
+さらに$\maruni に\maruichi$ を代入すると,
+\begin{align*}
+    &\begin{cases}
+        \maruichi\\
+        \p{\dfrac{9}{2}-3a-2}^2=\dfrac{1}{2}\p{\dfrac{9}{2}-3a}+a\p{\dfrac{9}{2}-3a-2}
+    \end{cases}
+    \doti
+    \begin{cases}
+        \maruichi\\
+        \p{\dfrac{5}{2}-3a}^2=\dfrac{1}{2}\p{\dfrac{9}{2}-3a}+a\p{\dfrac{5}{2}-3a}
+    \end{cases}\\
+    &\doti 
+    \begin{cases}
+        \maruichi\\
+        25-60a+36a^2=9-6a+10a=12a^2
+    \end{cases}
+    \doti
+    \begin{cases}
+        \maruichi\\
+        3a^2-4a+1=0
+    \end{cases}\\
+    &\doti 
+     \begin{cases}
+        \maruichi\\
+        a=\dfrac{1}{3},1
+    \end{cases}
+\end{align*}
 \end{document}
