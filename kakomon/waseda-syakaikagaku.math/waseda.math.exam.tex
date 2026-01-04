@@ -1699,5 +1699,125 @@ $\maruichi,\maruni 　より,D\cap E=\emptyset になるためには下限値が
 \begin{align*}
     \kotaee{\dfrac{-3+\sqrt{5}}{4}\leq k\leq\dfrac{5-\sqrt{2}}{2}}
 \end{align*}
+\newpage
+\section{法政大学解答編}
+\subsection{2023年度実施}
+\noindent\tokeichib\\
+\kai\\
+\kakkoichib,\kakkonib\\
+$D:|x-y|\leq x+1$
+\begin{align*}
+    |x-y|\leq x+1&\doti -x-1\leq x-y\leq x+1\\
+    &\doti -2x-1\leq-y\leq1\\
+    &\doti -1\leq y\leq 2x+1\cdots\cdots\cdots\maruichi
+\end{align*}
+$\maruichi にx=2を代入して,\kotaee{-1\leq y\leq 5\kakkoichib}$\\
+さらに$Dを図示すると\kakkonib の解答を得る.$
+\begin{center}
+    \begin{tikzpicture}
 
+    
+    \begin{scope}
+        \clip(-2,-2)rectangle(3,3);
+        
+        \fill[black!20!white]
+        plot[domain=3:-1](\x,{0*\x-1})--(-1,-1)--plot[domain=-1:3](\x,{2*\x+1})--cycle;
+        \draw[thick]plot(\x,{2*\x+1});
+        \draw[thick]plot(\x,{0*\x-1});
+        \draw[dashed](0,-1)--(-1,-1)--(-1,0)node[above]{$-1$};
+
+    \end{scope}
+    \draw[->,>=Latex](-2.5,0)--(3,0)node[right]{$x$};
+    \draw[->,>=Latex](0,-2)--(0,3)node[above]{$y$};
+    \node[above]at(2,3){$y=2x+1$};
+    \node[below right]at(2.5,-1.2){$y=-1$};
+    \end{tikzpicture}   
+\end{center}
+$\Y Wは上図の網目部で境界をすべて含む.$\\\\
+\kakkosanb　$C:x^2-4x+y^2-2y+5-a^2\leq0 とする.CがDの部分数集合となるようなaの最大値を求める.$
+\begin{align*}
+    C:(x-2)^2+(y-1)^2\leq a^2\doti 中心(2,1)半径aの円
+    \end{align*}
+このことより,次図のとき$a$は最大値を取る.
+\begin{center}
+    \begin{tikzpicture}[scale=1.5]
+        \begin{scope}
+        \clip(-2,-2)rectangle(3,3);
+        
+       
+        \draw[thick]plot(\x,{2*\x+1});
+        \draw[thick]plot(\x,{0*\x-1});
+        \draw[dashed](0,-1)--(-1,-1)--(-1,0)node[above]{$-1$};
+        
+
+    \end{scope}
+    \draw[->,>=Latex](-2.5,0)--(3,0)node[right]{$x$};
+    \draw[->,>=Latex](0,-2)--(0,3)node[above]{$y$};
+    \node[above]at(2,3){$y=2x+1$};
+    \node[below right]at(2.5,-1.2){$y=-1$};
+    \draw[very thick](2,1)circle[radius={4*sqrt(5)/5}];
+    \fill(2,1)circle(2pt);
+    \draw[dashed](0,1)--(2,1)--(2,0)node[below ]{$2$};
+    \coordinate(A)at(0,1);
+    \coordinate(B)at(2,5);
+    \coordinate(P)at(2,1);
+    \coordinate(H)at($(A)!(P)!(B)$);
+    \draw[very thick](P)--(H);
+    \draw(P)--(H)--(A) pic[draw,angle radius=2mm]{right angle=P--H--A};
+    \path [draw,thick] (P) to[out=70,in=40,edge node={node [midway,fill=white]{$a$}}](H);
+    \node[below left]at(0,0){O};
+
+    \end{tikzpicture}
+\end{center}
+$\Y 点と直線の距離公式より,$
+\begin{align*}
+    a=\dfrac{|4-1+1|}{\sqrt{5}}=\kotaee{\dfrac{4\sqrt{5}}{5}}
+\end{align*}\\
+\newpage
+\noindent\tokenib\\
+\kangaekata\\
+非常に厄介な確率の問題です.\ans{場合分けが桁違いに多い.}です.\kakkoichib,\kakkonib を完答できていれば御の字です.\\
+\kakkosanb では,3回目のBが引くカードがいずれにしても奇数であるということに気づく必要があります.そこからBの3回目のカードの値で場合分けします.\\
+\kai\\
+まず,A,B$のn回目(1\leq n\leq 3)のときのカードをそれぞれa_n,b_nと表すことにする.$\\
+\kakkoichib 　$全事象は,6\cdot5cdot4=120通りである.$\\
+ここで,$a=bが成立するのは,$
+\begin{align*}
+    a_1+a_2=b_1\cdots\cdots\cdots\maruichi
+\end{align*}
+が成立するときである.\\
+\tokeiichi\underline{$b_1=1,2のとき$}\\
+　$\maruichi を満たすような(a_1,a_2)は存在しない.$\\
+\tokeini\underline{$b_1=3$のとき}\\
+　$(a_1,a_2)=(1,2),(2,1)の2通り.$\\
+\tokeisan\underline{$b_1=4$のとき}\\
+　$(a_1,a_2)=(1,3),(3,1)の2通り.$\\
+\tokeishi\underline{$b_1=5$のとき}\\
+　$(a_1,a_2)=(1,4),(4,1),(2,3),(3,2)の4通り.$\\
+\tokeigo\underline{$b_1=6のとき$}
+　$(a_1,a_2)=(1,5),(2,4),(5,1),(4,2)の4通り.$\\
+$\Y 以上より,求める確率は,\dfrac{12}{120}=\kotaee{\dfrac{1}{10}}$\\\\
+\kakkonib　$4枚の札を引くときの全事象は,6\cdot5\cdot4\cdot3=360通りである.$\\
+このとき,
+\begin{align*}
+    a_1+a_2=b_1+b_2(=kとおく.)\cdots\cdots\cdots\maruni \doti kを2通りで表すことができる.
+\end{align*}
+これより,\\
+\tokeiichi\underline{$k\leq4 or k\geq10のとき$}\\
+　$\maruni を満たすような(a_1,a_2,b_1,b_2)は存在しない.$\\
+\tokeini\underline{$k=5$のとき}\\
+　$(a_1,a_2,b_1,b_2)=(1,4,2,3),(2,3,1,4)の\p{2!\times2!}\times2=8通り.$\\
+\tokeisan\underline{$k=6$のとき}\\
+　$(a_1,a_2,b_1,b_2)=(2,4,1,5),(1,5,2,4)の\p{2!\times2!}\times2=8通り.$\\
+\tokeishi\underline{$k=7$のとき}\\
+　$3+4　or　1+6　or　2+5　なので,\maruni を満たすような(a_1,a_2,b_1,b_2)の組は,$
+\begin{align*}
+    \comb{3}{2}\times2\times2\times2&=\B{(a_1,a_2)か(b_1,b_2)の選び方}\times(3+4,1+6,2+5の並び替え)\\
+    &=24通り
+\end{align*}
+\tokeigo\underline{$k=8のとき$}
+　$(a_1,a_2,b_1,b_2)=(2,6,3,5),(3,5,2,6)の\p{2!\times2!}\times2=8通り.$\\
+\tokeiroku\underline{$k=9のとき$}\\
+　$(a_1,a_2,b_1,b_2)=(3,6,4,5),(4,5,3,6)の\p{2!\times2!}\times2=8通り.$\\
+$\Y 求める確率は,\dfrac{56}{360}=\kotaee{\dfrac{7}{45}}$
 \end{document}
