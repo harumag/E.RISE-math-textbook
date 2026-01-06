@@ -1992,5 +1992,114 @@ $ここで,x=\dfrac{b}{4}を元の式に代入すると,$
   \kangaekata\\
 難易度は高くありませんが計算が煩雑です.落ち着いて計算しましょう.\\
 \kai\\
-\kakkoichib　参考図を適宜参照せよ.
+\kakkoichib　参考図を適宜参照せよ.\\
+$\begin{cases}
+    \theta=30\ddo\\
+    \Vec{AP}=\Vec{AC}
+\end{cases}　のとき,\Vec{EF}\cdot\Vec{EP}=\Vec{EF}\cdot\Vec{EC}である.$
+ここで,
+\begin{align*}
+    \begin{cases}
+        \Vec{EF}=\Vec{AF}-\vec{AE}=\dfrac{1}{2}\Vec{AD}-\dfrac{2}{3}\Vec{AB}\\
+        \Vec{EC}=\Vec{AC}-\Vec{AE}=\dfrac{1}{3}\Vec{AB}+\Vec{AD}
+    \end{cases}
+\end{align*}
+なので,
+\begin{align*}
+    k&=\p{\dfrac{1}{2}\Vec{AD}-\dfrac{2}{3}\Vec{AB}}\cdot\p{\dfrac{1}{3}\Vec{AB}+\Vec{AD}}\\
+    &=\Vec{AB}\cdot\Vec{AD}\p{\dfrac{1}{6}-\dfrac{2}{3}}+\dfrac{1}{2}\left|\Vec{AD}\right|^2-\dfrac{1}{9}\left|\Vec{AB}\right|^2\\
+    &=6\times\dfrac{\sqrt{3}}{2}\times\p{\dfrac{-3}{6}}+\dfrac{1}{2}\times4-\dfrac{2}{9}\times9\\
+    &=\kotaee{-\dfrac{3\sqrt{3}}{2}}
+\end{align*}\\
+\kakkonib　Pは直線BC上の点なので,$0\leq t\leq1 をみたすある実数tを用いて,\Vec{AP}=\Vec{AB}+t\Vec{AD}と表せる.$
+\begin{align*}
+    \Vec{EF}\cdot\Vec{EP}&=\p{\dfrac{1}{2}\Vec{AD}-\dfrac{2}{3}\Vec{AB}}\cdot\p{\Vec{AB}+t\Vec{AD}-\dfrac{2}{3}\Vec{AB}}\\
+    &=\p{\dfrac{1}{2}\Vec{AD}-\dfrac{2}{3}\Vec{AB}}\cdot\p{\dfrac{1}{3}\Vec{AB}+t\Vec{AD}}\\
+    &=\Vec{AD}\cdot\Vec{AB}\p{\dfrac{1}{6}-\dfrac{2}{3}t}+\dfrac{t}{2}\cdot\left|\Vec{AD}\right|^2-\dfrac{2}{9}\left|\Vec{AB}\right|^2\\
+    &=6\cos\theta\times\dfrac{1}{6}(1-4t)+2t-2\\
+    &=\cos\theta-2+t\p{2-4\cos\theta}\\
+    &=\cos\theta-2+2t\p{1-2\cos\theta}\cdots\cdots\cdots\maruichi　(0\leq t\leq1)
+\end{align*}
+$tが0\leq t\leq 1を満たす任意の値wをとるとき,t=0でも成り立つので$
+\begin{align*}
+    1-2\cos\theta&\doti \cos\theta=\dfrac{1}{2}\\
+    &\doti \kotaee{\theta=\dfrac{\pi}{3}}
+\end{align*}
+このとき,$\theta=\dfrac{\pi}{3}を\maruichi に代入して,\\
+k=\dfrac{1}{2}-2=\kotaee{-\dfrac{3}{2}}$
+\newpage
+\noindent\kakkosanb　$\mathrm{EF}=\mathrm{EP}かつk=-1を満たすとき\mathrm{BP}:\mathrm{PC}の値を求める.$\\
+\kangaekata\\
+どうしたらいいか判然としないタイプの問題は,とりあえず\ans{与えられた情報を同値変形}しましょう!
+\begin{align*}
+    \mathrm{EF}=\mathrm{EP}&\doti \left|\Vec{EF}\right|^2=\left|\Vec{FP}\right|^2\\
+    &\doti \left|\dfrac{1}{2}\Vec{AD}-\dfrac{2}{3}\Vec{AB}\right|^2=\left|\dfrac{1}{3}\Vec{AB}+t\Vec{AD}\right|^2\\
+    &\doti \dfrac{1}{4}\left|\Vec{AD}\right|^2-\dfrac{2}{3}\Vec{AB}\cdot\Vec{AD}+\dfrac{4}{9}\left|\Vec{AB}\right|^2=t^2\left|\Vec{AD}\right|^2+\dfrac{2}{3}t\Vec{AB}\cdot\Vec{AD}+\dfrac{1}{9}\left|\Vec{AB}\right|^2\\
+    &\doti 1-4\cos\theta+4=4t^2+4t\cos\theta+1\\
+    &\doti 4t^2+4t\cos\theta+4\cos\theta-4=0\\
+    &\doti t^2+\cos\theta(t+1)-1=0\cdots\cdots\cdots\maruni 
+\end{align*}
+一方,$k=-1より$
+\begin{align*}
+    &-1=\cos\theta-2+2t\p{1-2\cos\theta}\\
+    &\doti -1=\cos\theta-2+2t-4t\cos\theta\\
+    &\doti \cos\theta(4t-1)=-1+2t\\
+    &\doti \cos\theta=\dfrac{2t-1}{4t-1}\cdots\cdots\cdots\marusan
+\end{align*}
+よって,$\maruni と\marusan より,\marusan を\maruni$ に代入すると
+\begin{align*}
+    &t^2+(t+1)\cdot\dfrac{2t-1}{4t-1}-1=0\\
+    &\doti \dfrac{t^2(4t-1+(t+1)(2t-1)-(4t-1))}{4t-1}=0\\
+    &\doti \dfrac{4t^3+t^2-3t}{4t-1}=0\\
+    &\doti \begin{cases}
+        t(t+1)(4t-3)=0\\
+        t\neq\dfrac{1}{4}
+           \end{cases}\\
+    &\doti t=0,-1,\dfrac{3}{4}\\
+    &\doti t=\dfrac{3}{4}
+\end{align*}
+$\Y t=0のとき,\theta=0となり不適であるので,t=\dfrac{3}{4}である.$\\
+$\Y \Vec{AP}=\Vec{AB}+\dfrac{3}{4}\Vec{AD}なので,\kotaee{\mathrm{BP}:\mathrm{PC}=3:1}$
+\newpage
+\noindent\tokesanb\\
+\kangaekata\\
+落ち着いて,グラフを描けば大丈夫です.\\
+\kai\\
+
+
+
+\newpage
+\subsection{2025年度実施}
+\noindent\tokeichib\\
+\kangaekata\\
+1次元数直線上の解の個数の問題です.\ans{共通部分なのか合併集合なのか}を意識して解けば間違えるところはありません.(合併集合=合わせた部分)\\
+\kai
+\begin{align*}
+\begin{cases}
+    2x^2-4bx+15b=0\cdots\cdots\cdots\maruichi\\
+    x^2+8x+b+15=0\cdots\cdots\cdots\maruni
+\end{cases}
+\end{align*}
+$\maruichi,\maruni の判別式をそれぞれD_1,D_2とおく.$\\
+\kakkoichib　$a=5のとき$
+\begin{align*}
+    \begin{cases}
+        \maruichi\\
+        \maruni
+    \end{cases}\doti\begin{cases}
+        2x^2-4bx+15b=0\\
+        x^2+8x+b+15=0
+    \end{cases}
+\end{align*}
+なので,
+\begin{align*}
+    \begin{cases}
+        D_1=4b^2-30b=0\\
+        D_2=16-b-15\geq0
+    \end{cases}&\doti \begin{cases}
+        b(2b-15)=0\\
+        b\leq1
+    \end{cases}\\
+    &\doti \kotaee{b=0}
+\end{align*}
 \end{document}
