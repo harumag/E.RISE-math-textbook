@@ -1700,6 +1700,32 @@ $\maruichi,\maruni 　より,D\cap E=\emptyset になるためには下限値が
     \kotaee{\dfrac{-3+\sqrt{5}}{4}\leq k\leq\dfrac{5-\sqrt{2}}{2}}
 \end{align*}
 \newpage
+\noindent\ba{2.2.0}\\
+\kangaekata\\
+\kakkoichi　 は情報不足により,解答することができなくなっています.\\
+\kakkoni　内積の不等式を使えそうな形ですが,大きさの計算の部分で$x+7y=1を出すことができません.視点を変えて,\ans{1}に注目してみると
+\dfrac{1}{7x}+\dfrac{1}{y}にx+7yを掛け算しても良いことになります.$\\
+\kakkosan　分子の次数は分母の次数より大きいので,字数下げをしないと始まりません.\\
+\kakkoshi 　全力展開!!\\
+\kai\\
+\kakkoichib　解答不能.\\\\
+\kakkonib　$\dfrac{1}{7x}+\dfrac{1}{y}にx+7yをかけると,$
+\begin{align*}
+    (x+7y)\p{\dfrac{1}{7x}+\dfrac{1}{y}}&=\dfrac{1}{7}+\dfrac{x}{y}+\dfrac{y}{x}+7\\
+    &\geq 7+\dfrac{1}{7}+2\sqrt{\dfrac{x}{y}\cdot\dfrac{y}{x}}\\
+    &=9+\dfrac{1}{7}=\dfrac{64}{7}
+\end{align*}
+等号は,$\dfrac{x}{y}=\dfrac{y}{x}\doti x=y=\dfrac{1}{8}\p{\because x+7y=1\doti 8y=8x=1}のとき成立する.$\\
+$\Y 求める最小値は,\kotaee{\dfrac{64}{7}}$\\\\
+\kakkosanb　{\LARGE つづき}
+
+
+
+
+
+
+
+\newpage
 \section{法政大学解答編}
 \subsection{2023年度実施}
 \noindent\tokeichib\\
@@ -2125,8 +2151,40 @@ $\Y M(x)=\begin{cases}
     -x^2-4x+9　(f(x)\geq g(x))\\
     -x^2+8x+9　(f(x)<g(x))
 \end{cases}\\
-f(x)とg(x)の交点のx座標は,f(x)=g(x)\doti x=0　である.$
+f(x)とg(x)の交点のx座標は,f(x)=g(x)\doti x=0　である.$\\
+従って,$求める面積S_2とすると,それは次図の網目部である.$
+\begin{center}
+    \begin{tikzpicture}[scale=0.3]
+        \coordinate(A)at(0,9);
+        \begin{scope}
+            \clip(-6,2)rectangle(8,30);
+            \fill[black!20!white]
+            (A)--plot[domain=0:3](\x,{-pow(\x,2)+8*\x+9})--plot[domain=3:-3](\x,{2*\x+18})--plot[domain=-3:1](\x,{-pow(\x,2)-4*\x+9})--cycle;
+        \draw[dashed,smooth]plot(\x,{-pow(\x,2)+8*\x+9});
+        \draw[dashed,smooth]plot(\x,{-pow(\x,2)-4*\x+9});
+        \draw[dashed,smooth]plot(\x,{2*\x+18});
+                \end{scope}
+                \draw[very thick,smooth,domain=0:3]plot(\x,{-pow(\x,2)+8*\x+9});
+                \draw[very thick,smooth,domain=-3:0]plot(\x,{-pow(\x,2)-4*\x+9});
+                \draw[very thick,smooth,domain=3:-3]plot(\x,{2*\x+18});
+                \fill(3,24)circle(6pt);
+                \fill(-3,12)circle(6pt);
+                \node[above left]at(-4,11){$(-3,12)$};
+                \node[above left]at(-5,4){$y=-x^2-4x+9$};
+                \node[above right]at(4.5,24){$y=-x^2+8x+9$};
+                \node[below]at(5,23){$(3,24)$};
+                \node[above left]at(5,27){$\ell$};
+                \fill(0,9)circle(6pt);
+                \node[right]at(1,9){$(0,9)$};
 
+    \end{tikzpicture}
+\end{center}
+上図より,$S_2は,$
+\begin{align*}
+    S_2&=\dint{-3}{0}\B{2x+18-\p{-x^2-4x+9}}dx+\dint{0}{3}\B{2x+18-\p{-x^2+8x+9}}dx\\
+    &=(頑張って計算)\\
+    &=\kotaee{18}
+\end{align*}
 \newpage
 \subsection{2025年度実施}
 \noindent\tokeichib\\
