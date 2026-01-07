@@ -2064,9 +2064,68 @@ $\Y \Vec{AP}=\Vec{AB}+\dfrac{3}{4}\Vec{AD}なので,\kotaee{\mathrm{BP}:\mathrm{
 \noindent\tokesanb\\
 \kangaekata\\
 落ち着いて,グラフを描けば大丈夫です.\\
+また関数形がややこしいので,$m(x)とM(x)のどっちを採用するのか気をつけましょう.(f(x)とg(x)の上下関係に気を付ける)$\\
 \kai\\
-
-
+\kakkoichib　$a=21のとき,m(x)=\begin{cases}
+    g(x)=-x^2+8x+9=-(x-9)(x+1)\\
+    f(x)=-x^2-4x+21=-(x+7)(x-3)
+\end{cases}であり更にf(x)-g(x)=-12x+12=12(1-x)であるから下図の網目部が求める面積である.$
+\begin{center}
+    \begin{tikzpicture}[scale=0.3]
+        \draw[->,>=Latex](-8,0)--(10,0)node[right]{$x$};
+        \coordinate(A)at(1,16);
+        \begin{scope}
+            \clip(-7.1,-1)rectangle(9.1,30);
+            \fill[black!20!white]
+            (-1,0)--plot[domain=-1:1](\x,{-pow(\x,2)+8*\x+9})--plot[domain=1:3](\x,{-pow(\x,2)-4*\x+21})--cycle;
+        \draw[dashed,smooth]plot(\x,{-pow(\x,2)+8*\x+9});
+        \draw[dashed,smooth]plot(\x,{-pow(\x,2)-4*\x+21});
+                \end{scope}
+                \node[right]at(5,26){$y=g(x)$};
+                \node[left]at(-7,15){$y=f(x)$};
+                \node[above left]at(-1,0){$-1$};
+                \node[above right]at(3,0){$3$};
+                \node[right]at(1,16){$(1,16)$};
+                \fill(1,16)circle(10pt);
+                \draw[very thick,smooth,domain=-1:1]plot(\x,{-pow(\x,2)+8*\x+9});
+                \draw[very thick,smooth,domain=1:3]plot(\x,{-pow(\x,2)-4*\x+21});
+                \draw[dashed](1,16)--(1,0)node[below]{$1$};
+    \end{tikzpicture}
+\end{center}
+$\Y 求める面積S_1とすると,上図より,$
+\begin{align*}
+    S_1&=\dint{-1}{1}(-x^2+8x+9)dx+\dint{1}{3}(-x^2-4x+21)dx\\
+    &=(頑張って計算\cdots)\\
+    &=\kotaee{\dfrac{104}{3}}
+\end{align*}\\
+\newpage
+\noindent\kakkonib　$\ell の傾きが2より,y=f(x)とy=g(x)の微分係数をそれぞれ計算することにより,$
+\begin{align*}
+    \begin{cases}
+        g^\prime(x)=-2x+8\\
+        f^\prime(x)=-2x-4
+    \end{cases}&\doti\begin{cases}
+        2=-2x+8\\
+        2=-2x-4
+    \end{cases}\\
+    &\doti\begin{cases}
+        x=3　(\ell とy=g(x)の接点のx座標)\\
+        x=-3　(\ell とy=f(x)の接点のx座標)
+    \end{cases}
+\end{align*}
+よって,$このとき\ell の方程式は,$
+\begin{align*}
+    \ell:y=2(x-3)+24=2x+18
+\end{align*}
+これより,$x=-3のとき,f(-3)=12を満たすので,$
+\begin{align*}
+    -9+12+a=12\doti\kotaee{a=9}
+\end{align*}
+$\Y M(x)=\begin{cases}
+    -x^2-4x+9　(f(x)\geq g(x))\\
+    -x^2+8x+9　(f(x)<g(x))
+\end{cases}\\
+f(x)とg(x)の交点のx座標は,f(x)=g(x)\doti x=0　である.$
 
 \newpage
 \subsection{2025年度実施}
@@ -2117,9 +2176,9 @@ $\maruichi,\maruni の判別式をそれぞれD_1,D_2とおく.$\\
     \end{cases}
 \end{align*}
 これより,\\
-$\bullet$\underline{$b=0のとき$}\\
+$\bullet$　\underline{$b=0のとき$}\\
 　$a^2-4a-6\leq0\doti 2-\sqrt{10}\leq a\leq2+\sqrt{10}\cdots\cdots\cdots\marusan $\\
-$\bullet$\underline{$b=\dfrac{3}{2}aのとき$}
+$\bullet$　\underline{$b=\dfrac{3}{2}aのとき$}
 　\begin{align*}
     a^2-4a-6+\dfrac{3}{2}a\leq0&\doti 2a^2-5a-12\leq0\\
     &\doti (2a+3)(a-4)\leq0\\
@@ -2148,4 +2207,86 @@ $\Y aの取りうる値の範囲は,\marusan と\marushi を合わせた範囲�
     \yaa\to\leftarrow,\yaa\uparrow\downarrow　
 \end{align*}
 であり,$\yaa =\to \uparrow であることに注意して,$求める確率は,$\dfrac{4!}{2!}\times2\times\p{\dfrac{1}{4}}^4=\kotaee{\dfrac{3}{32}}$
+\newpage
+\noindent\tokesanb\\
+\kangaekata\\
+対称性：$y=f(-x)=-f(x)であり,-y=f(x)なので,y=f(x)のグラフは原点について対称です.これで積分計算を楽に済ませることができます.$\\
+\kai\\
+$f(x)=3x^3-(a+1)^2x=x\B{\sqrt{3}x+\p{a+1}}\B{\sqrt{3}x-\p{a+1}}と因数分解でき,更に(x,y)=(-x,-y)とすると,y=f(x)なので,y=f(x)のグラフは
+原点について対称である.$\\
+また,$\alpha=-\dfrac{a+1}{\sqrt{3}},\beta=\dfrac{a+1}{\sqrt{3}}(\alpha<\beta)とおく.$\\
+\kakkoichib　対称性より,
+\begin{align*}
+    \dfrac{27}{2}=2\times\dint{0}{\beta}(-f(x))dx\cdots\cdots\cdots\maruichi 
+\end{align*}
+である.\\
+ここで,
+\begin{align*}
+    -\dint{0}{\beta}f(x)dx&=\dint{\beta}{0}\B{3x^3-\p{a+1}^2x}dx\\
+    &=\dfrac{3}{4}\tint{x^4}{\beta}{0}-\dfrac{(a+1)^2}{2}\tint{x^2}{\beta}{0}\\
+    &=-\dfrac{3}{4}\cdot\dfrac{(a+1)^4}{9}+\dfrac{(a+1)^4}{6}\\
+    &=(a+1)^4\cdot\dfrac{1}{12}
+\end{align*}
+よって,
+\begin{align*}
+     \dfrac{1}{6}(a+1)^4=\dfrac{27}{2}&\doti (a+1)^4=3^4\\
+     &\doti a+1=3\\
+     &\doti \kotaee{a=2}
+\end{align*}\\
+\kakkonib　$f^\prime(x)=9x^2-(a+1)^2=9\p{x+\dfrac{a+1}{3}}\p{x-\dfrac{a+1}{3}}　より,次の増減表を得る.$
+\begin{center}
+    \begin{tabular}{|c||c|c|c|c|c|}
+        \hline
+        $x$ & $\cdots$ & $-\dfrac{a+1}{3}$ & $\cdots$ & $\dfrac{a+1}{3}$ & $\cdots$\\
+        \hline
+        $f^\prime(x)$ & $+$ & $0$ & $-$ & $0$ & $+$\\
+        \hline
+        $f(x)$ & $\yaa$ & $極大$ & $\yab$ & $極小$ & $\yaa$\\
+        \hline
+    \end{tabular}
+\end{center}
+$よって,p=-\dfrac{a+1}{3}なので,極大値はf(p)=3p^3-(a+1)^2p　であるから(p,f(p))の軌跡をWとすると,X=p,Y=f(p)とおけて,$
+\begin{align*}
+    (X,Y)\in W&\doti \exists p,\begin{cases}
+        p=X\\
+        Y=3p^3-(a+1)^2p
+    \end{cases}\\
+    &\doti\exists a,\begin{cases}
+        Y=3X^3-(a+1)^2X\\
+        a+1=-3X
+    \end{cases}\\
+    &\doti\begin{cases}
+        Y=3X^3-9X^3=-6X^3\cdots\cdots\cdots\maruni\\
+        a>0
+    \end{cases}\\
+    &\doti\begin{cases}
+        -3X-1>0\\
+        \maruni
+    \end{cases}\\
+    &\doti\begin{cases}
+        X<-\dfrac{1}{3}\\
+        \maruni
+    \end{cases}
+\end{align*}
+$\Y Wは,\begin{cases}
+    y=-6x^3\\
+    x<-\dfrac{1}{3}
+\end{cases}で,次図の太実線部である.ただし,白丸は含まない.$
+\begin{center}
+    \begin{tikzpicture}
+        \draw[->,>=Latex](-3,0)--(3,0)node[right]{$x$};
+        \draw[->,>=Latex](0,-3)--(0,3)node[above]{$y$};
+        \draw[smooth,dashed,domain=-1:1.4]plot(\x,{-pow(\x,3)})node[right]{$y=-6x^3$};
+        \begin{scope}
+            \clip(-1.5,0.5)rectangle(0,5);
+            \draw[very thick,smooth]plot(\x,{-pow(\x,3)});
+            
+        \end{scope}
+        
+        \draw[dashed]({-1*1/sqrt(2)-0.1},0)--({-1*1/sqrt(2)-0.1},{1/2})--(0,{1/2})node[right]{$\frac{2}{9}$};
+        \filldraw[very thick,fill=white,draw=black]({-1*1/sqrt(2)-0.1},{1/2})circle(2pt);
+        \node[below]at({-1*1/sqrt(2)-0.1},0){$-\frac{1}{3}$};
+        \node[below right]at(0,0){O};
+    \end{tikzpicture}
+\end{center}
 \end{document}
