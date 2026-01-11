@@ -1717,14 +1717,245 @@ $\maruichi,\maruni 　より,D\cap E=\emptyset になるためには下限値が
 \end{align*}
 等号は,$\dfrac{x}{y}=\dfrac{y}{x}\doti x=y=\dfrac{1}{8}\p{\because x+7y=1\doti 8y=8x=1}のとき成立する.$\\
 $\Y 求める最小値は,\kotaee{\dfrac{64}{7}}$\\\\
-\kakkosanb　{\LARGE つづき}
+\kakkosanb　$\spadesuit 分子の次数が分母の次数より大きいので,次数下げをしましょう.そこから,項が三つの\mathrm{AM-GM}の関係を使います.\spadesuit$\\
+$f(x)=\dfrac{x^3+3x^2+3x+5}{x^2+2x+1}とおくと,$
+\begin{align*}
+    f(x)&=\dfrac{(x+1)^3+4}{(x+1)^2}\\
+    &=x+1+\dfrac{4}{(x+1)^2}\\
+    &=\dfrac{x+1}{2}+\dfrac{x+1}{2}+\dfrac{4}{(x+1)^2}\geq3\cdot\sqrt[3]{\dfrac{x+1}{2}+\dfrac{x+1}{2}+\dfrac{4}{(x+1)^2}}=3　(\because\mathrm{AM-GM})
+\end{align*}
+また等号は,
+\begin{align*}
+    \dfrac{x+1}{2}=\dfrac{4}{x+1}\doti x+1=2 のとき成立.
+\end{align*}
+$\Y\kotaee{\min f(x)=3}$\\\\
+\newpage
+\noindent\kakkoshib　
+\begin{align*}
+    \p{\dfrac{1}{x}+\dfrac{1}{y}+\dfrac{1}{z}}\p{x+y+z}&=3+\dfrac{x}{y}+\dfrac{y}{x}+\dfrac{x}{z}+\dfrac{z}{x}+\dfrac{y}{z}+\dfrac{z}{y}\\
+    &\geq 3+2\sqrt{\dfrac{x}{y}\cdot\dfrac{y}{x}}+2\sqrt{\dfrac{x}{z}\cdot\dfrac{z}{x}}+2\sqrt{\dfrac{y}{z}\cdot\dfrac{z}{y}}=9　(\because \mathrm{AM-GM})
+\end{align*}
+$また等号は,$
+\begin{align*}
+    \dfrac{x}{y}=\dfrac{x}{x}かつ\dfrac{x}{z}=\dfrac{z}{x}かつ\dfrac{y}{z}=\dfrac{z}{y}\doti x=y=z のとき成立する.
+\end{align*}
+$\Y 最小値は,\kotaee{9}$\\\\
+\fbox{\kurosankakub 類題演習2.2.1\kurosankakua}\\
+\kai\\
+\kakkoichib　$\p{x+\dfrac{1}{y}}\p{y+\dfrac{4}{x}}=xy+\dfrac{4}{xy}+5\geq 4+5　(\because \mathrm{AM-GM})\\
+等号は,xy=\dfrac{4}{xy}\doti xy=2のとき成立する.$\\
+$\Y 最小値は,\kotaee{9}$\\\\
+\kakkonib　$f(x)=\dfrac{x+2}{x^2+2x+16}\cdots\cdots\cdots\maruichi とおく.x\neq0なので,\maruichi の両辺に逆数をとると,$
+\begin{align*}
+    \dfrac{1}{f(x)}&=\dfrac{x^2+2x+16}{x+2}=x+\dfrac{16}{x+2}\\
+    &=(x+2)+\dfrac{16}{x+2}-2\geq8-2=6(\because\mathrm{AM-GM})
+\end{align*}
+また,等号成立は,\begin{align*}
+    x+2=\dfrac{16}{x+2}\doti x=2のとき成立する.
+\end{align*}
+$\Y \dfrac{1}{f(x)}の最小値は6なので,f(x)の最小値は\kotaee{\dfrac{1}{6}}$\\\\
+\kakkosanb　$\mathrm{AM-GM}の関係より,$
+\begin{align*}
+    x+\dfrac{2}{x}\geq2\sqrt{2}　(等号成立は,x=\sqrt{2})
+\end{align*}
+これより,
+\begin{align*}
+    \p{x+\dfrac{2}{x}}^6\geq512
+\end{align*}
+なので,常に$\p{x+\dfrac{2}{x}}^6\geq yが成り立つための条件は,y\leq512$\\
+$\Y 最大値は,\kotaee{512}$
+\newpage
+\subsection{第3回}
+\noindent\ba{3.1.0}\\
+\kangaekata\\
+\kakkoshi は積分だけで面積を求めることができないので,\ans{大きい面積から余分な面積を引く.}ことを考えましょう!!また,面積の計算結果は汚くなることが多いです.数学\suII だと面積計算は出題されにくいので,一応注意しておきます.\\
+\kai\\
+\kakkoichib,\kakkonib　$\mathrm{A}\p{\sqrt{3},-\dfrac{1}{2}}をKの式に代入すると,$
+\begin{align*}
+    \dfrac{3}{4}+\dfrac{1}{4}=r^2\doti \kotaee{r=1}
+\end{align*}
+また,$\mathrm{A}での接線の方程式は,$
+\begin{align*}
+    y=\sqrt{3}\p{x-\sqrt{3}}-\dfrac{1}{2}\doti\kotaee{y=\sqrt{3}x-\dfrac{7}{2}}
+\end{align*}
+ところで,Cについて$y^\prime=2ax より,\mathrm{A}での接線の傾きは一致するので$
+\begin{align*}
+    2\sqrt{3}a=\sqrt{3}\doti\kotaee{a=\dfrac{1}{2}}
+\end{align*}
+このとき,
+\begin{align*}
+    -\dfrac{1}{2}=3a+b\doti\kotaee{b=-2}
+\end{align*}\\
+\kakkosanb
+\begin{align*}
+    \dint{-2}{\sqrt{3}}(ax^2+b)dx&=\tint{\dfrac{a}{3}x^3+bx}{-2}{\sqrt{3}}\\
+    &=\dfrac{a}{3}\p{3\sqrt{3}+8}+b\p{\sqrt{3}+2}\\
+    &=\dfrac{1}{6}\p{3\sqrt{3}+8}-2\sqrt{\sqrt{3}+2}\\
+    &=\kotaee{-\dfrac{3\sqrt{3}}{2}-\dfrac{8}{3}}
+\end{align*}\\
+\kakkoshib 表す領域を$D$とする.すなわち,
+\begin{align*}
+    D:\begin{cases}
+        x\leq\sqrt{3},y\leq0,y\geq\frac{1}{2}x^2-2\\
+        \p{x-\dfrac{\sqrt{3}}{2}}^2+y^2\geq1
+    \end{cases}
+\end{align*}
+これを図示すると次図のようになる.
+\newpage
+\begin{center}
+    \begin{tikzpicture}[scale=1.5]
+        
+        \coordinate(D)at(-2,0);
+        \coordinate(E)at({sqrt(3)},{-1/2});
+        \coordinate(B)at({sqrt(3)/2},0);
+        \coordinate(F)at({-1+sqrt(3)/2},0);
+        \coordinate(A)at({sqrt(3)},{-1/2});
+        \begin{scope}
+            \clip (-3,-2.2)rectangle(3,2);
+        \fill[black!20!white,even odd rule]
+        (D)
+        -- plot[smooth,domain=-2:{sqrt(3)},samples=300] (\x,{1/2*\x*\x-2})
+        -- (E)
+          arc[start angle=-30,end angle=180,radius=1]
+        -- (F) -- cycle
+        ({sqrt(3)/2},0) circle[radius=1];
+        \draw[smooth,very thick]plot(\x,{1/2*pow(\x,2)-2});
+        \draw[very thick] ({sqrt(3)/2},0)circle[radius=1];
+                \end{scope}
+\draw[->,>=Latex](-3,0)--(3,0)node[right]{$x$};
+        \draw[->,>=Latex](0,-3)--(0,3)node[above]{$y$};
+        \node[above]at(B){B};
+        \fill(B)circle(1pt);
+        \node[right]at(E){A};
+        \fill(E)circle(1pt);
+        \node[above]at({sqrt(3)},0){E};
+        \fill({sqrt(3)},0)circle(1pt);
+        \node[above left]at(F){F};
+        \fill(F)circle(1pt);
+        \node[above right]at(D){D};
+        \fill(D)circle(1pt);
+        \node[below left]at(0,-2){$-2$};
+        \node[above]at(3.8,1.8){$y=\dfrac{1}{2}x^2-2$};
+        \draw[dashed]({sqrt(3)},0)--(E)--(B);
+        \draw [thick,->,>=stealth](0.7,0) arc [start angle = -200, end angle = -21, radius = 0.2];
+        \node[left]at({sqrt(3)/2},-0.4){$\frac{5\pi}{6}$};
+    \end{tikzpicture}  
+\end{center}
+上図のように点$\mathrm{A}\p{sqrt{3},-\dfrac{1}{2}},\mathrm{B}\p{\dfrac{\sqrt{3}}{2},0},\mathrm{D}\p{-2,0},\mathrm{E}\p{\sqrt{3},0},
+\mathrm{F}:Cとx軸の交点　とおく.$\\
+また$\Sankaku{ABE}は\mathrm{AE}:\mathrm{EB}=\dfrac{1}{2}:\dfrac{\sqrt{3}}{2}=1:\sqrt{3}の直角三角形なので,\Kaku{DBA}=\pi-\dfrac{\pi}{6}=\dfrac{5\pi}{6}である.$\\
+よって,$求める面積Sは,$
+\begin{align*}
+    S&=\dint{-2}{\sqrt{3}}\B{-\p{ax^2+b}}dx-扇形\mathrm{FBA}-\Sankaku{ABE}\\
+    &=\dfrac{3\sqrt{3}}{2}+\dfrac{8}{3}-1^2\cdot\pi\cdot\dfrac{150\ddo}{360\ddo}-\dfrac{1}{2}\cdot\dfrac{\sqrt{3}}{2}\cdot\dfrac{1}{2}\\
+    &=\dfrac{3\sqrt{3}}{2}+\dfrac{8}{3}-\dfrac{5\pi}{12}-\dfrac{\sqrt{3}}{8}\\
+    &=\kotaee{\dfrac{11\sqrt{3}}{3}+\dfrac{8}{3}-\dfrac{5\pi}{12}}
+\end{align*}
+\newpage
+\noindent\ba{3.1.1}\\
+\kangaekata\\
+\kakkoni はもともと$aの存在条件を同値変形する問題ですが,\mathrm{AB}の中点がaで表せないので,適当な文字で\mathrm{A,B}の座標を置くことから始めます.$\\
+\kai\\
+$\begin{cases}
+    y=x^2\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\maruichi\\
+    y=-x^2+2ax-a\cdots\cdots\maruni
+\end{cases}$\\
+\kakkoichib　$2曲線の交点異なる二つの共有点の持つための条件は,\maruichi=\maruni より,2x^2-2ax+a=0\cdots\cdots\marusan の判別式が正であることなので$
+\begin{align*}
+  (\marusan の判別式)a^2-2a>0\doti\kotaee{a<0,a>2}
+\end{align*}
+\kakkonib　$\mathrm{A,B}の中点のx座標をそれぞれ,X_1,X_2とおくと,\mathrm{AB}の中点の座標\mathrm{M}は\mathrm{M}\p{\dfrac{X_1+X_1}{2},\dfrac{(X_1+X_2)^2}{2}}とおける.$\\
+$ここで,X_1,X_2は\maruichi の異なる2つの実数解なので,解と係数の関係より,$
+\begin{align*}
+    \begin{cases}
+        X_1+X_2=1\\
+        X_1X_2=\frac{a}{2}
+    \end{cases}
+\end{align*}
+$\mathrm{M}\p{\dfrac{a}{2},\dfrac{a^2-a}{2}}であり,更にX=\dfrac{a}{2},Y=\dfrac{a^2-a}{2}とし,\mathrm{M}の軌跡をWとすると,$
+\begin{align*}
+    (X,Y)\in W&\doti\exists a,\begin{cases}
+        X=\frac{a}{2}\\
+        Y=\frac{a^2-a}{2}\\
+        a<0,a>2
+    \end{cases}\\
+    &\doti\begin{cases}
+        Y=X^2-X\\
+        X<0,X>4
+    \end{cases}\\
+    &\doti Wはy=x^2-xのx<0,x>4の部分.
+\end{align*}
+これを図示すると下図の太実線部が$Wで,白丸を除く.$
+\begin{center}
+    \begin{tikzpicture}[scale=1.3]
+        \draw[->,>=Latex](-2,0)--(4,0)node[right]{$x$};
+        \draw[->,>=Latex](0,-1)--(0,5)node[above]{$y$};
+        \begin{scope}
+            \clip (-2,-1)rectangle(3,5);
+            \draw[dashed,smooth]plot(\x,{pow(\x,2)-\x});
+            \draw[very thick,smooth,domain=2:3]plot(\x,{pow(\x,2)-\x});
+            \draw[very thick,smooth,domain=0:-2]plot(\x,{pow(\x,2)-\x});
+            \filldraw[fill=white,draw=black](0,0)circle(2.5pt);
+            \filldraw[fill=white,draw=black](2,2)circle(2.5pt);
+            \node[below left]at(0,0){O};
+            \draw[dashed](2,2)--(2,0)node[below]{$4$};
+            
 
-
-
-
-
-
-
+            
+         \end{scope}
+         \node[right]at(3,5.5){$y=x^2-x$};
+    \end{tikzpicture}
+\end{center}
+\newpage
+\noindent\fbox{類題演習3.1.2}\\
+\kangaekata\\
+頻出の交点の軌跡の問題です.軌跡なので,普通に存在条件に帰着させれば良いですが,場合分けを忘れないようにしましょう.\\
+\kai
+\begin{align*}
+    \begin{cases}
+        mx-y=1\cdots\cdots\cdots\maruichi\\
+        x+my=m+2\cdots\cdots\cdots\maruni
+    \end{cases}
+\end{align*}
+$\maruichi,\maruni の交点を(X,Y)とし,交点の軌跡Wとする.$
+\begin{align*}
+    (X,Y)\in W&\doti
+     \exists m,\begin{cases}
+        mX-Y=1\\
+        X+mY=m+2
+    \end{cases}\cdots\cdots\cdots\asta
+\end{align*}
+\tokeiichi\underline{$X=0のとき$}
+\begin{align*}
+    \asta&\doti \exists m,\begin{cases}
+        -Y=1\\
+        mY=m+2
+    \end{cases}\doti m=-1
+\end{align*}
+\tokeini\underline{$X\neq0 のとき$}
+\begin{align*}
+    \asta&\doti \exists m,\begin{cases}
+        m=\frac{y+1}{x}\\
+        \maruni
+    \end{cases}\doti\frac{x^2+y^2-2x-1}{x}=0\\
+    &\doti x\B{(x-1)^2+y^2-2}=0
+\end{align*}
+よって,$Wは下図の太実線部で,白丸を除く.$
+\begin{center}
+    \begin{tikzpicture}
+        \draw[->,>=Latex](-1.5,0)--(3,0)node[right]{$x$};
+        \draw[->,>=Latex](0,-1.5)--(0,2)node[above]{$y$};
+        \draw[very thick](1,0)circle[radius={sqrt(2)}];
+        \filldraw[fill=white,draw=black](0,1)circle(2.5pt);
+        \node[below right]at(0,0){O};
+        \node[left]at(0,1){1};
+        \node[left]at(0,-1){$-1$};
+        \fill(1,0)circle(2pt);
+        \node[above]at(1,0){1};
+    \end{tikzpicture}
+\end{center}
+\newpage
+\subsection{第4回つづき}
 \newpage
 \section{法政大学解答編}
 \subsection{2023年度実施}
