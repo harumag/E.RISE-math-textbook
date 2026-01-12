@@ -1440,6 +1440,8 @@ $ここで,f(m)=m^2-mx+y　とおくと,$
             \node[below left]at(-1,0){$-1$};
         \end{scope}
         \node[right]at(0,1){1};
+        \filldraw[thin,fill=white,draw=black](0,1)circle(1pt);
+        \filldraw[fill=white,draw=black](0,0)circle(1pt);
     \end{tikzpicture}
 \end{center}
 $W_3は,左下図の太実線部で,原点,(1,0)を除き,それ以外の境界すべて含む.$\\\\
@@ -1955,7 +1957,64 @@ $\maruichi,\maruni の交点を(X,Y)とし,交点の軌跡Wとする.$
     \end{tikzpicture}
 \end{center}
 \newpage
-\subsection{第4回つづき}
+\subsection{第4回}
+\noindent\ba{4.1.0}\\
+\kangaekata\\
+\kakkoichi では,割り算の性質$P(x)\godo0\kmod{x^2-1}\doti P(x)\godo0\kmod{x-1}かつP(x)\godo0\kmod{x+1}　を用います.$\\
+\kakkosan 素因数分解をさせた意味を考えましょう.\\
+\kai\\
+\kakkoichib　$x^2-1=(x-1)(x+1)なので,$
+\begin{align*}
+\begin{cases}
+    P(x)\godo0\kmod{x-1}\\
+    P(x)\godo0\kmod{x+1}
+\end{cases}を示す.
+\end{align*}
+いま,$ x^2\godo x^5\godo x^4\godo x^3\godo\cdots\godo 1\kmod{x-1}$
+なので,
+\begin{align*}
+    P(x)&\godo(1-3+3-1)\cdot1\cdot2\cdot3\cdot4\\
+    &\godo 0\kmod{x-1}
+\end{align*}
+同様に,$x^6\godo-x^5\godo x^4\godo-x^3\godo\cdots\godo1\kmod{x+1}$より,$P(x)\godo0\kmod{x+1}$\\
+$\Y \begin{cases}
+    P(x)\godo0\kmod{x-1}\\
+    P(x)\godo0\kmod{x+1}
+\end{cases}\doti P(x)\godo0\kmod{x^2-1}　\ans{証明終わり}$\\\\
+\kakkonib
+\begin{align*}
+6480&=10\times648=10\times4\times162=10\times4\times2\times81\\
+&=2^4\times5\times9^2\\
+&=\kotaee{2^4\times3^4\times5}
+\end{align*}\\
+\kakkosanb　$P(n)=(n^6-3n^4+3n^2-1)n^3(n^2+1)(n^2+2)(n^2+3)　と因数分解できるので,$
+\begin{align*}
+    \begin{cases}
+        P(n)\godo0\kmod{2^4}\cdots\cdots\cdots\maruichi\\
+        P(n)\godo0\kmod{3^4}\cdots\cdots\cdots\maruni\\
+        P(n)\godo0\kmod{5}\cdots\cdots\cdots\marusan
+    \end{cases}
+\end{align*}
+であることをそれぞれ言えばよい.\\
+\newpage
+まず,$\maruichi$ を示す.合同式の対称性に注目して下表を得る.
+\begin{center}
+    \begin{tabular}{|c||c|c|c|c|c|c|c|c|}
+        \hline
+        $n\kmod{16}$ & $0$ & $\pm1$ & $\pm2$ & $\pm3$ & $\pm4$ & $\pm5$ & $\pm6$ & $\pm7$\\
+        \hline
+        $n^2\kmod{16}$ & $0$ & $1$ & $4$ & $9$ & $0$ & $9$ & $4$ & $1$ \\
+        \hline
+        $n^4\kmod{16}$ & $0$ & $1$ & $0$ & $1$ & $0$  & $1$ & $0$ & $1$ \\
+        \hline
+        $n^6\kmod{16}$ & $0$ & $1$ & $0$ & $1$ & $0$  & $1$ & $0$ & $1$ \\
+        \hline
+        $P(n)\kmod{16}$ & $0$ & $0$ & $0$ & $0$ & $0$  & $0$ & $0$ & $0$ \\
+        \hline
+    \end{tabular}
+\end{center}
+上表より,$\maruichi が示された.$
+\subsection{つづき}
 \newpage
 \section{法政大学解答編}
 \subsection{2023年度実施}
