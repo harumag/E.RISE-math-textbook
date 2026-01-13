@@ -2087,7 +2087,53 @@ a_{n+1}&=2(5b_n+r_n)^2+1=2(25b_n^2+10b_nr_n+r_n^2)+1\\
     b_{n+1}&=10b_n^2+12b_n+3=10b_n^2+12(5c_n+s_n)+3\\
     &\godo2s_n+3\kmod{5}
 \end{align*}
-よって,$s_{n+1}は2s_n+3を5で割った余りに等しい.$
+よって,$s_{n+1}は2s_n+3を5で割った余りに等しい.$\\
+\tokeini\underline{$nが偶数\doti r_n=4のとき$}\\
+　$\maruni より,a_{n+1}=5(10b_n^2+16b_n)+33\cdots\cdots\cdots\marushi なので,$
+\begin{align*}
+    b_{n+1}&=10b_n^2+16b_n+6\\
+    &=10b_n^2+16(5c_n+s_n)+6\\
+    &\godo s_n+1\kmod{5}　(続きは次ページ)
+\end{align*}
+よって,$s_{n+1}はs_n+1を5で割った余りに等しい.$\\
+$\Y 以上をまとめると,$
+\begin{align*}
+    &r_n=3(\doti nが奇数)\narabaa b_{n+1}\godo2s_n+3\kmod{5}\\
+    &r_n=4(\doti nが偶数)\narabaa b_{n+1}\godo s_n+1\kmod{5}
+\end{align*}
+また,$b_1=1より,s_1=1なので,$
+\begin{align*}
+    &\p{s_n,r_n}=(1,3)のとき,\p{s_{n+1},r_{n+1}}=(0,4)\\
+    &\p{s_n,r_n}=(0,4)のとき,\p{s_{n+1},r_{n+1}}=(1,3)
+\end{align*}
+となって,$\p{s_n,r_n}は(0,4),(1,3)を周期的に繰り返す.$\\
+$\Y \kotaee{s_n=\begin{cases}
+    0　(n:偶数)\\
+    1　(n:奇数)
+\end{cases}}$
+\kakkosanb　$まず,\marusan よりnが奇数なので,$
+\begin{align*}
+    a_{n+1}&=50b_n^2+60b_n+19\\
+    &=50b_n^2+60(5c_n+1)+19\\
+    &\godo10+19\kmod{50}\\
+    =29
+\end{align*}
+次に$\marushi より,nが偶数なので,$
+\begin{align*}
+    a_{n+1}&=50b_n^2+60b_n+33\\
+    &=50b_n^2+60\cdot5c_n+33\\
+    &\godo33\kmod{50}
+\end{align*}
+また,$a_1=8に注意して,a_nを50で割った余りは,
+\kotaee{
+    \begin{cases}
+8　(n=1)\\
+29　(n:偶数)\\
+33　(n:3以上の奇数)
+\end{cases}
+}$
+\newpage
+
 \newpage
 \section{法政大学解答編}
 \subsection{2023年度実施}
