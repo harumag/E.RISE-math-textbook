@@ -2245,13 +2245,15 @@ $\Y b_nの値が最大になるようなnの値は,\kotaee{n=5}$
 \subsection{総合演習：解答編}
 では,フィナーレに参りましょう!しっかり復習して,図形と解析分野を是非,得意にしてください!\\
 \chu \ba{5.1.0}と\ba{5.1.1}は手書きによる回答になります.スイマセン\hiraayamari\\\\
-\ba{5.1.2}\\
+\newpage
+
+\noindent\ba{5.1.2}\\
 \kangaekata\\
 図形と関数の分野でベクトルを使うタイミングは,次の二つです.\\
 \ans{\doichi :面積を求めたいとき.}\\
 \ans{\doni :接線と法線が絡むとき}\\
 誘導に乗れば,イージーですが,計算が重たいので,落ち着いて計算しましょう.また僕には,\kakkosan,\kakkoshi の
-誘導の意味がわかりません.\\\
+誘導の意味がわかりません.\\\\
 \kai\\
 \kakkoichib　\begin{align*}
 &C_1の\mathrm{P}での接線の方程式は,y=2tx-t^2\cdots\cdots\cdots\maruichi であり,\\
@@ -2390,7 +2392,7 @@ $\Y S=\kotaee{\dfrac{\sqrt{2}}{6}(3-2\sqrt{2})}$
          \draw[dashed](A)--(0,{15/8})node[left]{2};
     \end{tikzpicture}
 \end{center}
-\kakkoichib　$直線\mathrm{OA}の式が,y=xなので,求める面積Tとすると,Tは上図の斜線部と網目部を合わせた部分であるあから,$
+\kakkoichib　$直線\mathrm{OA}の式が,y=xなので,求める面積Tとすると,Tは上図の斜線部と網目部を合わせた部分であるから,$
 \begin{align*}
     T&=\dint{0}{2}\B{x-(x^3-3x)}dx=\dint{0}{2}\p{-x^3+4x}dx\\
     &=-\dfrac{1}{4}\tint{x^4}{0}{2}+4\cdot\dfrac{1}{2}\tint{x^2}{0}{2}\\
@@ -2442,7 +2444,7 @@ $\Y Sは,Tから\Sankaku{OPA}(斜線部分)を引けばよいので, S(t)=4-\lef
 \newpage
 \noindent\ba{5.1.4}\\
 \kangaekata\\
-\kakkoni $座標において,\sin^2x や\cos^2x という\ans{2乗の形}は厄介です.なので,半角公式を用いて次数を下げましょう.一応,導出方法を含めて確認しますか.$\\
+\kakkoni $座標において,\sin^2x や\cos^2x という\ans{2乗の形}は厄介です.なので,半角公式を用いて次数を下げましょう.一応,導出方法を含めて確認しましょう.$\\
 \koushikia $<半角公式の導出>$\\
 $\cos の2倍角の公式より,$
 \begin{align*}
@@ -2456,7 +2458,7 @@ $\maruichi より,\ans{\cos^2\theta=\dfrac{1+\cos2\theta}{2}}\\
 \ell の方向ベクトルとして,\vec{v}=\tvec<0,1>[-\sin\theta,\cos\theta]が取れるので,直線m上の点(x,y) とすると,mの方程式は,$
 \begin{align*}
     \tvec<0,1>[x+1,y]\cdot\vec{v}=0&\doti \tvec<0,1>[x+1,y]\cdot\tvec<0,1>[-\sin\theta,\cos\theta]=0\\
-    &\doti \kotaee{m:(x+1)\sin\theta-y\sin\theta=0}
+    &\doti \kotaee{m:(x+1)\sin\theta-y\cos\theta=0}
 \end{align*}\\
 \kakkonib　まず,与えられた状況を図示すると下図を得る.
 \begin{center}
@@ -2489,9 +2491,54 @@ $\maruichi より,\ans{\cos^2\theta=\dfrac{1+\cos2\theta}{2}}\\
         \draw[very thick](O)--(-1,0);
         \draw [->,>=Latex,thick](0.5,0) arc (0:30:0.5);%半径1.5の弧
         \node[right]at(0.5,{1/7}){$\theta$};
+        \node[below]at(-1,0){A};
     \end{tikzpicture}
 \end{center}
-\subsection{つづき}
+\newpage
+\noindent  図より,$\mathrm{AQ}は点(-1,0)と\ell の距離なので,$
+\begin{align*}
+    \mathrm{AQ}=\dfrac{|-\cos\theta-1|}{\sqrt{\cos^2\theta+\sin^2\theta}}=\kotaee{\cos\theta+1}
+\end{align*}
+$\mathrm{PQ}は,\mathrm{O}と直線mの距離に等しいので,$
+\begin{align*}
+    \mathrm{PQ}=\dfrac{|\sin\theta|}{\sqrt{\sin^2\theta+(-\cos\theta)2}}=\kotaee{\sin\theta}
+\end{align*}\\
+\kakkosanb　\begin{align*}
+    L&=\mathrm{OP}+\mathrm{PQ}+\mathrm{AQ}+\mathrm{OA}\\
+    &=1+\cos\theta+1+1+\sin\theta\\
+    &=\sin\theta+\cos\theta+3\\
+    &=\sqrt{2}\sin\p{\theta+\dfrac{\pi}{4}}+3　\p{\dfrac{\pi}{4}<\theta+\dfrac{\pi}{4}<\dfrac{5\pi}{4}}
+\end{align*}
+$\Y \theta+\dfrac{\pi}{4}=\dfrac{\pi}{2}\doti \theta=\dfrac{\pi}{4}のとき,最大値\kotaee{3+\sqrt{2}}\\
+また,このとき,\cos\theta=\kotaee{\dfrac{1}{\sqrt{2}}}$\\\\
+\kakkoshib　\begin{align*}
+    S&=(\mathrm{AQ}+\mathrm{OP})\times\mathrm{PQ}\times\dfrac{1}{2}\\
+    &=\dfrac{1}{2}\sin\theta\p{1+\cos\theta+1}\\
+    &=\dfrac{1}{2}\sin\theta(\cos\theta+2)
+\end{align*}
+$\Y S^2=\dfrac{1}{4}\sin^2\theta(\cos\theta+2)^2=\dfrac{1}{4}\p{1-\cos^2\theta}\p{\cos\theta+2}^2\\
+\doti 4S^2=\p{1-\cos^2\theta}\p{\cos\theta+2}^2\\
+\cos\theta=tとおくと,-1<t<1\cdots\cdots\cdots\asta であり,4S^2=(1-t^2)(t+2)^2:=f(t)$
+\begin{align*}
+    f^\prime(t)&=2(2+t)(1-t^2)+(2+t)^2(-2t)\\
+    &=-2(2+t)(2t^2+2t-1)
+\end{align*}
+これより,次の増減表を得る.
+\begin{center}
+    \begin{tabular}{|c||c|c|c|c|c|c|c|c|}
+        \hline
+        $t$ & $\cdots$  & $-2$ & $\cdots$ & $\frac{-1-\sqrt{3}}{2}$ & $\cdots$ & $\frac{-1+\sqrt{3}}{2}$ & $\cdots$ & $1$\\
+        \hline
+        $f^\prime(t)$ & $+$ & $0$ & $-$ & $0$ & $+$ & $0$ & $-$ & ${}$\\
+        \hline
+        $f(t)$ & $\yaa$ & ${}$ & $\yab$  & ${}$ & $\yaa$ & ${}$ & $\yab$ & ${}$\\
+        \hline
+    \end{tabular}
+\end{center}
+\newpage
+\noindent 下の増減表より,$t=\dfrac{-1+\sqrt{3}}{2}のときにf(t)は最大になり,このときS^2も最大になる.このときの\theta  を\alpha 
+とおくと,0<\dfrac{-1+\sqrt{3}}{2}<\dfrac{1}{2}\doti \cos\dfrac{\pi}{2}<\cos\alpha<\cos\dfrac{\pi}{3}\\
+\Y \dfrac{\pi}{3}<\alpha<\dfrac{\pi}{2}が成立する.　\ans{(証明終わり)}$
 \newpage
 \noindent\ba{5.1.5}\\
 \kangaekata\\
