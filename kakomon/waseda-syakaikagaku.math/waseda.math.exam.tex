@@ -2,7 +2,7 @@
 \usepackage[dvipdfmx]{graphicx,color}
 \usepackage{ascmac,amsmath,amssymb,amstext}
 \usepackage{tikz,multicol,float,tikz-3dplot}
-\usetikzlibrary{positioning,intersections,calc,arrows.meta,math,angles}
+\usetikzlibrary{positioning,intersections,calc,arrows.meta,math,angles,patterns}
 \usepackage{zogeny,ceo,comment}
 \newcommand{\ans}[1]{\mbox{\boldmath{$#1$}}}
 \renewcommand{\baselinestretch}{1.3} 
@@ -2248,24 +2248,250 @@ $\Y b_nの値が最大になるようなnの値は,\kotaee{n=5}$
 \ba{5.1.2}\\
 \kangaekata\\
 図形と関数の分野でベクトルを使うタイミングは,次の二つです.\\
-\fbox{\ans{\doichi :面積を求めたいとき.}\\
-\ans{\doni :接線と法線が絡むとき}}\\
-誘導に乗れば,イージーですが,計算が重たいので,落ち着いて計算しましょう.僕には,\kakkosan,\kakkoshi の
+\ans{\doichi :面積を求めたいとき.}\\
+\ans{\doni :接線と法線が絡むとき}\\
+誘導に乗れば,イージーですが,計算が重たいので,落ち着いて計算しましょう.また僕には,\kakkosan,\kakkoshi の
 誘導の意味がわかりません.\\\
 \kai\\
-\kakkoichib　
-
+\kakkoichib　\begin{align*}
+&C_1の\mathrm{P}での接線の方程式は,y=2tx-t^2\cdots\cdots\cdots\maruichi であり,\\
+&C_1の\mathrm{P}での接線の傾きは,y^\prime=2a(t-1)+b\cdots\cdots\cdots\maruni である.
+\end{align*}
+$\maruichi と\maruni の傾きは一致するので,2t=2a(t-1)+b\cdots\cdots\cdots\marusan$\\
+また,Pでの$y座標は等しいので,t^2=a(t-1)^2+b(t-1)+2\cdots\cdots\cdots\marushi $
+よって,
+\begin{align*}
+    \begin{cases}
+        \marusan\\
+        \marushi
+    \end{cases}&\doti\begin{cases}
+        \marusan\\
+        t^2=at^2-2at+bt+a-b+2
+    \end{cases}\\
+    &\doti \begin{cases}
+        \marusan:b=2t-2a(t-1)\\
+        t^2=at^2-2at+2t^2-2at(t-1)+a-2t*2a(t-1)+2
+    \end{cases}\\
+    &\doti\begin{cases}
+        b=2t-2a(t-1)\\
+        at^2+t^2-2at-2at^2+2at+a-2t+2at-2a+2=0
+    \end{cases}\\
+    &\doti\begin{cases}
+        \marusan\\
+        t^2-at^2+2at-2t-a-+2=0
+    \end{cases}\\
+    &\doti\begin{cases}
+        \marusan\\
+        a(-t^2+2t-1)=-t^2+2t-2
+    \end{cases}
+\end{align*}    
+    \begin{align*}
+        &\doti\begin{cases}
+        \marusan\\
+        a=\dfrac{t^2-2t+2}{t^2-2t+1}=\dfrac{t^2-2t+1}{(t-1)^2}\cdots\cdots\cdots\marugo
+    \end{cases}\\
+    &\doti\begin{cases}
+        b=2\B{t-\dfrac{t^2-2t+2}{(t-1)^2}\times(t-1)}=2\cdot\dfrac{t-2}{t-1}\\
+        \marugo
+    \end{cases}\\
+    &\doti\kotaee{\begin{cases}
+        a=\dfrac{t^2-2t+2}{(t-1)^2}\\
+        b=2\cdot\dfrac{t-2}{t-1}
+    \end{cases}}
+\end{align*}\\
+\kakkonib　\begin{align*}
+    a>1&\doti a-1>0\\
+    &\doti \dfrac{t^2-2t+2-(t^2-2t+1)}{(t-1)^2}=\dfrac{1}{(t-1)^2}>0　\ans{(証明終わり)}
+\end{align*}\\
+\kakkosanb　$C_2をxで微分すると,$
+\begin{center}
+    $y^\prime=2a(x-1)+b$
+\end{center}
+なので,$y^\prime=0とすると$
+\begin{align*}
+    y^\prime=0\doti y-1=-\dfrac{b}{2a}\doti x=1-\dfrac{b}{2a}\cdots\cdots\cdots\maruroku
+\end{align*}
+$\maruroku にそれぞれ,aとb を代入することにより,$
+\begin{align*}
+    x&=1-\dfrac{1}{2}\cdot\dfrac{2(t-2)/t-1}{t^2-2t+2/(t-1)^2}=1-\dfrac{1}{2}\cdot2(t-2)\times\dfrac{t-1}{t^2-2t+2}\\
+    &=1-\dfrac{t^2-3t+2}{t^2-2t+2}=\kotaee{\dfrac{t}{t^2-2t+2}}
+\end{align*}\\
+\kakkoshib　\begin{align*}
+    \dfrac{1}{f(t)}=t+\dfrac{2}{t}-1\geq 2\sqrt{2}-1　(\because \mathrm{AM-GM})
+\end{align*}
+$等号は,t=\dfrac{2}{t}\doti t=\sqrt{2}のとき成立するので,\kotaee{t=\sqrt{2}のとき,\min\dfrac{1}{f(t)}=2\sqrt{2}-1}$
+\newpage
+\noindent\kakkogob　$t=\sqrt{2}のとき,a,bそれぞれの値は,$
+\begin{align*}
+    \begin{cases}
+        a=\dfrac{2-2\sqrt{2}+2}{3-2\sqrt{2}}=2(2+\sqrt{2})\\
+        b=2\cdot\dfrac{\sqrt{2}-2}{\sqrt{2}-1}=2\sqrt{2}
+    \end{cases}
+\end{align*}
+これより,$C_2の方程式は,$
+\begin{center}
+    $C_2:y=2\sqrt{2}(1+\sqrt{2})(x-1)^2-2\sqrt{2}(x-1)+2$
+\end{center}
+である.$よって,y=2とC_2との共有点の座標は,$
+\begin{align*}
+    2=2\sqrt{2}(1+\sqrt{2})(x-1)^2-2\sqrt{2}(x-1)+2&\doti 0=\sqrt{2}(x-1)\B{(1+\sqrt{2})(x-1)-1}\\
+    &\doti x=1　または　x-1=\dfrac{1}{1+\sqrt{2}}\\
+    &\doti x=1,\sqrt{2}
+\end{align*}
+よって,求める面積$Sは$
+\begin{align*}
+    S&=\left|\dint{1}{\sqrt{2}}\G{2-\B{2\sqrt{2}(1+\sqrt{2})(x-1)^2-2\sqrt{2}(x-1)+2}}dx\right|\\
+    &=\dint{1}{\sqrt{2}}\B{2\sqrt{2}(1+\sqrt{2})(x-1)^2-2\sqrt{2}(x-1)}dx\\
+    &=\dfrac{2\sqrt{2}(1+\sqrt{2})}{3}\tint{(x-1)^3}{1}{\sqrt{2}}-\dfrac{2\sqrt{2}}{2}\tint{(x-1)^2}{1}{\sqrt{2}}\\
+    &=\dfrac{2\sqrt{2}(1+\sqrt{2})}{3}\G{(\sqrt{2}-1)^3}-\dfrac{2\sqrt{2}}{2}\G{(\sqrt{2}-1)^2}\\
+    &=\sqrt{2}(\sqrt{2}-1)^2\B{-\dfrac{2}{3}\cdot (1+\sqrt{2})(1-\sqrt{2})-\dfrac{1}{2}}\\
+    &=\sqrt{2}(\sqrt{2}-1)^2\B{\dfrac{2}{3}-\dfrac{1}{2}}\\
+    &=\dfrac{\sqrt{2}}{6}(\sqrt{2}-1)^2\\
+    &=\dfrac{\sqrt{2}}{6}(3-2\sqrt{2})
+\end{align*}
+$\Y S=\kotaee{\dfrac{\sqrt{2}}{6}(3-2\sqrt{2})}$
 \newpage
 \noindent\ba{5.1.3}\\
 \kangaekata\\
 \kakkoichi で面積を計算させるのは珍しいですね.でものちに\kakkoshi を楽にするためのステップだったのだと判明します.\\
 \kai\\
-\kakkoichib　
+\begin{center}
+    \begin{tikzpicture}[scale=1.5]
+        
+        \begin{scope}
+            \clip (-2.5,-2)rectangle(2.3,2);
+            \draw[samples=500,thick]plot(\x,{pow(\x,3)-\x});
+            \coordinate(O)at(0,0);
+            \coordinate(A)at({3/2},{15/8});
+            \draw[thin](O)--(A);
+            \coordinate(P)at({2/3},{-10/27});
+            \draw[thin](O)--(P);
+            \draw[thin](P)--(A);
+            \fill[black!20!white](O)--(P)--plot[domain={2/3}:0,thick](\x,{pow(\x,3)-\x});
+            \fill[black!20!white](P)--(A)--plot[domain={3/2}:{2/3},thick](\x,{pow(\x,3)-\x});
+            \draw[samples=500,thick]plot(\x,{pow(\x,3)-\x});
+        \end{scope}
+        \fill(A)circle(1pt);
+        \node[right]at(A){A};
+        \fill(P)circle(1pt);
+        \node[below]at(P){P};
+        \node[below left]at(O){O};
+        \draw[->,>=stealth](1.7,{15/16})--(1.22,{15/16});
+        \node[right]at(1.7,{15/16}){$S_2$};
+        \draw[->,>=stealth]({-0.2,-1})--({2/3-0.33},-{2/9});
+        \node[below]at({-0.2,-1}){$S_1$};
+        \draw[thick](O)--(P)--(A)--(O);
+        \draw[->,>=Latex](-2.5,0)--(2.2,0)node[right]{$x$};
+        \draw[->,>=Latex](0,-2)--(0,2.4)node[above]{$y$};
+        \fill[pattern=north west lines] (O)--(A)--(P);
+        \draw[dashed](A)--({3/2},0)node[below]{2};
+        \node[above left]at(-1,0){$-\sqrt{3}$};
+         \node[left]at(-1.6,-1){$y=x^3-3x$};
+         \draw[dashed](A)--(0,{15/8})node[left]{2};
+    \end{tikzpicture}
+\end{center}
+\kakkoichib　$直線\mathrm{OA}の式が,y=xなので,求める面積Tとすると,Tは上図の斜線部と網目部を合わせた部分であるあから,$
+\begin{align*}
+    T&=\dint{0}{2}\B{x-(x^3-3x)}dx=\dint{0}{2}\p{-x^3+4x}dx\\
+    &=-\dfrac{1}{4}\tint{x^4}{0}{2}+4\cdot\dfrac{1}{2}\tint{x^2}{0}{2}\\
+    &=\kotaee{4}
+\end{align*}\\
+\kakkonib　$直線\mathrm{OA} の方向ベクトル \vec{d} として,\vec{d}=\tvec<0,1>[1,1] がとれる.$\\
+また,$y^\prime=3x^2-3より,\mathrm{P} における接線の方程式は,$
+\begin{align*}
+    y=3(t^2-1)(x-t)+t^3-3t=3(t^2-1)x-2t^3\cdots\cdots\cdots\maruichi 
+\end{align*}
+ここで,$\maruichi\doti \tvec<0,1>[3(t^2-1),-1]\cdot\tvec<0,1>[x,y]=2t^3\cdots\cdots\cdots\maruni より,\maruni の方向ベクトルとして　
+\vec{v}=\tvec<0,1>[1,3(t^2-1)]がとれる.$
+\newpage
+\noindent\begin{align*}
+    \Y \maruichi\heikou\maruni&\doti \vec{d}\heikou\vec{v}\\
+    &\doti \det\B{\vec{d},\vec{v}}=0\\
+    &\doti \det\B{\tvec<0,1>[1,1],\tvec<0,1>[1,3(t^2-1)]}=0\\
+    &\doti 3t^2-3-1=0\\
+    &\doti t^2=\dfrac{4}{3}\\
+    &\doti t=\dfrac{2}{\sqrt{3}}　(\because t>0) 
+\end{align*}
+$\Y \kotaee{t=\dfrac{2}{\sqrt{3}}}$\\\\
+\kakkosanb　\kakkosanb より$\mathrm{P}の座標は,\mathrm{P}\p{\dfrac{2}{\sqrt{3}},-\dfrac{10}{3\sqrt{3}}}
+であるから,直線\mathrm{OP}の方程式は,y=-\dfrac{5}{3}x\cdots\cdots\cdots\marusan である.$\\
+ここで,$\Vec{OP}=\tvec<0,1>[t,t^3-3t],\Vec{OA}=\tvec<0,1>[2,2]なので,\Sankaku{OPA}の面積は,$
+\begin{align*}
+    \Sankaku{OPA}&=\dfrac{1}{2}\left|\det\B{\tvec<0,1>[t,t^3-3t],\tvec<0,1>[2,2]}\right|\\
+    &=\dfrac{1}{2}\left|2t-2t^3+6t\right|\\
+    &=\dfrac{1}{2}\left|2t^3-8t\right|=\left|t^3-4t\right|
+\end{align*}
+$\Y Sは,Tから\Sankaku{OPA}(斜線部分)を引けばよいので, S(t)=4-\left|t^3-4t\right|=4-\left|t(t+2)(t-2)\right|　と表すことができ,t<2であることから,S(t)=t(t+2)(t-2)+4となる.\\
+また,展開することにより,S(t)=t^3-4t+4を得て,微分することにより次の増減表を得る.$
+\begin{center}
+    $y^\prime=3t^2-4=(\sqrt{3}t-2)(\sqrt{3}t+2)$
+\end{center}
+\begin{center}
+    \begin{tabular}{|c||c|c|c|c|c|}
+        \hline
+        $t$ & $0$ & $\cdots$ & $\frac{2}{\sqrt{3}}$ & $\cdots$ & $2$\\
+        \hline
+        $S^\prime(t)$ & $\times$ & $-$ & $0$ & $+$ & $\times$\\
+        \hline
+        $S(t)$ & $4$ & $\yab$ & ${}$ & $\yaa$ & $4$\\
+        \hline
+    \end{tabular}
+\end{center}
+上表より,$\ans{t=\dfrac{2}{\sqrt{3}}}のとき,\kotaee{\min S(t)=S\p{\dfrac{2}{\sqrt{3}}}=\dfrac{36-16\sqrt{3}}{9}}$
+
 \newpage
 \noindent\ba{5.1.4}\\
 \kangaekata\\
-特になし!!誘導に乗る!!!!!!!!!!\\
-\kakkoichib　
+\kakkoni $座標において,\sin^2x や\cos^2x という\ans{2乗の形}は厄介です.なので,半角公式を用いて次数を下げましょう.一応,導出方法を含めて確認しますか.$\\
+\koushikia $<半角公式の導出>$\\
+$\cos の2倍角の公式より,$
+\begin{align*}
+    \cos2\theta&=\cos^2\theta-\sin^2\theta\\
+    &=2\cos^2\theta-1\cdots\cdots\cdots\maruichi\\
+    &=1-2\sin^2\theta\cdots\cdots\cdots\maruni
+\end{align*}
+$\maruichi より,\ans{\cos^2\theta=\dfrac{1+\cos2\theta}{2}}\\
+\maruni より,\ans{\sin^2\theta=\dfrac{1-\cos2\theta}{2}}　\ans{(証明終わり)}$\\\\
+\kakkoichib　$円の接線の公式より,\ell の方程式は,\kotaee{\ell:x\cos\theta+y\sin\theta=1}\\
+\ell の方向ベクトルとして,\vec{v}=\tvec<0,1>[-\sin\theta,\cos\theta]が取れるので,直線m上の点(x,y) とすると,mの方程式は,$
+\begin{align*}
+    \tvec<0,1>[x+1,y]\cdot\vec{v}=0&\doti \tvec<0,1>[x+1,y]\cdot\tvec<0,1>[-\sin\theta,\cos\theta]=0\\
+    &\doti \kotaee{m:(x+1)\sin\theta-y\sin\theta=0}
+\end{align*}\\
+\kakkonib　まず,与えられた状況を図示すると下図を得る.
+\begin{center}
+    \begin{tikzpicture}[scale=2.5]
+        \draw[->,>=Latex](-1.8,0)--(1.8,0)node[right]{$x$};
+        \draw[->,>=Latex](0,-0.5)--(0,1.8)node[above]{$y$};
+        \begin{scope}
+            \clip(-1.1,0)rectangle(1.3,1.8);
+            \draw[thick](0,0)circle[radius=1];
+            \draw[very thick]plot(\x,{2-sqrt(3)*\x});
+            \coordinate(P)at({sqrt(3)/2},{1/2});
+            \fill(P)circle(1.2pt);
+        \end{scope}
+        \node[below left]at(0,0){O};
+        \node[above left]at(-1,0){$-1$};
+        \node[below right]at(1,0){1};
+        \draw[->,>=Latex,very thick](0,0)--({sqrt(3)/2},{1/2});
+        \coordinate(A)at(-1,0);
+        \node[right]at(P){P};
+        \node[right]at(0.2,1.8){$\ell$};
+
+        \begin{scope}
+            \clip(-1.2,-0.5)rectangle(1,1.8);
+            \draw[very thick]plot(\x,{\x*1/sqrt(3)+1/sqrt(3)});
+        \end{scope}
+        \node[above right]at(1,1){$m$};
+        \fill({sqrt(3)/2-1/4},{1/2+sqrt(3)/4})circle(1.2pt);
+        \coordinate(Q)at({sqrt(3)/2-1/4},{1/2+sqrt(3)/4});
+        \node[above]at(Q){Q};
+        \draw[very thick](O)--(-1,0);
+        \draw [->,>=Latex,thick](0.5,0) arc (0:30:0.5);%半径1.5の弧
+        \node[right]at(0.5,{1/7}){$\theta$};
+    \end{tikzpicture}
+\end{center}
+\subsection{つづき}
 \newpage
 \noindent\ba{5.1.5}\\
 \kangaekata\\
