@@ -3172,4 +3172,72 @@ $\Y Wは,\begin{cases}
         \node[below right]at(0,0){O};
     \end{tikzpicture}
 \end{center}
+\newpage
+\section{条件付き確率解答}
+\begin{itembox}
+    [l]{問題}
+     　袋の中に$1から10までの数字が1つずつ書かれた10枚のカードが入ってる.この袋の中からカードを1枚取り出し,取り出したカードに書かれている数字を
+     記録し,袋の中に戻す操作を繰り返す.\\
+     　2回目までの操作で出た数字の和をXとし,3回目までの操作で記録された数字の和をYとする.\\$
+     　$Yが3の倍数となるとき,Xが5の倍数であった条件付き確率を求めよ.$
+\end{itembox}
+\kangaekata\\
+$\mod を使うには,それぞれの試行回数の時の数を文字でおいて考える必要があります.$\\
+\kai\\
+$1回目,2回目,3回目のそれぞれのカードの数字をa_1,a_2,a_3とする.$\\
+このとき,\begin{center}
+    $P_Y(X)=\dfrac{P\p{Y\cap X}}{P\p{Y}}=\dfrac{n\p{Y\cap X}}{n\p{Y}}$
+\end{center}
+を求める.
+また,$1回目,2回目,3回目それぞれのカードに書かれていた数字をa_1,a_2,a_3とおくと$
+\begin{align*}
+    \begin{cases}
+        X=a_1+a_2\\
+        Y=a_1+a_2+a_3
+    \end{cases}\doti\begin{cases}
+        X=a_1+a_2\\
+        Y=X+a_3
+    \end{cases}
+\end{align*}である.
+今,$1\sim 10を\mod3 で分類すると,次表を得る.$
+\begin{center}
+    \begin{tabular}{|c||c|c|c|c|c|c|c|c|c|c|}
+        \hline
+        $n$ & $1$ & $2$ & $3$ & $4$ & $5$ & $6$ & $7$ & $8$ & $9$ & $10$\\
+        \hline
+        $n\kmod{3}$ & $1$ & $2$ & $0$ & $1$ & $2$ & $0$ & $1$ & $2$ & $0$ & $1$\\
+        \hline 
+    \end{tabular}
+\end{center}
+すなわち,$\{3,6,9\}:余り0,\{1,4,7,10\}:余り1,\{2,5,8\}:余り2$　である.\\\\
+まず,$n(Y\cap X) を求める.\\
+　X\godo0\kmod{5}になるXは,X=5,10,15,20のときで,それぞれX\godo 2,1,0,2\kmod{3}であり,X\cap Yは次の4通りで場合分けできる.$\\
+\tokeiichi\underline{$X=5のとき,$}\\
+　$(a_1,a_2)=(1,4)(2,3)の4通りで,a_3が(\mod3)で1であればよいから,4\times4=16通り.$\\
+\tokeini\underline{$X=10のとき$}\\
+　$(a_1,a_2)=(1,9)(2,8)(3,7)(4,6)(5,5)の9と通りで,a_3が(\mod3)で2であればよいから,9\times3=27通り.$
+\newpage
+\noindent\tokeisan\underline{$X=15のとき$}\\
+　$(a_1,a_2)=(10,5)(9,6)(8,7)の6通りで,a_3が(\mod3)で0であればよいから,6\times3=18通り.$\\
+\tokeishi\underline{$X=20のとき$}\\
+　$(a_1,a_2)=(10,10)の1通りで,a_3が(\mod3)で2であればよいから,1\times3=3通り.$\\
+$\Y 以上\tokeiichi から\tokeishi まですべて足すと,65通りでこれがn\p{Y\cap X}である.$\\\\
+次に,$Y\godo0\kmod{3}であるような(a_1,a_2,a_3)の総数を求める.$\\
+(\tokeichi)\underline{$X\godo0\kmod{3}のとき$}\\
+　$Y=X+a_3\godo0\kmod{3}なるa_3は,余りが0であれば良いので,a_3=3,6,9の3つであり,X\godo0\kmod{3}なる(a_1,a_2)の組は,(a_1,a_2)\godo(0,0)(1,2)(2,1)で,
+3\times3+4\times3+4\times3=33通りである.よって,これを満たす(a_1,a_2,a_3)$の組の総数は,$3\times33=99通りである.$\\
+(\tokeni)\underline{$X\godo1\kmod{3}$のとき}\\
+　$Y=X+a_3\godo0\kmod{3}なるa_3は,余りが2であれば良いので,a_3=2,5,8の3つであり,X\godo1\kmod{3}なる(a_1,a_2)の組は,(a_1,a_2)\godo(0,1)(1,0)(2,2)で,
+3\times4+3\times4+3\times3=33通りである.よって,これを満たす(a_1,a_2,a_3)の組の総数は,3\times33=99通りである.$\\
+(\tokesan)\underline{$X\godo2\kmod{3}のとき$}\\
+　$Y=X+a_3\godo0\kmod{3}なるa_3は,余りが1であれば良いので,a_3=1,4,7,10の4つであり,X\godo2\kmod{3}なる(a_1,a_2)の組は,(a_1,a_2)\godo(0,2)(2,0)(1,1)で,
+3\times3+3\times3+4\times4=34通りである.よって,これを満たす(a_1,a_2,a_3)の組の総数は,4\times34=136通りである.$\\
+$\Y 以上(\tokeichi)\sim(\tokesan)まですべて足すと,334通りでこれがn(Y)である.$\\\\
+$\Y 以上より,求める条件付き確率は,\kotaee{\dfrac{65}{334}}$
+
+
+
+
+
+
 \end{document}
