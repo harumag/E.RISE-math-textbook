@@ -481,7 +481,7 @@ $f(\theta)=\cos2\theta-\sqrt{3}\sin2\theta+4\cos\frac{\theta}{2}\p{\sin\frac{\th
 \end{itembox}\\
 \begin{itembox}
     [l]{\ba{5.1.6}\kagil 落ち着いて計算\kagir(B30)}
-    $関数f(x)=x^2-\dfrac{1}{2}xに対して,曲線C:y=f(x)上に点\mathrm{P}(t,f(t))　(t>0)をとる.次の問に答えよ.$\\
+    $関数f(x)=x^3-\dfrac{1}{2}xに対して,曲線C:y=f(x)上に点\mathrm{P}(t,f(t))　(t>0)をとる.次の問に答えよ.$\\
     \kakkoichi　$曲線C上の点\mathrm{P}における接線を\ell_1,点\mathrm{P}を通り\ell_1に垂直な直線を\ell_2とする.
     ただし,\ell_1はx軸に平行でないとする.原点と\ell_1,\ell_2との距離をそれぞれd_1,d_2とおく.このとき,d_1およびd_2を
     tを用いて表せ.$\\
@@ -2580,11 +2580,36 @@ $\Y Cと\maruichi は\mathrm{O,A}以外の異なる二つの共有点を持つ.�
     &\doti y=-tx+\dfrac{1}{4}\cdot(-4)\\
     &\doti y=-tx-1\cdots\cdots\cdots\marushi
 \end{align*}
-$\Y \kotaee{L:y=-tx-1}$
+$\Y \kotaee{L:y=-tx-1}$\\
+また,
+\begin{align*}
+    \marushi\doti \tvec<0,1>[t,1]\cdot\tvec<0,1>[x,y]=-1
+\end{align*}
+より,$Lの方向ベクトル\vec{d}として,\tvec<0,1>[t,1]を反時計回りに90\ddo 回転させたベクトル\vec{d}=\tvec<0,1>[-1,t]が取れる.$\\
+ところで,$線分\mathrm{PQ}の中点を\mathrm{M}とすると,\mathrm{M}の座標は,$
+\begin{align*}
+    \mathrm{M}\p{\dfrac{\alpha+\beta}{2},\dfrac{\p{\alpha+\beta}^2-2\alpha\beta}{2}}であり,x=\alpha,\beta は\marusan の異なる2つの解なので,解と係数の関係より,
+\end{align*}
+$\begin{cases}
+    \alpha+\beta=-t\\
+    \alpha\beta=1
+\end{cases}なので,\mathrm{M}の座標は,\mathrm{M}\p{-\dfrac{t}{2},\dfrac{t^2-2}{2}}と書ける.$\\
+$\Y Nの方程式は,\vec{d}を用いて,$
+\begin{align*}
+    \tvec<0,1>[x+\frac{t}{2},y-\frac{t^2-2}{2}]\cdot\vec{d}=0&\doti \tvec<0,1>[x+\frac{t}{2},y-\frac{t^2-2}{2}]\cdot\tvec<0,1>[-1,t]=0\\
+    &\doti -x-\dfrac{t}{2}+ty-\dfrac{t^3-2t}{2}=0\\
+    &\doti \kotaee{x-ty=\dfrac{t-t^3}{2}}
+\end{align*}
+
 
 \newpage
 \noindent\ba{5.1.6}\\
+\chu 問題訂正あり.$\times f(x)=x^2-\dfrac{1}{2}x\to f(x)=\ans{x^3}-\dfrac{1}{2}x$\\
 \kangaekata\\
+\kakkoichi　$\ell_1,\ell_2ともにx軸に垂直ではありませんが,原点との距離を求めるのでax+by+c=0の形に直しておくのが良いでしょう.$\\
+\kai\\
+\kakkoichib　
+
 
 \newpage
 \section{法政大学解答編}
