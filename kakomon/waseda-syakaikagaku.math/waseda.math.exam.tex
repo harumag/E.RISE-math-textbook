@@ -13,7 +13,7 @@
 \maketitle
 \newpage
 {\LARGE はじめに}\\
-長い長い受験勉強もとうとう終わりが見えてきました.今これを書いているのは12月の14日の深夜です.今から,2ヶ月後の理瀬は
+長い長い受験勉強もとうとう終わりが見えてきました.今これを書いているのは12月の14日の深夜です.今から,2ヶ月後の理瀬さんは
 もう大学入試を終えています.さて,どんな景色が見えているのでしょうか.\\\\
 今から志望校の合格にできることは,たくさん問題をといてパターンをたくさん身につけるのではなく,
 \begin{center}
@@ -2608,9 +2608,119 @@ $\Y Nの方程式は,\vec{d}を用いて,$
 \kangaekata\\
 \kakkoichi　$\ell_1,\ell_2ともにx軸に垂直ではありませんが,原点との距離を求めるのでax+by+c=0の形に直しておくのが良いでしょう.$\\
 \kai\\
-\kakkoichib　
+\kakkoichib　$f^\prime(x)=3x^2-\dfrac{1}{2}であるから,\ell_1の方程式は,$
+\begin{align*}
+    y=\p{3t^2-\dfrac{1}{2}}(x-t)+t^3-\dfrac{1}{2}t\doti (6t^2-1)x-2y-4t^3=0
+\end{align*}
+$これと,t>0より,原点\mathrm{O}と\ell_1の距離d_1は$
+\begin{align*}
+    d_1=\dfrac{|-4t^3|}{\sqrt{(6t^2-1)^2+2^2}}=\kotaee{\dfrac{4t^3}{\sqrt{36t^4-12t^2+5}}}
+\end{align*}
+また,$\ell_2 は\mathrm{P}を通り\ell_1 に垂直な直線であるから,\ell_1の方向ベクトルとして,\vec{d}=\tvec<0,1>[2,-(6t^2-1)]
+がとれるので,これと内積することにより,$
+\begin{align*}
+    &\tvec<0,1>[x-t,y-(t^3-\frac{1}{2}t)]\cdot\tvec<0,1>[2,-(6t^2-1)]=0\doti2(x-t)+(6t^2-1)\p{y-t^3+\frac{1}{2}t}=0\\
+    &\doti 2x+(6t^2-1)y-6t^5+4t^3-\frac{5}{2}t=0
+\end{align*}
+よって,$d_2は,$
+\begin{align*}
+    d_2=\dfrac{|12t^5-8t^3+5t|}{2\sqrt{36t^4-12t^2+5}}=\ans{\dfrac{12t^5-8t^3+5t}{2\sqrt{36t^4-12t^2+5}}}　\kotaee{(\because (分子)>0)}
+\end{align*}\\
+\kakkonib　$d_1=d_2のとき,$
+\begin{align*}
+    2\cdot4t^3=12t^5-8t^3+5t&\doti t(12t^4-16t^2+5)=0\\
+    &\doti t(2t^2-1)(6t^2-5)=0\\
+    &\doti t\p{\sqrt{2}t-1}\p{\sqrt{2}t+1}\p{\sqrt{6}t-\sqrt{5}}\p{\sqrt{6}t+\sqrt{5}}=0\\
+    &\doti t=\dfrac{1}{\sqrt{2}},\dfrac{\sqrt{5}}{\sqrt{6}}=\dfrac{\sqrt{2}}{2},\dfrac{\sqrt{30}}{6}　\p{\because t>0}
+\end{align*}
+$\Y \kotaee{t=\dfrac{\sqrt{2}}{2},\dfrac{\sqrt{30}}{6}}$
+\newpage
+\kakkosanb
+\begin{center}
+    \begin{tikzpicture}[scale=4]
+        \draw[->,>=Latex](-{1/3},0)--(1.5,0)node[right]{$x$};
+        \draw[->,>=Latex](0,-0.5)--(0,1.5)node[above]{$y$};
+        \begin{scope}
+            \clip({-1/3},-0.5)rectangle(1.5,1.4);
+            \draw[samples=500,very thick]plot(\x,{pow(\x,3)-1/2*\x});
+            \draw[domain=-0.02:0.8,very thick]plot(\x,{-\x+1/sqrt(2)});
+            \draw[domain=-0.1:1.3,very thick]plot(\x,{-1/2*\x+5*sqrt(30)/36});
+            \node[below left]at(0,0){O};
+            \draw[dashed]({sqrt(5)/sqrt(6)},{sqrt(30)/18})--({sqrt(5)/sqrt(6)},0)node[below]{$\frac{\sqrt{5}}{\sqrt{6}}$};
+            \draw[->,>=stealth]({1/sqrt(3)},-0.3)--({1/sqrt(2)},-0.02);
+            \node[below left]at({1/sqrt(3)},-0.2){$\dfrac{1}{\sqrt{2}}$};
+        \end{scope}
+        \node[right]at(1.2,1){$C$};
+        \node[above]at(0.5,0.6){$\ell_2,　t=\frac{\sqrt{5}}{\sqrt{6}}$};
+        \node[below]at(0.23,0.3){$t=\frac{1}{\sqrt{2}}$};
+        \node[below]at(0.2,0.4){$\ell_2$};
+        
+    \end{tikzpicture}
+\end{center}
+$\bullet　 \underline{t=\dfrac{\sqrt{2}}{2}のとき,}\\
+　\ell_2の方程式は,$
+\begin{align*}
+    2x+2y-\dfrac{1}{\sqrt{2}}\p{\dfrac{6}{4}-\dfrac{4}{2}+\dfrac{5}{2}}=0\doti y=-x+\dfrac{1}{\sqrt{2}}
+\end{align*}
+なので,$\mathrm{P}の座標は,\mathrm{P}\p{\dfrac{1}{\sqrt{2}},0}となることより,求める面積は,$
+\begin{align*}
+    S&=\dint{0}{\frac{1}{\sqrt{2}}}\B{\p{x-\dfrac{1}{\sqrt{2}}}-\p{x^3-\dfrac{1}{2}x}}dx\\
+    &=\dint{0}{\frac{1}{\sqrt{2}}}\p{-x^3-\dfrac{1}{2}x+\dfrac{1}{\sqrt{2}}}dx\\
+    &=-\dfrac{1}{4}\cdot\p{\dfrac{1}{\sqrt{2}}}^4-\dfrac{1}{2}\cdot\dfrac{1}{2}\p{\dfrac{1}{\sqrt{2}}}^2+\dfrac{1}{\sqrt{2}}\cdot\dfrac{1}{\sqrt{2}}\\
+    &=\dfrac{-1-2+8}{16}=\kotaee{\dfrac{5}{16}}
+\end{align*}
+$\bullet　\underline{t=\dfrac{\sqrt{30}}{6}のとき,}\\
+　\ell_2の方程式は,$
+\begin{align*}
+    2x+4y-\dfrac{\sqrt{5}}{\sqrt{6}}\p{6\cdot\dfrac{25}{36}-4\cdot\dfrac{5}{6}+\dfrac{5}{2}}=0\doti y=-\dfrac{1}{2}x+\dfrac{5\sqrt{5}}{6\sqrt{6}}
+\end{align*}
+なので,$t=\dfrac{\sqrt{2}}{2}のときと同様に,上図を参考にして,求める面積は,$
+\begin{align*}
+    S&=\dint{0}{\frac{\sqrt{5}}{\sqrt{6}}}\B{\p{-\dfrac{1}{2}x+\dfrac{5\sqrt{5}}{6\sqrt{6}}}-\p{x^3-\dfrac{1}{2}x}}dx\\
+    &=-\dfrac{1}{4}\p{\dfrac{\sqrt{5}}{\sqrt{6}}}^4+\dfrac{5\sqrt{5}}{6\sqrt{6}}\cdot\dfrac{\sqrt{5}}{\sqrt{6}}\\
+    &=\dfrac{3}{4}\cdot\dfrac{25}{36}=\kotaee{\dfrac{25}{36}}
+\end{align*}
+\newpage
+\ba{5.1.7}\\
+\kangaekata\\
+$\kakkoichi f(x)=0もg(x)=0も解が2つずつあるので,積は4通りできますが,実部は2通りしかできません.いずれかが0となる条件を一気に扱うには....\\
+\kakkoni \kakkoichi の条件を活かすためにa,bをパラメータで表しましょう.$\\
+\kai\\
+$\kakkoichib　f(x)=(x-a)^2+1-a^2,g(x)=(x-b)^2+1-b^2である.|a|<1,|b|<1も合わせると,それぞれの解について,$
+\begin{center}
+    $\alpha=a\pm\sqrt{1-a^2}i,\beta=b\pm\sqrt{1-b^2}i$
+\end{center}
+となる.$よって,\mathrm{Re}(\alpha\beta)=ab\pm\sqrt{1-a^2}\sqrt{1-b^2}であり,このいずれかが0になるような条件は,$
+\begin{align*}
+    \p{ab+\sqrt{1-a^2}\sqrt{1-b^2}}\p{ab-\sqrt{1-a^2}\sqrt{1-b^2}}=0&\doti (ab)^2-\p{\sqrt{1-a^2}\sqrt{1-b^2}}^2=0\\
+    &\doti a^2+b^2=1
+\end{align*}
+である.$a=\pm1,b=\pm1が除かれることに注意すると,これを満たすような(a,b)の集合は,下図の太実線部で,白丸を除く.$
+\begin{center}
+    \begin{tikzpicture}[scale=1.5]
+        
+    \draw[->,>=Latex](-1.5,0)--(1.5,0)node[right]{$a$};
+    \draw[->,>=Latex](0,-1.5)--(0,1.5)node[above]{$b$};
+    \draw[very thick](0,0)circle[radius=1];
+    \filldraw[fill=white,draw=black](0,1)circle(1pt)node[above left]{$1$};
+    \filldraw[fill=white,draw=black](0,-1)circle(1pt)node[below left]{$-1$};
+    \filldraw[fill=white,draw=black](1,0)circle(1pt)node[above right]{$-1$};
+    \filldraw[fill=white,draw=black](-1,0)circle(1pt)node[above left]{$1$};
+    \node[below left]at(0,0){O};
+    \end{tikzpicture}
+\end{center}
+\kakkonib　P$(1,1-a^2),\mathrm{Q}\p{b,1-b^2}である.\kakkoichi の結果より,a=\cos\theta,b=\sin\theta　\p{-\pi<\theta<\pi,\theta\neq0,\theta=\pm\dfrac{\pi}{2}}$
 
-
+とおくことができ,このとき,$\mathrm{PQ}^2は,$
+\begin{align*}
+    \mathrm{PQ}^2&=\p{\sin\theta-\cos\theta}^2+\p{-\sin^2\theta+\cos^2\theta}^2\\
+    &=1-\sin2\theta+\cos^22\theta\\
+    &=1-\sin2\theta+(1-\sin^22\theta)\\
+    &=-\p{\sin2\theta+\dfrac{1}{2}}^2+\dfrac{9}{4}
+\end{align*}
+となるから,$\sin2\theta=-\dfrac{1}{2}のときに,\mathrm{PQ}の最大値は,\sqrt{\dfrac{9}{4}}=\kotaee{\dfrac{3}{2}}$
+\newpage
+\section{おわりに}
 \newpage
 \section{法政大学解答編}
 \subsection{2023年度実施}
